@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
 *,
 *::after,
 *::before {
     margin: 0;
     padding: 0;
     text-decoration: none;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
     outline: none;
     box-sizing: border-box;
     list-style: none;
@@ -345,7 +347,6 @@ header nav ul li a:hover {
     font-size: 2.2rem;
     margin-top: 100px;
     text-transform: capitalize;
-    letter-spacing: 1px;
 }
 
 
@@ -513,7 +514,7 @@ header nav ul li a:hover {
 
 .testimoni .perTestimoni {
     width: calc(90%/3);
-    height: 500px;
+    height: 600px;
     display: flex;
     align-items: center;
     /* justify-content: center; */
@@ -539,8 +540,8 @@ header nav ul li a:hover {
 }
 
 .testimoni .perTestimoni span {
-    font-size: 1rem;
-    margin-top: 5px;
+    font-size: .9rem;
+    margin-top: 3px;
 }
 
 .testimoni .perTestimoni p {
@@ -830,12 +831,103 @@ footer {
 
 
 .eventMediaPartner button {
-    font-size: 1.2rem;
-    padding: 20px 30px;
+    font-size: 1.1rem;
+    padding: 15px 25px;
     background-color: #2B46A6;
     color: #fff;
     border-radius: 10px;
     font-weight: 600;
+}
+
+
+.tahapanUpload {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.tahapanUpload h1 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    text-transform: capitalize;
+    color: #1B1B4B;
+}
+
+.tahapanUpload .tahapan {
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.tahapanUpload .tahapan .perTahapan {
+    width: 45%;
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+    margin: 0 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.tahapanUpload .tahapan .perTahapan span {
+    width: 60px;
+    min-width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+    font-size: 1.4rem;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #1D247B;
+}
+
+.tahapanUpload .tahapan .perTahapan h3 {
+    font-size: 1.6rem;
+    line-height: 35px;
+    color: #1B1B4B;
+    margin-bottom: 10px;
+}
+
+.tahapanUpload .tahapan .perTahapan p {
+    font-size: 1.1rem;
+}
+
+.tahapanUpload button {
+    font-size: 1.1rem;
+    padding: 15px 25px;
+    background-color: #2B46A6;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+
+.partnerUniversitas {
+    padding-top: 70px;
+    padding-bottom: 150px;
+    background-color: #F5F5F5;
+}
+
+.partnerUniversitas h1 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    text-transform: capitalize;
+    color: #1B1B4B;
+    margin-bottom: 50px;
+}
+
+.partnerUniversitas .universitas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.partnerUniversitas .universitas img {
+    width: 130px;
+    height: 130px;
+    margin: 20px 30px;
 }
 
 /* Halaman Media Partner end */
@@ -1164,6 +1256,52 @@ footer {
     .testimoni .perTestimoni:last-child {
         display: none;
     }
+
+
+    .join h1 {
+        font-size: 2rem;
+        line-height: 40px;
+        letter-spacing: 1px;
+    }
+
+    /* Media Partner start */
+
+    .eventMediaPartner .title .caption h2 {
+        font-size: 1.8rem;
+        margin-bottom: 5px;
+    }
+
+    .eventMediaPartner .title .caption p {
+        font-size: 1.3rem;
+    }
+
+    .eventMediaPartner .promosi .perPromosi {
+        flex-direction: column;
+    }
+
+    .eventMediaPartner .promosi .perPromosi img {
+        margin-right: 0px;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    .tahapanUpload {
+        padding-top: 50px;
+    }
+
+    .tahapanUpload .tahapan {
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+    }
+
+    .tahapanUpload .tahapan .perTahapan {
+        width: 100%;
+        padding: 40px 20px;
+        margin-bottom: 40px;
+    }
+
+    /* Media Partner end */
+
 }
 
 @media(max-width: 1000px) {
@@ -1222,10 +1360,24 @@ footer {
     }
 
 
+
+    .join {
+        height: 100%;
+        padding-bottom: 50px;
+        padding-top: 50px;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .join img {
+        width: 60%;
+    }
+
     .join h1 {
-        font-size: 2rem;
-        line-height: 40px;
-        letter-spacing: 1px;
+        font-size: 2.2rem;
+        line-height: 45px;
+        margin: 0;
     }
 
 
@@ -1251,6 +1403,19 @@ footer {
     .heroMediaPartner .caption {
         width: 100%;
         text-align: center;
+    }
+
+
+    .eventMediaPartner .promosi .perPromosi {
+        margin: 15px 10px;
+    }
+
+    .eventMediaPartner .promosi .perPromosi img {
+        height: 150px;
+    }
+
+    .eventMediaPartner .promosi .perPromosi h2 {
+        font-size: 1.5rem;
     }
 
 
@@ -1298,25 +1463,19 @@ footer {
         line-height: 30px;
     }
 
-    .join {
-        height: 100%;
-        padding-bottom: 50px;
-        padding-top: 50px;
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
+    .testimoni .perTestimoni {
+        height: 630px;
     }
 
-    .join img {
-        width: 60%;
+    .testimoni .perTestimoni p {
+        font-size: .9rem;
     }
 
-    .join h1 {
-        font-size: 2.2rem;
-        line-height: 45px;
-        margin: 0;
-    }
 
+
+
+
+    /* Media Partner start */
 
     .heroMediaPartner {
         padding: 150px 50px 100px 50px;
@@ -1327,6 +1486,34 @@ footer {
         line-height: 50px;
         margin-bottom: 70px;
     }
+
+
+    .eventMediaPartner .title .circle {
+        font-size: .9rem;
+    }
+
+    .eventMediaPartner .promosi .perPromosi img {
+        height: 100px;
+    }
+
+    .eventMediaPartner .promosi .perPromosi h2 {
+        font-size: 1.2rem;
+        line-height: 30px;
+    }
+
+    .eventMediaPartner .promosi .perPromosi p {
+        font-size: .9rem;
+    }
+
+    .partnerUniversitas .universitas img {
+        width: 90px;
+        height: 90px;
+        margin: 20px 10px;
+    }
+
+
+    /* Media Partner start */
+
 
 }
 
@@ -1422,6 +1609,113 @@ footer {
         font-size: 1.2rem;
         line-height: 30px;
     }
+
+
+
+    /* Halaman Media Partner Start */
+
+    .eventMediaPartner {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .eventMediaPartner .title .circle {
+        display: none;
+    }
+
+    .eventMediaPartner .title .caption h2 {
+        font-size: 2rem;
+        line-height: 45px;
+    }
+
+    .eventMediaPartner .title .caption p {
+        display: none;
+    }
+
+    .eventMediaPartner .promosi .perPromosi {
+        width: 100%;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .eventMediaPartner .promosi .perPromosi img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .eventMediaPartner .promosi .perPromosi h2 {
+        font-size: 1.6rem;
+        line-height: 40px;
+    }
+
+    .eventMediaPartner .promosi .perPromosi p {
+        font-size: 1.1rem;
+    }
+
+
+    .tahapanUpload {
+        /* padding-top: 100px;
+        padding-bottom: 100px; */
+    }
+
+    .tahapanUpload h1 {
+        /* font-size: 2.5rem;
+        margin-bottom: 50px;
+        text-transform: capitalize;
+        color: #1B1B4B; */
+    }
+
+    .tahapanUpload .tahapan {
+        /* display: flex;
+        margin-bottom: 100px; */
+    }
+
+    .tahapanUpload .tahapan .perTahapan {
+        /* width: 45%;
+        display: flex;
+        background-color: #fff;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+        margin: 0 20px;
+        padding: 20px;
+        border-radius: 20px; */
+    }
+
+    .tahapanUpload .tahapan .perTahapan span {
+        /* width: 60px;
+        min-width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 30px;
+        font-size: 1.4rem;
+        border-radius: 50%;
+        color: #fff;
+        background-color: #1D247B; */
+    }
+
+    .tahapanUpload .tahapan .perTahapan h3 {
+        /* font-size: 1.6rem;
+        line-height: 35px;
+        color: #1B1B4B;
+        margin-bottom: 10px; */
+    }
+
+    .tahapanUpload .tahapan .perTahapan p {
+        /* font-size: 1.1rem; */
+    }
+
+    .tahapanUpload button {
+        /* font-size: 1.1rem;
+        padding: 15px 25px;
+        background-color: #2B46A6;
+        color: #fff;
+        font-weight: 600;
+        border-radius: 20px;
+        text-transform: uppercase; */
+    }
+
+    /* Halaman Media Partner End */
 
 
 }
@@ -1542,6 +1836,30 @@ footer {
 
     /* Halaman Media Partner end */
 
+}
+
+@media(max-width: 450px) {
+
+    .footer .box p {
+        font-size: .9rem;
+    }
+
+
+    /* Halaman Media Partner Start */
+    .eventMediaPartner .promosi .perPromosi img {
+        height: 150px;
+    }
+
+    .eventMediaPartner .promosi .perPromosi h2 {
+        font-size: 1.3rem;
+        line-height: 30px;
+    }
+
+    .eventMediaPartner .promosi .perPromosi p {
+        font-size: .9rem;
+    }
+
+    /* Halaman Media Partner End */
 }
 
 @media(max-width: 400px) {
@@ -1699,6 +2017,28 @@ footer {
     }
 
 
+    /* Halaman Media Partner Start */
+    .heroMediaPartner .caption h1 {
+        font-size: 1.3rem;
+        line-height: 30px;
+    }
+
+    .eventMediaPartner .promosi .perPromosi img {
+        height: 120px;
+    }
+
+
+    .eventMediaPartner {}
+
+    .eventMediaPartner button {
+        font-size: 1rem;
+        padding: 20px;
+    }
+
+    /* Halaman Media Partner End */
+
+
+
 }
 
 
@@ -1728,6 +2068,9 @@ footer {
         width: 70px;
         height: 70px;
     }
+
+
+
 
 }
 
