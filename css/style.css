@@ -750,6 +750,8 @@ footer {
     border-radius: 10px;
     color: #fff;
     font-weight: 600;
+    position: relative;
+    bottom: 20px;
 }
 
 .heroMediaPartner .caption .btn button:first-child {
@@ -1432,6 +1434,22 @@ footer {
 
 
 
+@media(max-width: 900px) {
+
+    /* Media Partner Start */
+    .partnerUniversitas {
+        text-align: center;
+    }
+
+    .partnerUniversitas .universitas img {
+        width: 90px;
+        height: 90px;
+        margin: 10px;
+    }
+
+    /* Media Partner End */
+}
+
 @media(max-width: 800px) {
 
     /* program section */
@@ -1654,65 +1672,7 @@ footer {
 
 
     .tahapanUpload {
-        /* padding-top: 100px;
-        padding-bottom: 100px; */
-    }
-
-    .tahapanUpload h1 {
-        /* font-size: 2.5rem;
-        margin-bottom: 50px;
-        text-transform: capitalize;
-        color: #1B1B4B; */
-    }
-
-    .tahapanUpload .tahapan {
-        /* display: flex;
-        margin-bottom: 100px; */
-    }
-
-    .tahapanUpload .tahapan .perTahapan {
-        /* width: 45%;
-        display: flex;
-        background-color: #fff;
-        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
-        margin: 0 20px;
-        padding: 20px;
-        border-radius: 20px; */
-    }
-
-    .tahapanUpload .tahapan .perTahapan span {
-        /* width: 60px;
-        min-width: 60px;
-        height: 60px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-right: 30px;
-        font-size: 1.4rem;
-        border-radius: 50%;
-        color: #fff;
-        background-color: #1D247B; */
-    }
-
-    .tahapanUpload .tahapan .perTahapan h3 {
-        /* font-size: 1.6rem;
-        line-height: 35px;
-        color: #1B1B4B;
-        margin-bottom: 10px; */
-    }
-
-    .tahapanUpload .tahapan .perTahapan p {
-        /* font-size: 1.1rem; */
-    }
-
-    .tahapanUpload button {
-        /* font-size: 1.1rem;
-        padding: 15px 25px;
-        background-color: #2B46A6;
-        color: #fff;
-        font-weight: 600;
-        border-radius: 20px;
-        text-transform: uppercase; */
+        text-align: center;
     }
 
     /* Halaman Media Partner End */
@@ -1759,6 +1719,32 @@ footer {
         border-radius: 10px;
         color: #fff;
         font-weight: 600;
+    }
+
+    .tahapanUpload {}
+
+    .tahapanUpload h1 {
+        font-size: 2rem;
+    }
+
+
+    .tahapanUpload .tahapan .perTahapan {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tahapanUpload .tahapan .perTahapan span {
+        width: 100px;
+        height: 100px;
+        margin: 0;
+        margin-bottom: 20px;
+        font-size: 2rem;
+    }
+
+    .tahapanUpload .tahapan .perTahapan h3 {
+        line-height: 35px;
     }
 
     /* Halaman Media Partner end*/
@@ -1832,7 +1818,21 @@ footer {
     }
 
 
-    .heroMediaPartner .caption .btn button {}
+    .tahapanUpload h1 {
+        font-size: 1.7rem;
+    }
+
+
+    .tahapanUpload .tahapan .perTahapan h3 {
+        font-size: 1.3rem;
+        line-height: 30px;
+    }
+
+    .tahapanUpload .tahapan .perTahapan p {
+        font-size: 1rem;
+    }
+
+
 
     /* Halaman Media Partner end */
 
@@ -1944,6 +1944,10 @@ footer {
     }
 
 
+    .footer .box h2 {
+        font-size: 1.7rem;
+    }
+
     .footer .box .sosmed img {
         width: 30px;
         height: 30px;
@@ -1960,6 +1964,34 @@ footer {
         width: 100%;
         margin-bottom: 20px;
     }
+
+    .tahapanUpload {
+        text-align: center;
+    }
+
+    .tahapanUpload .tahapan .perTahapan span {
+        width: 60px;
+        height: 60px;
+        font-size: 1.4rem;
+    }
+
+    .tahapanUpload .tahapan .perTahapan h3 {
+        font-size: 1.2rem;
+        line-height: 25px;
+    }
+
+    .tahapanUpload .tahapan .perTahapan p {
+        font-size: .9rem;
+    }
+
+    .partnerUniversitas h1 {
+        font-size: 1.9rem;
+    }
+
+    .tahapanUpload button {
+        width: 100%;
+    }
+
 
     /* Halaman Media Partner End  */
 
@@ -2027,9 +2059,6 @@ footer {
         height: 120px;
     }
 
-
-    .eventMediaPartner {}
-
     .eventMediaPartner button {
         font-size: 1rem;
         padding: 20px;
@@ -2069,6 +2098,43 @@ footer {
         height: 70px;
     }
 
+
+    .footer .box p {
+        font-size: .8rem;
+        line-height: 20px;
+    }
+
+
+
+    /* Media Partner Start */
+    .eventMediaPartner button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .tahapanUpload {
+        text-align: center;
+    }
+
+    .tahapanUpload h1 {
+        font-size: 1.3rem;
+    }
+
+    .tahapanUpload .tahapan .perTahapan h3 {
+        font-size: 1rem;
+        line-height: 20px;
+    }
+
+    .tahapanUpload .tahapan .perTahapan p {
+        font-size: .8rem;
+    }
+
+    .tahapanUpload button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    /* Media Partner End */
 
 
 
