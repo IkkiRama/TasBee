@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
+
+/* background-image: linear-gradient(to top right,#3629a7,#c238be); */
+
+
+/* background-image: linear-gradient(
+180deg,rgba(13,0,32,.5) -40px,rgba(53,0,58,0) 200px); */
+
+
 *,
 *::after,
 *::before {
@@ -939,6 +947,125 @@ footer {
 
 
 
+/* Halaman Artikel Start */
+.heroArtikel .bg-patern {
+    width: 100%;
+    height: 100vh;
+    background: url("../img/Artikel/blog-pattern-bg.png");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    object-fit: cover;
+    position: relative;
+}
+
+.heroArtikel {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top right, #3629a7, #c238be);
+}
+
+
+.blog-white-mask-lg {
+    display: none;
+}
+
+
+
+
+.heroArtikel .bg-patern .caption {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transform: translateY(-100px);
+}
+
+.heroArtikel .bg-patern .caption h1 {
+    font-size: 6rem;
+    color: #fff;
+    font-family: serif;
+}
+
+
+.heroArtikel .bg-patern .hero-img img:first-child {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    bottom: 100px;
+    right: 100px;
+}
+
+.heroArtikel .bg-patern .hero-img img:last-child {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+}
+
+
+.heroArtikel .bg-patern .hero-bg .blog-white-mask {
+    width: 100%;
+    left: 0;
+    bottom: -10px;
+    position: absolute;
+    object-fit: cover;
+}
+
+
+
+
+.artikel {
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    padding-bottom: 150px;
+    background-image: linear-gradient(180deg, #f3f4f9, #f3f4f9, #fff 75%);
+}
+
+.artikel .perArtikel {
+    width: calc(90%/3);
+    margin: 20px 10px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 .5rem .5rem rgba(0, 0, 0, 0.1);
+}
+
+.artikel .perArtikel:hover h2 {
+    color: #3629a7;
+}
+
+.artikel .perArtikel img {
+    width: 100%;
+    height: 250px;
+    border-radius: 20px;
+}
+
+.artikel .perArtikel h2 {
+    font-size: 1.4rem;
+    line-height: 25px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.artikel .perArtikel p {
+    color: #000;
+    font-size: .9rem;
+}
+
+/* Halaman Artikel End */
+
+
+
 
 
 
@@ -1421,8 +1548,42 @@ footer {
     }
 
 
+
     /* Halaman Media Partner End*/
 
+
+    /* Halaman Artikel Start */
+    .heroArtikel .bg-patern .caption h1 {
+        font-size: 5rem;
+    }
+
+    .heroArtikel .bg-patern .hero-img img:first-child {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        bottom: 150px;
+        right: 50px;
+    }
+
+    .heroArtikel .bg-patern .hero-img img:last-child {
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        bottom: 0;
+        left: 50px;
+    }
+
+
+    .artikel .perArtikel {
+        width: calc(90%/2);
+    }
+
+    .artikel .perArtikel img {
+        height: 300px;
+        margin-bottom: 10px;
+    }
+
+    /* Halaman Artikel End */
 
 
 
@@ -1446,6 +1607,7 @@ footer {
         height: 90px;
         margin: 10px;
     }
+
 
     /* Media Partner End */
 }
@@ -1530,7 +1692,13 @@ footer {
     }
 
 
-    /* Media Partner start */
+    /* Media Partner end */
+    /* Halaman Artikel  start */
+    .artikel .perArtikel img {
+        height: 220px;
+    }
+
+    /* Halaman Artikel  end */
 
 
 }
@@ -1678,6 +1846,35 @@ footer {
     /* Halaman Media Partner End */
 
 
+    .heroArtikel .bg-patern .hero-img img:first-child {
+        width: 200px;
+        height: 200px;
+        bottom: 50px;
+    }
+
+    .heroArtikel .bg-patern .hero-img img:last-child {
+        width: 300px;
+        height: 300px;
+    }
+
+    .heroArtikel .bg-patern .hero-bg .blog-white-mask {
+        height: 100px;
+    }
+
+    .artikel .perArtikel {
+        width: 80%;
+        margin: 0;
+        margin-top: 30px;
+    }
+
+    .artikel .perArtikel img {
+        height: 300px;
+    }
+
+    /* Halaman Artikel End */
+
+
+
 }
 
 @media(max-width: 600px) {
@@ -1748,6 +1945,46 @@ footer {
     }
 
     /* Halaman Media Partner end*/
+
+
+
+
+
+
+
+
+
+
+    /* Halaman Artikel start*/
+    .heroArtikel .bg-patern .hero-img img:first-child {
+        right: 50px;
+        bottom: 0;
+        top: 50px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .heroArtikel .bg-patern .hero-img img:last-child {
+        left: 50px;
+        height: 250px;
+        width: 250px;
+    }
+
+
+    .heroArtikel .bg-patern .caption {
+        transform: translateY(0);
+    }
+
+    .heroArtikel .bg-patern .caption h1 {
+        font-size: 4rem;
+    }
+
+    .artikel .perArtikel {
+        width: 90%;
+    }
+
+
+    /* Halaman Artikel end*/
 
 }
 
@@ -1835,6 +2072,30 @@ footer {
 
 
     /* Halaman Media Partner end */
+    /* Halaman Artikel start */
+    .heroArtikel .bg-patern .caption h1 {
+        font-size: 3rem;
+    }
+
+    .artikel .perArtikel {
+        width: 100%;
+    }
+
+    .artikel .perArtikel img {
+        height: 250px;
+    }
+
+
+    .heroArtikel .bg-patern .hero-img img:first-child {
+        display: none;
+    }
+
+    .heroArtikel .bg-patern .hero-img img:last-child {
+        display: none;
+    }
+
+
+    /* Halaman Artikel end */
 
 }
 
@@ -1858,6 +2119,7 @@ footer {
     .eventMediaPartner .promosi .perPromosi p {
         font-size: .9rem;
     }
+
 
     /* Halaman Media Partner End */
 }
@@ -2067,6 +2329,21 @@ footer {
     /* Halaman Media Partner End */
 
 
+    /* Halaman Artikel start */
+    .heroArtikel .bg-patern .caption h1 {
+        font-size: 2.5rem;
+    }
+
+
+    .artikel .perArtikel h2 {
+        font-size: 1.2rem;
+    }
+
+    .artikel .perArtikel p {
+        font-size: .9rem;
+    }
+
+    /* Halaman Artikel end */
 
 }
 
@@ -2137,6 +2414,24 @@ footer {
     /* Media Partner End */
 
 
+
+
+
+    /* Halaman Artikel start */
+    .heroArtikel .bg-patern .caption h1 {
+        font-size: 2rem;
+    }
+
+
+    .artikel .perArtikel p {
+        font-size: .8rem;
+    }
+
+    .artikel .perArtikel img {
+        height: 150px;
+    }
+
+    /* Halaman Artikel end */
 
 }
 
