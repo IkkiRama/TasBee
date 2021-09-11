@@ -1412,6 +1412,282 @@ footer {
 
 
 
+/* Halaman per Event start */
+.container {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.container .detailEvent {
+    width: 60%;
+    margin-right: 20px;
+}
+
+.container .detailEvent .thumbnail {
+    width: 100%;
+    height: 520px;
+}
+
+
+.container .detailEvent h1 {
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+.container .detailEvent .date {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    margin: 10px 0 20px 0;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.container .detailEvent .date .tanggal,
+.container .detailEvent .date .waktu {
+    display: flex;
+    align-items: center;
+}
+
+.container .detailEvent .date .tanggal p,
+.container .detailEvent .date .waktu p {
+    font-weight: 600;
+}
+
+.container .detailEvent .date img {
+    width: 15px;
+    height: 15px;
+    margin-right: 15px;
+}
+
+.container .form {
+    width: 40%;
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+}
+
+
+.form h2 {
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.container .form form button {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #2B46A6;
+    border-radius: 7px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-top: 50px;
+}
+
+
+
+form .form-group {
+    width: 100%;
+    position: relative;
+    height: 60px;
+    background-color: blue;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+form input {
+    width: 100%;
+    height: 100%;
+    color: #595f6e;
+    padding-top: 20px;
+    border: none;
+    outline: none;
+}
+
+
+form label {
+    position: absolute;
+    bottom: 0px;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid #000;
+}
+
+form label::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid #5fa8d3;
+    transform: translateX(-100%);
+    transition: transform .3s ease;
+}
+
+
+label span {
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    transition: all .3s ease;
+}
+
+
+form input:focus+label span,
+form input:valid+label span {
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #5fa8d3;
+}
+
+
+
+form input:focus+label::after,
+form input:valid+label::after {
+    transform: translateX(0);
+}
+
+/* Halaman per Event end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
