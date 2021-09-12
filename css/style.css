@@ -1,12 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
 
-/* background-image: linear-gradient(to top right,#3629a7,#c238be); */
-
-
-/* background-image: linear-gradient(
-180deg,rgba(13,0,32,.5) -40px,rgba(53,0,58,0) 200px); */
-
 
 *,
 *::after,
@@ -96,16 +90,12 @@ header nav ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 1.5rem;
+    color: #000;
 }
 
-.navbarMobile .perNavbarMobile:hover svg {
+.navbarMobile .perNavbarMobile:hover {
     opacity: .8;
-}
-
-
-.navbarMobile .perNavbarMobile svg {
-    width: 50%;
-    height: 50%;
 }
 
 
@@ -261,12 +251,6 @@ header nav ul li a:hover {
     font-size: 2rem;
     font-weight: 600;
 }
-
-/* 
-.program .caption img {
-    width: 100%;
-    height: 400px;
-} */
 
 .program .caption p {
     margin: 30px 0;
@@ -657,16 +641,22 @@ header nav ul li a:hover {
     display: flex;
 }
 
-.footer .box .sosmed img {
+.footer .box .sosmed .perSosmed {}
+
+.footer .box .sosmed .perSosmed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 45px;
     height: 45px;
     padding: 10px;
+    font-size: 1.5rem;
     margin: 0 10px;
     border-radius: 50%;
     background: rgb(255, 160, 17);
 }
 
-.footer .box .sosmed img:hover {
+.footer .box .sosmed .perSosmed:hover {
     transform: rotate(360deg);
     transition: 1s;
 }
@@ -2679,9 +2669,8 @@ form input:valid+label::after {
     }
 
 
-    .navbarMobile .perNavbarMobile svg {
-        width: 40%;
-        height: 40%;
+    .navbarMobile .perNavbarMobile {
+        font-size: 1.2rem;
     }
 
     .testimoni .perTestimoni img {
@@ -2724,11 +2713,12 @@ form input:valid+label::after {
         font-size: 1.7rem;
     }
 
-    .footer .box .sosmed img {
-        width: 30px;
-        height: 30px;
+    .footer .box .sosmed .perSosmed {
+        width: 35px;
+        height: 35px;
         padding: 5px;
-        margin: 0 10px;
+        font-size: 1.2rem;
+        margin: 10px;
         border-radius: 50%;
         background: rgb(255, 160, 17);
     }
@@ -2801,9 +2791,8 @@ form input:valid+label::after {
     }
 
 
-    .navbarMobile .perNavbarMobile svg {
-        width: 40%;
-        height: 40%;
+    .navbarMobile .perNavbarMobile {
+        font-size: 1.1rem;
     }
 
 
@@ -2898,9 +2887,8 @@ form input:valid+label::after {
     }
 
 
-    .navbarMobile .perNavbarMobile svg {
-        width: 30%;
-        height: 30%;
+    .navbarMobile .perNavbarMobile {
+        font-size: 1rem;
     }
 
 
@@ -2923,6 +2911,13 @@ form input:valid+label::after {
         line-height: 20px;
     }
 
+    .footer .box .sosmed {
+        flex-wrap: wrap;
+    }
+
+    .footer .box .sosmed .perSosmed {
+        margin: 10px 5px;
+    }
 
 
     /* Media Partner Start */
