@@ -34,8 +34,8 @@ section {
 
 header {
     width: 100%;
-    min-height: 10vh;
-    max-height: 100%;
+    height: 10vh;
+    /* max-height: 100%; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1448,9 +1448,8 @@ footer {
     font-weight: 600;
 }
 
-.container .detailEvent .date img {
-    width: 15px;
-    height: 15px;
+.container .detailEvent .date .icon {
+    font-size: 1.1rem;
     margin-right: 15px;
 }
 
@@ -2040,6 +2039,30 @@ form input:valid+label::after {
 
 
     /* Media Partner End */
+
+
+
+
+
+
+    /* Halaman per Event start */
+
+    .container .detailEvent .thumbnail {
+        height: 400px;
+    }
+
+
+    .container .detailEvent h1 {
+        font-size: 1.5rem;
+        margin-top: 0;
+    }
+
+    .form h2 {
+        font-size: 1.7rem;
+    }
+
+
+    /* Halaman per Event end */
 }
 
 @media(max-width: 800px) {
@@ -2163,9 +2186,57 @@ form input:valid+label::after {
     }
 
     /* Halaman event  end */
+
+
+
+
+
+
+
+
+    /* Halaman per Event start */
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .container .detailEvent {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .container .detailEvent .thumbnail {
+        height: 450px;
+    }
+
+
+    .container .detailEvent h1 {
+        font-size: 2rem;
+        margin-top: 20px;
+    }
+
+    .container .form {
+        width: 100%;
+        position: static;
+        margin-top: 50px;
+    }
+
+    /* Halaman per Event end */
 }
 
+
+
+
+
+
+
 @media(max-width: 700px) {
+    header {
+        min-height: 12vh;
+        /* padding-top: 10px; */
+        /* padding-bottom: 10px; */
+        max-height: 100%;
+    }
+
     header nav {
         display: none;
     }
@@ -2562,9 +2633,11 @@ form input:valid+label::after {
         font-size: 1rem;
     }
 
-
-
     /* Halaman Media Partner end */
+
+
+
+
     /* Halaman Artikel start */
     .heroArtikel .bg-patern .caption h1 {
         font-size: 3rem;
@@ -2601,6 +2674,23 @@ form input:valid+label::after {
     }
 
     /* Halaman Event end */
+
+
+
+    /* Halaman per Event start */
+
+    .container .detailEvent .thumbnail {
+        height: 320px;
+    }
+
+    .container .detailEvent h1 {
+        font-size: 1.5rem;
+        margin-top: 0px;
+    }
+
+
+    /* Halaman per Event end */
+
 }
 
 @media(max-width: 450px) {
@@ -2761,6 +2851,31 @@ form input:valid+label::after {
 
     /* Halaman Media Partner End  */
 
+
+
+
+    /* Halaman per Event start */
+
+    .container .detailEvent .thumbnail {
+        height: 270px;
+    }
+
+    .container .detailEvent p {
+        font-size: .9rem;
+    }
+
+    .container .detailEvent .date .tanggal p,
+    .container .detailEvent .date .waktu p {
+        font-size: .8rem;
+    }
+
+    .container .detailEvent .date .icon {
+        font-size: .8rem;
+        margin-right: 10px;
+    }
+
+    /* Halaman per Event end*/
+
 }
 
 
@@ -2872,6 +2987,25 @@ form input:valid+label::after {
 
     /* Halaman Event end */
 
+
+
+
+
+
+    /* Halaman per Event start */
+    .container .detailEvent .thumbnail {
+        height: 250px;
+    }
+
+
+    .container .detailEvent h1 {
+        font-size: 1.2rem;
+        line-height: 25px;
+    }
+
+    /* Halaman per Event end */
+
+
 }
 
 
@@ -2969,6 +3103,49 @@ form input:valid+label::after {
     }
 
     /* Halaman Artikel end */
+
+
+
+
+
+
+    /* Halaman per Event start */
+
+    .container .detailEvent p {
+        font-size: .8rem;
+    }
+
+    .container .detailEvent .thumbnail {
+        height: 210px;
+    }
+
+    .container .detailEvent .date .tanggal p,
+    .container .detailEvent .date .waktu p {
+        font-size: .7rem;
+    }
+
+    .container .detailEvent .date .icon {
+        font-size: .7rem;
+        margin-right: 5px;
+    }
+
+    .container .form {
+        margin-top: 40px;
+    }
+
+
+    .form h2 {
+        font-size: 1.4rem;
+        margin-bottom: -20px;
+    }
+
+    .container .form form button {
+        padding: 10px;
+        margin-top: 30px;
+    }
+
+
+    /* Halaman per Event start */
 
 }
 
