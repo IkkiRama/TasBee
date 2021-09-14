@@ -2252,11 +2252,12 @@ form input:valid+label::after {
     }
 
     .fitur .imgFitur {
-        margin: 25px 0 75px 0;
+        margin: 25px 0;
     }
 
     .fitur .imgFitur img {
         height: 58px;
+        margin: 15px 5px;
     }
 
     .program .caption img {
@@ -2735,9 +2736,11 @@ form input:valid+label::after {
         height: 30%;
     }
 
+
     .fitur .imgFitur img {
         height: 50px;
-        margin: 10px 20px;
+        width: 50px;
+        margin: 10px 5px;
     }
 
 
@@ -2919,8 +2922,8 @@ form input:valid+label::after {
     }
 
     .fitur .imgFitur img {
-        height: 50px;
-        margin: 10px 15px;
+        /* height: 50px; */
+        margin: 10px 5px;
     }
 
 
@@ -3014,6 +3017,20 @@ form input:valid+label::after {
 
 
 @media(max-width: 300px) {
+
+    .fitur h1 {
+        font-size: 1rem;
+        line-height: 22px;
+    }
+
+    .fitur .imgFitur img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .program .caption p {
+        font-size: .9rem;
+    }
 
     .program .event .perEvent {
         height: 370px;
