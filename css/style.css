@@ -31,20 +31,74 @@ section {
     padding: 0 100px;
 }
 
+.container {
+    width: 100%;
+    height: 100%;
+
+}
+
+
+#scroll-top {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1rem;
+    z-index: 1000;
+    transform: translateY(150%);
+    transition: 3s;
+}
+
+#scroll-top img {
+    width: 4rem;
+    /* animation: float 3s linear infinite; */
+}
+
+
+#scroll-top.show {
+    transform: translateY(0);
+    transition: 3s;
+}
+
+#scroll-top.show img {
+    animation: float 3s linear infinite;
+}
+
+
+@keyframes float {
+
+    0% {
+        transform: translateY(0rem);
+    }
+
+    50% {
+        transform: translateY(-2rem);
+    }
+
+    100% {
+        transform: translateY(0rem);
+    }
+}
+
+
 
 header {
     width: 100%;
+    z-index: 1000;
     min-height: 10vh;
     max-height: 100%;
+    background: linear-gradient(to right, #450b7c, #563cc9);
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 100px;
+}
+
+header .container {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
-    padding: 0 100px;
-    z-index: 1000;
-    /* background-color: #1B1B4B; */
-    background: linear-gradient(to right, #450b7c, #563cc9);
-    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 header .logo {
@@ -135,6 +189,12 @@ header nav ul li a:hover {
     background: linear-gradient(to top right, #450b7c, #563cc9, #49e9fb);
 }
 
+.hero .container {
+    width: 100%;
+    height: 100%;
+}
+
+
 
 .hero .caption {
     width: 100%;
@@ -149,6 +209,9 @@ header nav ul li a:hover {
 .hero .bg-patern {
     width: 100%;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     /* position: relative; */
     background-image: url("../img/paperpilar/hero-pattern-bg.png");
     background-size: cover;
@@ -213,7 +276,6 @@ header nav ul li a:hover {
 
 
 
-
 /* fitur section */
 
 .fitur h1 {
@@ -240,8 +302,16 @@ header nav ul li a:hover {
 
 /* program section */
 .program {
+    width: 100%;
+    height: 100%;
+}
+
+.program .container {
+    width: 100%;
+    height: 100%;
     display: flex;
 }
+
 
 .program .caption {
     position: relative;
@@ -335,6 +405,11 @@ header nav ul li a:hover {
 
 
 /* homePartner start */
+.containerTitleHome {
+    width: 100%;
+    height: 100%;
+}
+
 .titleHome {
     font-size: 2.2rem;
     margin-top: 100px;
@@ -342,79 +417,86 @@ header nav ul li a:hover {
 }
 
 
-
 .homePartner {
+    width: 100%;
     display: flex;
     margin-top: 50px;
     position: relative;
 }
 
+.homePartner .container {
+    width: 100%;
+    display: flex;
+}
 
-.homePartner .keterangan {
+
+
+
+.homePartner .container .keterangan {
     width: 50%;
 }
 
-.homePartner .keterangan .profil {
+.homePartner .container .keterangan .profil {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 20px;
 }
 
-.homePartner .keterangan .profil .perProfil {
+.homePartner .container .keterangan .profil .perProfil {
     width: 50%;
     display: flex;
     margin: 20px 0;
 }
 
-.homePartner .keterangan .profil .perProfil img {
+.homePartner .container .keterangan .profil .perProfil img {
     width: 50px;
     height: 50px;
 }
 
-.homePartner .keterangan .profil .perProfil .caption {
+.homePartner .container .keterangan .profil .perProfil .caption {
     display: flex;
     flex-direction: column;
     margin-left: 10px;
 }
 
-.homePartner .keterangan .profil .perProfil .caption span {
+.homePartner .container .keterangan .profil .perProfil .caption span {
     font-size: 1.8rem;
-    font-weight: 550;
+    font-weight: 600;
     margin-bottom: 5px;
 }
 
 
-.homePartner .keterangan .profil .perProfil .caption p {
+.homePartner .container .keterangan .profil .perProfil .caption p {
     font-size: .9rem;
 }
 
 
 
-.homePartner .keterangan .captionKeterangan {
+.homePartner .container .keterangan .captionKeterangan {
     font-size: 1.1rem;
     line-height: 25px;
 }
 
 
-.homePartner .keterangan .btnJoin {
+.homePartner .container .keterangan .btnJoin {
     position: absolute;
     bottom: 0;
 }
 
-.homePartner .keterangan .btnJoin button {
+.homePartner .container .keterangan .btnJoin button {
     padding: 15px 40px;
     font-size: 1.1rem;
     border-radius: 10px;
     border: 1px solid #2B46A6;
 }
 
-.homePartner .keterangan .btnJoin button:first-child {
+.homePartner .container .keterangan .btnJoin button:first-child {
     color: #fff;
     background-color: #2B46A6;
 }
 
 
-.homePartner .keterangan .btnJoin button:last-child {
+.homePartner .container .keterangan .btnJoin button:last-child {
     background-color: #fff;
     color: #2B46A6;
 }
@@ -430,12 +512,12 @@ header nav ul li a:hover {
 
 
 
-.homePartner .tawaran {
+.homePartner .container .tawaran {
     width: 50%;
     margin-left: 20px;
 }
 
-.homePartner .tawaran .perTawaran {
+.homePartner .container .tawaran .perTawaran {
     width: 100%;
     display: flex;
     align-items: center;
@@ -445,18 +527,18 @@ header nav ul li a:hover {
     border-radius: 20px;
 }
 
-.homePartner .tawaran .perTawaran:first-child {
+.homePartner .container .tawaran .perTawaran:first-child {
     margin-bottom: 50px;
 }
 
-.homePartner .tawaran .perTawaran .caption h2 {
+.homePartner .container .tawaran .perTawaran .caption h2 {
     font-size: 1.5rem;
     line-height: 35px;
     color: #1a1a4b;
     margin-bottom: 20px;
 }
 
-.homePartner .tawaran .perTawaran .caption p {
+.homePartner .container .tawaran .perTawaran .caption p {
     line-height: 1.4em;
     letter-spacing: .03em;
 }
@@ -471,21 +553,28 @@ header nav ul li a:hover {
 
 /* uploadEvent start */
 .uploadEvent {
+    width: 100%;
+    height: 100%;
+}
+
+.uploadEvent .container {
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-.uploadEvent img {
+.uploadEvent .container img {
     width: 40%;
 }
 
-.uploadEvent .caption {
+.uploadEvent .container .caption {
     width: 60%;
 }
 
-.uploadEvent .caption p {
+.uploadEvent .container .caption p {
     font-size: 1.5rem;
     margin-bottom: 25px;
 }
@@ -498,13 +587,18 @@ header nav ul li a:hover {
 
 /* testimoni start */
 .testimoni {
+    width: 100%;
+    height: 100%;
+}
+
+.testimoni .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 50px;
 }
 
-.testimoni .perTestimoni {
+.testimoni .container .perTestimoni {
     width: calc(90%/3);
     height: 600px;
     display: flex;
@@ -519,24 +613,24 @@ header nav ul li a:hover {
     color: #fff;
 }
 
-.testimoni .perTestimoni img {
+.testimoni .container .perTestimoni img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
 }
 
-.testimoni .perTestimoni h2 {
+.testimoni .container .perTestimoni h2 {
     font-size: 1.3rem;
     margin-top: 20px;
     margin-bottom: 5px;
 }
 
-.testimoni .perTestimoni span {
+.testimoni .container .perTestimoni span {
     font-size: .9rem;
     margin-top: 3px;
 }
 
-.testimoni .perTestimoni p {
+.testimoni .container .perTestimoni p {
     margin-top: 1rem !important;
     font-weight: 500;
     line-height: 20px;
@@ -576,27 +670,30 @@ header nav ul li a:hover {
 
 
 
-
-
 /* join start */
 .join {
     width: 100%;
-    height: 70vh;
-    margin-top: 70px;
-    display: flex;
-    align-items: center;
+    height: 100%;
     background: url("../img/bg-5.webp");
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+    margin-top: 70px;
 }
 
-.join img {
+.join .container {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.join .container img {
     width: 50%;
     height: 80%;
 }
 
-.join h1 {
+.join .container h1 {
     font-size: 2.5rem;
     line-height: 60px;
     font-weight: 600;
@@ -609,13 +706,19 @@ header nav ul li a:hover {
 
 
 
+
 /* footer start */
 .footer {
-    display: flex;
-    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
     padding-top: 50px;
     padding-bottom: 100px;
     box-shadow: .5rem 0 1rem rgba(0, 0, 0, 0.1);
+}
+
+.footer .container {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .footer .box {
@@ -641,7 +744,6 @@ header nav ul li a:hover {
     display: flex;
 }
 
-.footer .box .sosmed .perSosmed {}
 
 .footer .box .sosmed .perSosmed {
     display: flex;
@@ -678,9 +780,12 @@ header nav ul li a:hover {
 footer {
     width: 100%;
     height: 8vh;
-    font-size: 1.1rem;
     background: linear-gradient(to right, #450b7c, #563cc9);
     color: #fff;
+}
+
+footer .container {
+    font-size: 1.1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -690,6 +795,42 @@ footer {
 /* footer end */
 
 
+@media(min-width:1500px) {
+
+    section {
+        padding: 0;
+    }
+
+    .container {
+        max-width: 1140px;
+        background-color: red;
+    }
+
+    .join img {
+        height: 50%;
+    }
+
+    .join {
+        height: 60vh;
+    }
+
+
+
+
+    .fitur,
+    footer,
+    .footer,
+    .join,
+    .testimoni,
+    .uploadEvent,
+    .containerTitleHome,
+    .homePartner,
+    .program {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
 
 
 
@@ -1405,7 +1546,7 @@ footer {
 
 
 /* Halaman per Event start */
-.container {
+.containerDetailEvent {
     display: flex;
     /* align-items: center; */
     justify-content: center;
@@ -1414,23 +1555,23 @@ footer {
     position: relative;
 }
 
-.container .detailEvent {
+.containerDetailEvent .detailEvent {
     width: 60%;
     margin-right: 20px;
 }
 
-.container .detailEvent .thumbnail {
+.containerDetailEvent .detailEvent .thumbnail {
     width: 100%;
     height: 520px;
 }
 
 
-.container .detailEvent h1 {
+.containerDetailEvent .detailEvent h1 {
     font-size: 2rem;
     margin-top: 20px;
 }
 
-.container .detailEvent .date {
+.containerDetailEvent .detailEvent .date {
     display: flex;
     justify-content: space-between;
     padding: 10px 0;
@@ -1439,23 +1580,23 @@ footer {
     border-bottom: 1px solid #000;
 }
 
-.container .detailEvent .date .tanggal,
-.container .detailEvent .date .waktu {
+.containerDetailEvent .detailEvent .date .tanggal,
+.containerDetailEvent .detailEvent .date .waktu {
     display: flex;
     align-items: center;
 }
 
-.container .detailEvent .date .tanggal p,
-.container .detailEvent .date .waktu p {
+.containerDetailEvent .detailEvent .date .tanggal p,
+.containerDetailEvent .detailEvent .date .waktu p {
     font-weight: 600;
 }
 
-.container .detailEvent .date .icon {
+.containerDetailEvent .detailEvent .date .icon {
     font-size: 1.1rem;
     margin-right: 15px;
 }
 
-.container .form {
+.containerDetailEvent .form {
     width: 40%;
     position: sticky;
     top: 0;
@@ -1468,7 +1609,7 @@ footer {
     text-transform: capitalize;
 }
 
-.container .form form button {
+.containerDetailEvent .form form button {
     width: 100%;
     padding: 10px 0;
     background-color: #2B46A6;
@@ -1692,7 +1833,7 @@ form input:valid+label::after {
 @media(max-width: 1300px) {
 
     /* program section */
-    .program {
+    .program .container {
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
@@ -1734,50 +1875,50 @@ form input:valid+label::after {
         text-transform: uppercase;
     }
 
-    .homePartner {
+    .homePartner .container {
         flex-wrap: wrap;
         height: 100%;
         justify-content: center;
-        padding: 0 100px;
+        /* padding: 0 100px; */
     }
 
 
-    .homePartner .keterangan {
+    .homePartner .container .keterangan {
         width: 100%;
     }
 
-    .homePartner .tawaran {
+    .homePartner .container .tawaran {
         width: 100%;
         margin-left: 0px;
         margin-top: 50px;
         margin-bottom: 150px;
     }
 
-    .homePartner .keterangan .profil .perProfil {
+    .homePartner .container .keterangan .profil .perProfil {
         justify-content: center;
         margin: 25px 0;
     }
 
-    .homePartner .keterangan .captionKeterangan {
+    .homePartner .container .keterangan .captionKeterangan {
         font-size: 1.5rem;
         line-height: 35px;
         text-align: center;
     }
 
 
-    .homePartner .tawaran {
+    .homePartner .container .tawaran {
         justify-content: space-between;
     }
 
-    .homePartner .tawaran .perTawaran {
+    .homePartner .container .tawaran .perTawaran {
         padding: 30px 50px;
     }
 
-    .homePartner .tawaran .perTawaran .caption h2 {
+    .homePartner .container .tawaran .perTawaran .caption h2 {
         font-size: 2rem;
     }
 
-    .homePartner .tawaran .perTawaran .caption p {
+    .homePartner .container .tawaran .perTawaran .caption p {
         font-size: 1.2rem;
     }
 
@@ -1785,7 +1926,7 @@ form input:valid+label::after {
 
 
     /* testimoni start */
-    .testimoni .perTestimoni {
+    .testimoni .container .perTestimoni {
         height: 600px;
     }
 
@@ -1794,17 +1935,17 @@ form input:valid+label::after {
 }
 
 @media(max-width: 1200px) {
-    .testimoni .perTestimoni {
+    .testimoni .container .perTestimoni {
         width: calc(90%/2);
         height: 600px;
     }
 
-    .testimoni .perTestimoni:last-child {
+    .testimoni .container .perTestimoni:last-child {
         display: none;
     }
 
 
-    .join h1 {
+    .join .container h1 {
         font-size: 2rem;
         line-height: 40px;
         letter-spacing: 1px;
@@ -1889,25 +2030,25 @@ form input:valid+label::after {
         margin: 50px 0 100px 0;
     }
 
-    .uploadEvent {
+    .uploadEvent .container {
         flex-wrap: wrap-reverse;
         justify-content: center;
     }
 
-    .uploadEvent img {
+    .uploadEvent .container img {
         width: 60%;
         height: 400px;
         margin: 50px 0;
 
     }
 
-    .uploadEvent .caption {
+    .uploadEvent .container .caption {
         width: 100%;
     }
 
 
 
-    .join {
+    .join .container {
         height: 100%;
         padding-bottom: 50px;
         padding-top: 50px;
@@ -1916,11 +2057,11 @@ form input:valid+label::after {
         text-align: center;
     }
 
-    .join img {
+    .join .container img {
         width: 60%;
     }
 
-    .join h1 {
+    .join .container h1 {
         font-size: 2.2rem;
         line-height: 45px;
         margin: 0;
@@ -2049,12 +2190,12 @@ form input:valid+label::after {
 
     /* Halaman per Event start */
 
-    .container .detailEvent .thumbnail {
+    .containerDetailEvent .detailEvent .thumbnail {
         height: 400px;
     }
 
 
-    .container .detailEvent h1 {
+    .containerDetailEvent .detailEvent h1 {
         font-size: 1.5rem;
         margin-top: 0;
     }
@@ -2085,28 +2226,28 @@ form input:valid+label::after {
 
     /* program section end */
 
-    .homePartner .tawaran .perTawaran .caption h2 {
+    .homePartner .container .tawaran .perTawaran .caption h2 {
         font-size: 1.7rem;
     }
 
-    .homePartner .tawaran .perTawaran .caption p {
+    .homePartner .container .tawaran .perTawaran .caption p {
         font-size: 1rem;
     }
 
-    .homePartner .keterangan .btnJoin button {
+    .homePartner .container .keterangan .btnJoin button {
         font-size: 1rem;
     }
 
-    .homePartner .keterangan .captionKeterangan {
+    .homePartner .container .keterangan .captionKeterangan {
         font-size: 1.4rem;
         line-height: 30px;
     }
 
-    .testimoni .perTestimoni {
+    .testimoni .container .perTestimoni {
         height: 630px;
     }
 
-    .testimoni .perTestimoni p {
+    .testimoni .container .perTestimoni p {
         font-size: .9rem;
     }
 
@@ -2197,26 +2338,26 @@ form input:valid+label::after {
 
 
     /* Halaman per Event start */
-    .container {
+    .containerDetailEvent {
         flex-wrap: wrap;
     }
 
-    .container .detailEvent {
+    .containerDetailEvent .detailEvent {
         width: 100%;
         margin-right: 0;
     }
 
-    .container .detailEvent .thumbnail {
+    .containerDetailEvent .detailEvent .thumbnail {
         height: 450px;
     }
 
 
-    .container .detailEvent h1 {
+    .containerDetailEvent .detailEvent h1 {
         font-size: 2rem;
         margin-top: 20px;
     }
 
-    .container .form {
+    .containerDetailEvent .form {
         width: 100%;
         position: static;
         margin-top: 50px;
@@ -2274,60 +2415,70 @@ form input:valid+label::after {
     }
 
 
-    .testimoni {
+    .testimoni .container {
         flex-wrap: wrap;
     }
 
-    .testimoni .perTestimoni {
+    .testimoni .container .perTestimoni {
         width: 100%;
         height: 100%;
         margin-bottom: 20px;
         padding-bottom: 30px;
     }
 
-    .testimoni .perTestimoni:last-child {
+    .testimoni .container .perTestimoni:last-child {
         display: inherit;
     }
 
 
-    .homePartner .tawaran .perTawaran {
+
+    .homePartner .container .tawaran {
+        margin-bottom: 200px;
+    }
+
+
+    .homePartner .container .tawaran .perTawaran {
         flex-wrap: wrap-reverse;
         justify-content: center;
         text-align: center;
         width: 100%;
     }
 
-    .homePartner .tawaran .perTawaran .caption h2 {
+
+
+    .homePartner .container .tawaran .perTawaran .caption h2 {
         font-size: 1.3rem;
+        line-height: 30px;
     }
 
-    .homePartner .keterangan .btnJoin {
+    .homePartner .container .keterangan .btnJoin {
         left: 50px;
         right: 50px;
     }
 
-    .homePartner .keterangan .btnJoin button {
+    .homePartner .container .keterangan .btnJoin button {
         font-size: 1rem;
         width: 100%;
         margin-top: 20px;
         padding: 15px 30px;
     }
 
-    .homePartner .keterangan .captionKeterangan {
+    .homePartner .container .keterangan .captionKeterangan {
         font-size: 1.2rem;
         line-height: 30px;
     }
 
     .titleHome {
         line-height: 40px;
+        margin-top: 70px;
     }
 
 
-    .uploadEvent img {
+    .uploadEvent .container img {
         width: 80%;
     }
 
-    .uploadEvent .caption p {
+    .uploadEvent .container .caption p {
         font-size: 1.2rem;
         line-height: 30px;
     }
@@ -2439,6 +2590,16 @@ form input:valid+label::after {
         padding: 0 25px;
     }
 
+    .homePartner .container .keterangan .btnJoin {
+        left: 25px;
+        right: 25px;
+    }
+
+    .uploadEvent .container {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
     header {
         padding: 0 25px;
     }
@@ -2465,6 +2626,7 @@ form input:valid+label::after {
         height: 100vh;
         padding: 50px 25px 0px 25px;
     }
+
 
     .heroMediaPartner .caption .btn button {
         padding: 15px 20px;
@@ -2561,47 +2723,46 @@ form input:valid+label::after {
         height: 350px;
     }
 
-    .homePartner {
-        padding: 0 25px;
-    }
 
-    .homePartner .keterangan .profil .perProfil {
+
+
+    .homePartner .container .keterangan .profil .perProfil {
         width: 100%;
         justify-content: start;
     }
 
 
-    .homePartner .keterangan .captionKeterangan {
+    .homePartner .container .keterangan .captionKeterangan {
         font-size: 1.1rem;
         line-height: 25px;
     }
 
-    .homePartner .tawaran .perTawaran .caption h2 {
+    .homePartner .container .tawaran .perTawaran .caption h2 {
         line-height: 25px;
     }
 
-    .homePartner .tawaran .perTawaran .caption p {
+    .homePartner .container .tawaran .perTawaran .caption p {
         font-size: 1rem;
     }
 
 
-    .uploadEvent img {
+    .uploadEvent .container img {
         width: 100%;
         height: 350px;
     }
 
-    .uploadEvent .caption p {
+    .uploadEvent .container .caption p {
         font-size: 1.2rem;
         line-height: 25px;
     }
 
-    .join img {
+    .join .container img {
         width: 80%;
         height: 100%;
     }
 
 
-    .join h1 {
+    .join .container h1 {
         font-size: 1.8rem;
         margin-top: 20px;
         line-height: 40px;
@@ -2682,11 +2843,11 @@ form input:valid+label::after {
 
     /* Halaman per Event start */
 
-    .container .detailEvent .thumbnail {
+    .containerDetailEvent .detailEvent .thumbnail {
         height: 320px;
     }
 
-    .container .detailEvent h1 {
+    .containerDetailEvent .detailEvent h1 {
         font-size: 1.5rem;
         margin-top: 0px;
     }
@@ -2717,11 +2878,19 @@ form input:valid+label::after {
         font-size: .9rem;
     }
 
+    .homePartner .container .tawaran {
+        margin-bottom: 170px;
+    }
+
 
     /* Halaman Media Partner End */
 }
 
 @media(max-width: 400px) {
+
+    .titleHome {
+        margin-top: 50px;
+    }
 
     section {
         padding: 0 15px;
@@ -2768,22 +2937,22 @@ form input:valid+label::after {
         font-size: 1.2rem;
     }
 
-    .testimoni .perTestimoni img {
+    .testimoni .container .perTestimoni img {
         width: 120px;
         height: 120px;
     }
 
 
 
-    .homePartner .keterangan .btnJoin button {
+    .homePartner .container .keterangan .btnJoin button {
         font-size: .8rem;
     }
 
-    .homePartner .tawaran .perTawaran {
+    .homePartner .container .tawaran .perTawaran {
         padding: 20px;
     }
 
-    .homePartner .tawaran .perTawaran .caption p {
+    .homePartner .container .tawaran .perTawaran .caption p {
         font-size: .9rem;
     }
 
@@ -2794,12 +2963,12 @@ form input:valid+label::after {
 
 
 
-    .uploadEvent img {
+    .uploadEvent .container img {
         width: 100%;
         height: 100%;
     }
 
-    .uploadEvent .caption p {
+    .uploadEvent .container .caption p {
         font-size: 1.1rem;
     }
 
@@ -2861,20 +3030,20 @@ form input:valid+label::after {
 
     /* Halaman per Event start */
 
-    .container .detailEvent .thumbnail {
+    .containerDetailEvent .detailEvent .thumbnail {
         height: 270px;
     }
 
-    .container .detailEvent p {
+    .containerDetailEvent .detailEvent p {
         font-size: .9rem;
     }
 
-    .container .detailEvent .date .tanggal p,
-    .container .detailEvent .date .waktu p {
+    .containerDetailEvent .detailEvent .date .tanggal p,
+    .containerDetailEvent .detailEvent .date .waktu p {
         font-size: .8rem;
     }
 
-    .container .detailEvent .date .icon {
+    .containerDetailEvent .detailEvent .date .icon {
         font-size: .8rem;
         margin-right: 10px;
     }
@@ -2927,7 +3096,7 @@ form input:valid+label::after {
     }
 
 
-    .join h1 {
+    .join .container h1 {
         font-size: 1.5rem;
         /* margin-top: 20px; */
         line-height: 35px;
@@ -2999,12 +3168,12 @@ form input:valid+label::after {
 
 
     /* Halaman per Event start */
-    .container .detailEvent .thumbnail {
+    .containerDetailEvent .detailEvent .thumbnail {
         height: 250px;
     }
 
 
-    .container .detailEvent h1 {
+    .containerDetailEvent .detailEvent h1 {
         font-size: 1.2rem;
         line-height: 25px;
     }
@@ -3046,15 +3215,15 @@ form input:valid+label::after {
     }
 
 
-    .homePartner .keterangan .captionKeterangan {
+    .homePartner .container .keterangan .captionKeterangan {
         font-size: 1rem;
     }
 
-    .homePartner .keterangan .btnJoin button {
+    .homePartner .container .keterangan .btnJoin button {
         padding: 15px;
     }
 
-    .homePartner .tawaran .perTawaran img {
+    .homePartner .container .tawaran .perTawaran img {
         width: 70px;
         height: 70px;
     }
@@ -3131,25 +3300,25 @@ form input:valid+label::after {
 
     /* Halaman per Event start */
 
-    .container .detailEvent p {
+    .containerDetailEvent .detailEvent p {
         font-size: .8rem;
     }
 
-    .container .detailEvent .thumbnail {
+    .containerDetailEvent .detailEvent .thumbnail {
         height: 210px;
     }
 
-    .container .detailEvent .date .tanggal p,
-    .container .detailEvent .date .waktu p {
+    .containerDetailEvent .detailEvent .date .tanggal p,
+    .containerDetailEvent .detailEvent .date .waktu p {
         font-size: .7rem;
     }
 
-    .container .detailEvent .date .icon {
+    .containerDetailEvent .detailEvent .date .icon {
         font-size: .7rem;
         margin-right: 5px;
     }
 
-    .container .form {
+    .containerDetailEvent .form {
         margin-top: 40px;
     }
 
@@ -3159,7 +3328,7 @@ form input:valid+label::after {
         margin-bottom: -20px;
     }
 
-    .container .form form button {
+    .containerDetailEvent .form form button {
         padding: 10px;
         margin-top: 30px;
     }
