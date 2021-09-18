@@ -13,6 +13,7 @@
     box-sizing: border-box;
     list-style: none;
     font-display: sans-serif;
+    word-wrap: break-word;
 }
 
 
@@ -795,42 +796,462 @@ footer .container {
 /* footer end */
 
 
-@media(min-width:1500px) {
-
-    section {
-        padding: 0;
-    }
-
-    .container {
-        max-width: 1140px;
-        background-color: red;
-    }
-
-    .join img {
-        height: 50%;
-    }
-
-    .join {
-        height: 60vh;
-    }
 
 
 
 
-    .fitur,
-    footer,
-    .footer,
-    .join,
-    .testimoni,
-    .uploadEvent,
-    .containerTitleHome,
-    .homePartner,
-    .program {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Event */
+.heroEvent2 {
+    width: 100%;
+    height: 70vh;
+    background-color: #eff2f6;
+    /* padding-top: 100px; */
 }
+
+.heroEvent2 .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.heroEvent2 .container h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.heroEvent2 .container p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #302f2f;
+}
+
+
+.heroEvent2 .container form {
+    width: 40%;
+    height: 50px;
+    /* background-color: red; */
+    position: relative;
+}
+
+.heroEvent2 .container form input {
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    border: 1px solid #e4e4e7;
+    cursor: text;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    background-color: #fff;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.heroEvent2 .container form button {
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-top: 1px solid #e4e4e7;
+    border-right: 1px solid #e4e4e7;
+    border-bottom: 1px solid #e4e4e7;
+    background-color: #fff;
+    right: 0;
+    font-size: 1.2rem;
+}
+
+
+
+.Event2 {
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #f8fafc;
+}
+
+.Event2 .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Event2 .container .sorting {
+    width: 30%;
+    top: 100px;
+    position: sticky;
+    align-self: flex-start;
+    /* background-color: red; */
+}
+
+.Event2 .container .sorting h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #4a4b4c;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+
+.Event2 .container .sorting .urutkan .boxUrutkan:hover {
+    cursor: pointer;
+}
+
+.Event2 .container .sorting .urutkan .boxUrutkan {
+    width: 90%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border: 1px solid #e4e4e7;
+    border-radius: 7px;
+    color: #3f3f3f;
+    padding: 1rem;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.Event2 .container .sorting .urutkan .boxUrutkan span {
+    font-weight: 600;
+}
+
+
+
+
+
+.Event2 .container .sorting .urutkan .boxUrutkan .isiBoxUrutkan.showIsiBoxUrutkan {
+    display: flex;
+}
+
+
+.Event2 .container .sorting .urutkan .boxUrutkan .isiBoxUrutkan {
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 9999999999;
+    background-color: #fff;
+    border: 1px solid #e4e4e7;
+    border-radius: 7px;
+    padding: .5rem 0;
+}
+
+.Event2 .container .sorting .urutkan .boxUrutkan .isiBoxUrutkan span {
+    padding: 1rem;
+}
+
+.Event2 .container .sorting .urutkan .boxUrutkan .isiBoxUrutkan span.active {
+    background-color: #5441fa;
+    border: 1px solid #e4e4e7;
+    color: #fff;
+}
+
+.Event2 .container .sorting .urutkan .boxUrutkan .isiBoxUrutkan span.active:hover {
+    background-color: #5441fa;
+    cursor: pointer;
+}
+
+.Event2 .container .sorting .urutkan .boxUrutkan .isiBoxUrutkan span:hover {
+    background-color: #afc0ff;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Event2 .container .sorting .filterProgram .boxFilterProgram {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid #e4e4e7;
+    border-radius: 7px;
+    padding: 1rem 0;
+    position: relative;
+}
+
+.Event2 .container .sorting .filterProgram .boxFilterProgram .perFilterProgram {
+    /* background-color: red; */
+    overflow-y: hidden;
+    /* margin-bottom: 10px; */
+}
+
+.Event2 .container .sorting .filterProgram .boxFilterProgram .perFilterProgram .keterangan {
+    padding: .5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Event2 .container .sorting .filterProgram .boxFilterProgram .perFilterProgram .keterangan:hover {
+    cursor: pointer;
+    background-color: #e4e4e7;
+}
+
+
+
+.Event2 .container .sorting .filterProgram .boxFilterProgram .perFilterProgram .keterangan span {
+    color: #3f3f3f;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+
+
+.Event2 .container .sorting .filterProgram .boxFilterProgram .perFilterProgram .isiFilterProgram.hideIsiFilterProgram {
+    height: 0;
+}
+
+
+.Event2 .container .sorting .filterProgram .boxFilterProgram .perFilterProgram .isiFilterProgram {
+    height: 100%;
+    padding: 0 1rem;
+    /* transform: translateY(-100px); */
+}
+
+.Event2 .container .sorting .filterProgram .boxFilterProgram .perFilterProgram .isiFilterProgram .perIsiFilterProgram {
+    margin: 10px 0;
+}
+
+.Event2 .container .sorting .filterProgram .boxFilterProgram .perFilterProgram .isiFilterProgram .perIsiFilterProgram span {
+    font-weight: 500;
+    color: #3f3f3f;
+    margin-left: 10px;
+}
+
+
+.Event2 .container .sorting .filterProgram .boxFilterProgram .btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.Event2 .container .sorting .filterProgram .boxFilterProgram .btn button {
+    width: 80%;
+    padding: 7px 10px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 600;
+    background-color: #563cc9;
+    border-radius: 7px;
+    border: 1px solid #563cc9;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.Event2 .container .sorting .filterProgram .boxFilterProgram .btn button:last-child {
+    background-color: #fff;
+    color: #3f3f3f;
+    border: 1px solid #e4e4e7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Event2 .container .program {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.Event2 .container .program .keteranganProgram {
+    width: 100%;
+    /* background-color: red; */
+    padding: 10px 0;
+    border-bottom: 4px solid #e4e4e7;
+    background-color: #f8fafc;
+    top: 50px;
+    position: sticky;
+    align-self: flex-start;
+    margin-bottom: 30px;
+}
+
+.Event2 .container .program .keteranganProgram span {
+    color: #3629a7;
+    position: relative;
+    padding: 0 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+
+
+.Event2 .container .program .sudahBerakhir {
+    width: 100%;
+    min-height: 70vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Event2 .container .program .sudahBerakhir h1 {
+    font-size: 2rem;
+    margin-top: 20px;
+    color: #CE231C;
+}
+
+
+
+
+.Event2 .container .program .masihBerlangsung {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.Event2 .container .program .masihBerlangsung .perMasihBerlangsung {
+    width: calc(90%/2);
+    margin: 0 10px;
+    background-color: #fff;
+    border: 2px solid #e4e4e7;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    margin: 20px 10px;
+}
+
+.Event2 .container .program .masihBerlangsung .perMasihBerlangsung img {
+    width: 100%;
+    height: 250px;
+}
+
+.Event2 .container .program .masihBerlangsung .perMasihBerlangsung h2 {
+    font-size: 1.2rem;
+    line-height: 25px;
+    padding: 10px;
+    text-transform: capitalize;
+    color: #4a4b4c;
+}
+
+.Event2 .container .program .masihBerlangsung .perMasihBerlangsung h4 {
+    font-size: 1.2rem;
+    color: #CE231C;
+    padding: 10px;
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.Event2 .container .program .masihBerlangsung .perMasihBerlangsung p {
+    font-size: .9rem;
+    padding: 10px;
+    color: #828282;
+}
+
+.Event2 .container .program .masihBerlangsung .perMasihBerlangsung .date {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #e4e4e7;
+}
+
+
+.Event2 .container .program .masihBerlangsung .perMasihBerlangsung .date p {
+    color: #4a4b4c;
+    font-weight: 500;
+}
+
+.Event2 .container .program .masihBerlangsung .perMasihBerlangsung .date i {
+    margin-right: 10px;
+}
+
+.Event2 .container .program .masihBerlangsung .perMasihBerlangsung .btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Event2 .container .program .masihBerlangsung .perMasihBerlangsung .btn a:hover {
+    opacity: .9;
+}
+
+.Event2 .container .program .masihBerlangsung .perMasihBerlangsung .btn a {
+    text-align: center;
+    width: 95%;
+    padding: 8px;
+    font-size: 1rem;
+    border-radius: 10px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #3629a7;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -850,6 +1271,12 @@ footer .container {
 
 
 /* Halaman Media Partner start */
+.heroMediaPartner .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .heroMediaPartner {
     width: 100%;
     height: 100vh;
@@ -860,29 +1287,29 @@ footer .container {
     /* background: linear-gradient(to top right, #450b7c, #563cc9, #49e9fb); */
 }
 
-.heroMediaPartner img {
+.heroMediaPartner .container img {
     width: 40%;
     height: 100%;
 }
 
 
-.heroMediaPartner .caption {
+.heroMediaPartner .container .caption {
     width: 60%;
 }
 
-.heroMediaPartner .caption h1 {
+.heroMediaPartner .container .caption h1 {
     font-size: 3rem;
     line-height: 70px;
     color: #1B1B4B;
     margin-bottom: 100px;
 }
 
-.heroMediaPartner .caption h1 span {
+.heroMediaPartner .container .caption h1 span {
     color: #B73D60;
 }
 
 
-.heroMediaPartner .caption .btn button {
+.heroMediaPartner .container .caption .btn button {
     padding: 20px 30px;
     text-transform: uppercase;
     font-size: 1rem;
@@ -893,28 +1320,29 @@ footer .container {
     bottom: 20px;
 }
 
-.heroMediaPartner .caption .btn button:first-child {
+.heroMediaPartner .container .caption .btn button:first-child {
     background-color: #2B46A6;
 }
 
-.heroMediaPartner .caption .btn button:last-child {
+.heroMediaPartner .container .caption .btn button:last-child {
     background-color: #B73D60;
 }
 
 
 /* event Media Partner */
+
 .eventMediaPartner {
     padding-top: 70px;
     padding-bottom: 70px;
     background-color: #F5F5F5;
 }
 
-.eventMediaPartner .title {
+.eventMediaPartner .container .title {
     display: flex;
     align-items: center;
 }
 
-.eventMediaPartner .title .circle {
+.eventMediaPartner .container .title .circle {
     width: 80px;
     margin-right: 30px;
     height: 80px;
@@ -927,24 +1355,24 @@ footer .container {
     background-color: #DF2069;
 }
 
-.eventMediaPartner .title .caption h2 {
+.eventMediaPartner .container .title .caption h2 {
     font-size: 2.2rem;
     color: #1B1B4B;
     margin-bottom: 10px;
 }
 
-.eventMediaPartner .title .caption p {
+.eventMediaPartner .container .title .caption p {
     font-size: 1.7rem;
 }
 
-.eventMediaPartner .promosi {
+.eventMediaPartner .container .promosi {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin: 50px 0;
 }
 
-.eventMediaPartner .promosi .perPromosi {
+.eventMediaPartner .container .promosi .perPromosi {
     background-color: #fff;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
     width: 45%;
@@ -954,24 +1382,24 @@ footer .container {
     padding: 30px 20px;
 }
 
-.eventMediaPartner .promosi .perPromosi img {
+.eventMediaPartner .container .promosi .perPromosi img {
     margin-right: 20px;
 }
 
-.eventMediaPartner .promosi .perPromosi h2 {
+.eventMediaPartner .container .promosi .perPromosi h2 {
     font-size: 1.6rem;
     line-height: 35px;
     color: #1B1B4B;
     margin-bottom: 20px;
 }
 
-.eventMediaPartner .promosi .perPromosi p {
+.eventMediaPartner .container .promosi .perPromosi p {
     font-size: 1rem;
     line-height: 25px;
 }
 
 
-.eventMediaPartner button {
+.eventMediaPartner .container button {
     font-size: 1.1rem;
     padding: 15px 25px;
     background-color: #2B46A6;
@@ -986,19 +1414,19 @@ footer .container {
     padding-bottom: 100px;
 }
 
-.tahapanUpload h1 {
+.tahapanUpload .container h1 {
     font-size: 2.5rem;
     margin-bottom: 50px;
     text-transform: capitalize;
     color: #1B1B4B;
 }
 
-.tahapanUpload .tahapan {
+.tahapanUpload .container .tahapan {
     display: flex;
     margin-bottom: 100px;
 }
 
-.tahapanUpload .tahapan .perTahapan {
+.tahapanUpload .container .tahapan .perTahapan {
     width: 45%;
     display: flex;
     background-color: #fff;
@@ -1008,7 +1436,7 @@ footer .container {
     border-radius: 20px;
 }
 
-.tahapanUpload .tahapan .perTahapan span {
+.tahapanUpload .container .tahapan .perTahapan span {
     width: 60px;
     min-width: 60px;
     height: 60px;
@@ -1022,24 +1450,24 @@ footer .container {
     background-color: #1D247B;
 }
 
-.tahapanUpload .tahapan .perTahapan h2 {
+.tahapanUpload .container .tahapan .perTahapan h2 {
     font-size: 1.6rem;
     line-height: 35px;
     color: #1B1B4B;
     margin-bottom: 10px;
 }
 
-.tahapanUpload .tahapan .perTahapan p {
+.tahapanUpload .container .tahapan .perTahapan p {
     font-size: 1.1rem;
 }
 
-.tahapanUpload button {
+.tahapanUpload .container button {
     font-size: 1.1rem;
     padding: 15px 25px;
     background-color: #2B46A6;
     color: #fff;
     font-weight: 600;
-    border-radius: 20px;
+    border-radius: 10px;
     text-transform: uppercase;
 }
 
@@ -1050,7 +1478,7 @@ footer .container {
     background-color: #F5F5F5;
 }
 
-.partnerUniversitas h1 {
+.partnerUniversitas .container h1 {
     font-size: 2.5rem;
     margin-bottom: 50px;
     text-transform: capitalize;
@@ -1058,14 +1486,14 @@ footer .container {
     margin-bottom: 50px;
 }
 
-.partnerUniversitas .universitas {
+.partnerUniversitas .container .universitas {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.partnerUniversitas .universitas img {
+.partnerUniversitas .container .universitas img {
     width: 10%;
     height: 5%;
     margin: 20px 30px;
@@ -1101,8 +1529,13 @@ footer .container {
 
 
 
-
 /* Halaman Artikel Start */
+.heroArtikel .bg-patern .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .heroArtikel .bg-patern {
     width: 100%;
     height: 100vh;
@@ -1128,7 +1561,7 @@ footer .container {
 
 
 
-.heroArtikel .bg-patern .caption {
+.heroArtikel .bg-patern .container .caption {
     width: 100%;
     height: 100%;
     display: flex;
@@ -1139,14 +1572,14 @@ footer .container {
     position: relative;
 }
 
-.heroArtikel .bg-patern .caption h1 {
+.heroArtikel .bg-patern .container .caption h1 {
     font-size: 6rem;
     color: #fff;
     font-family: serif;
 }
 
 
-.heroArtikel .bg-patern .hero-img img:first-child {
+.heroArtikel .bg-patern .container .hero-img img:first-child {
     width: 300px;
     height: 300px;
     position: absolute;
@@ -1154,7 +1587,7 @@ footer .container {
     right: 100px;
 }
 
-.heroArtikel .bg-patern .hero-img img:last-child {
+.heroArtikel .bg-patern .container .hero-img img:last-child {
     width: 400px;
     height: 400px;
     position: absolute;
@@ -1163,7 +1596,7 @@ footer .container {
 }
 
 
-.heroArtikel .bg-patern .hero-bg .blog-white-mask {
+.heroArtikel .bg-patern .container .hero-bg .blog-white-mask {
     width: 100%;
     left: 0;
     bottom: -10px;
@@ -1173,6 +1606,13 @@ footer .container {
 
 
 
+
+.artikel .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
 .artikel {
     width: 100%;
@@ -1187,7 +1627,7 @@ footer .container {
     background-image: linear-gradient(180deg, #f3f4f9, #f3f4f9, #fff 75%);
 }
 
-.artikel .perArtikel {
+.artikel .container .perArtikel {
     width: calc(90%/3);
     margin: 20px 10px;
     padding: 20px;
@@ -1196,30 +1636,104 @@ footer .container {
     box-shadow: 0 .5rem .5rem rgba(0, 0, 0, 0.1);
 }
 
-.artikel .perArtikel:hover h2 {
+.artikel .container .perArtikel:hover h2 {
     color: #3629a7;
 }
 
-.artikel .perArtikel img {
+.artikel .container .perArtikel img {
     width: 100%;
     height: 250px;
     border-radius: 20px;
 }
 
-.artikel .perArtikel h2 {
+.artikel .container .perArtikel h2 {
     font-size: 1.4rem;
     line-height: 25px;
     color: #000;
     margin-bottom: 10px;
 }
 
-.artikel .perArtikel p {
+.artikel .container .perArtikel p {
     color: #000;
     font-size: 1rem;
 }
 
 /* Halaman Artikel End */
 
+@media(min-width:1500px) {
+
+    header .container nav ul li a {
+        margin: 0 0px;
+    }
+
+    section {
+        padding: 0;
+    }
+
+    .heroMediaPartner .container img {
+        width: 40%;
+        height: 50%;
+    }
+
+    .container {
+        max-width: 1140px;
+        /* background-color: red; */
+    }
+
+
+    .join .container {
+        height: 50vh;
+    }
+
+    /* .join img { height: 50%; }*/
+
+    .join {
+        height: 60vh;
+    }
+
+    .heroArtikel .bg-patern .container .hero-img img:first-child {
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        bottom: 100px;
+        right: 400px;
+    }
+
+    .heroArtikel .bg-patern .container .hero-img img:last-child {
+        width: 600px;
+        height: 600px;
+        position: absolute;
+        bottom: 0;
+        left: 400px;
+    }
+
+
+
+
+
+
+    .heroEvent2,
+    .Event2,
+    .heroArtikel .bg-patern,
+    .eventMediaPartner,
+    .tahapanUpload,
+    .partnerUniversitas,
+    .heroEvent,
+    .events,
+    .fitur,
+    footer,
+    .footer,
+    .join,
+    .testimoni,
+    .uploadEvent,
+    .containerTitleHome,
+    .homePartner,
+    .program {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
 
 
 
@@ -1347,6 +1861,12 @@ footer .container {
 
 
 /* Halaman Event start */
+.heroEvent .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .heroEvent {
     width: 100%;
     min-height: 100vh;
@@ -1357,38 +1877,42 @@ footer .container {
     /* background-color: #0095da; */
 }
 
-.heroEvent .caption {
+.heroEvent .container .caption {
     width: 50%;
 }
 
-.heroEvent .caption h1 {
+.heroEvent .container .caption h1 {
     font-size: 3rem;
     color: #1B1B4B;
     margin-bottom: 40px;
 }
 
-.heroEvent .caption h1 span {
+.heroEvent .container .caption h1 span {
     color: #B73D60;
 }
 
-.heroEvent .caption p {
+.heroEvent .container .caption p {
     font-size: 1.2rem;
     line-height: 35px;
 }
 
-.heroEvent img {
+.heroEvent .container img {
     width: 50%;
     margin-left: 20px;
 }
 
 
 
-.events {
-    width: 100%;
+.events .container {
+
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.events {
+    width: 100%;
     background-color: #F5F5F5;
     padding-top: 50px;
     padding-bottom: 100px;
@@ -1449,12 +1973,17 @@ footer .container {
 }
 
 
+.program .masihBerlangsung .selengkapnya:hover,
+.artikel .container .selengkapnya:hover,
 .events .event button:hover,
 .events .selengkapnya:hover {
     cursor: pointer;
     opacity: .9;
 }
 
+
+.program .masihBerlangsung .selengkapnya,
+.artikel .container .selengkapnya,
 .events .selengkapnya {
     margin-top: 70px;
     width: 100%;
@@ -1468,7 +1997,6 @@ footer .container {
 }
 
 /* Halaman Event end */
-
 
 
 
@@ -1622,7 +2150,7 @@ footer .container {
 
 
 
-form .form-group {
+.containerDetailEvent .form form .form-group {
     width: 100%;
     position: relative;
     height: 60px;
@@ -1631,7 +2159,7 @@ form .form-group {
     margin-top: 20px;
 }
 
-form input {
+.containerDetailEvent .form form input {
     width: 100%;
     height: 100%;
     color: #595f6e;
@@ -1641,7 +2169,7 @@ form input {
 }
 
 
-form label {
+.containerDetailEvent .form form label {
     position: absolute;
     bottom: 0px;
     left: 0%;
@@ -1651,7 +2179,7 @@ form label {
     border-bottom: 1px solid #000;
 }
 
-form label::after {
+.containerDetailEvent .form form label::after {
     content: '';
     position: absolute;
     left: 0;
@@ -1664,7 +2192,7 @@ form label::after {
 }
 
 
-label span {
+.containerDetailEvent .form form label span {
     position: absolute;
     bottom: 5px;
     left: 0px;
@@ -1672,8 +2200,8 @@ label span {
 }
 
 
-form input:focus+label span,
-form input:valid+label span {
+.containerDetailEvent .form form input:focus+label span,
+.containerDetailEvent .form form input:valid+label span {
     transform: translateY(-150%);
     font-size: 14px;
     color: #5fa8d3;
@@ -1681,8 +2209,8 @@ form input:valid+label span {
 
 
 
-form input:focus+label::after,
-form input:valid+label::after {
+.containerDetailEvent .form form input:focus+label::after,
+.containerDetailEvent .form form input:valid+label::after {
     transform: translateX(0);
 }
 
@@ -1953,35 +2481,36 @@ form input:valid+label::after {
 
     /* Media Partner start */
 
-    .eventMediaPartner .title .caption h2 {
+    .eventMediaPartner .container .title .caption h2 {
         font-size: 1.8rem;
         margin-bottom: 5px;
     }
 
-    .eventMediaPartner .title .caption p {
+    .eventMediaPartner .container .title .caption p {
         font-size: 1.3rem;
     }
 
-    .eventMediaPartner .promosi .perPromosi {
+    .eventMediaPartner .container .promosi .perPromosi {
         flex-direction: column;
     }
 
-    .eventMediaPartner .promosi .perPromosi img {
+    .eventMediaPartner .container .promosi .perPromosi img {
         margin-right: 0px;
         height: 200px;
         margin-bottom: 20px;
     }
 
-    .tahapanUpload {
+    .tahapanUpload .container {
         padding-top: 50px;
     }
 
-    .tahapanUpload .tahapan {
+    .tahapanUpload .container .tahapan {
         flex-wrap: wrap;
+        margin: 0;
         margin-bottom: 50px;
     }
 
-    .tahapanUpload .tahapan .perTahapan {
+    .tahapanUpload .container .tahapan .perTahapan {
         width: 100%;
         padding: 40px 20px;
         margin-bottom: 40px;
@@ -2074,34 +2603,41 @@ form input:valid+label::after {
     /* Halaman Media Partner Start*/
     .heroMediaPartner {
         width: 100%;
+        padding: 0;
+        /* padding: 150px 100px 0 100px; */
+
+    }
+
+    .heroMediaPartner .container {
         height: 100vh;
-        padding: 150px 100px 50px 100px;
+        width: 100%;
+        margin: 0;
         display: flex;
         align-items: center;
         justify-content: center;
         background-color: #fff;
     }
 
-    .heroMediaPartner img {
+    .heroMediaPartner .container img {
         display: none;
     }
 
 
-    .heroMediaPartner .caption {
+    .heroMediaPartner .container .caption {
         width: 100%;
         text-align: center;
     }
 
 
-    .eventMediaPartner .promosi .perPromosi {
+    .eventMediaPartner .container .promosi .perPromosi {
         margin: 15px 10px;
     }
 
-    .eventMediaPartner .promosi .perPromosi img {
+    .eventMediaPartner .container .promosi .perPromosi img {
         height: 150px;
     }
 
-    .eventMediaPartner .promosi .perPromosi h2 {
+    .eventMediaPartner .container .promosi .perPromosi h2 {
         font-size: 1.5rem;
     }
 
@@ -2111,11 +2647,11 @@ form input:valid+label::after {
 
 
     /* Halaman Artikel Start */
-    .heroArtikel .bg-patern .caption h1 {
+    .heroArtikel .bg-patern .container .caption h1 {
         font-size: 5rem;
     }
 
-    .heroArtikel .bg-patern .hero-img img:first-child {
+    .heroArtikel .bg-patern .container .hero-img img:first-child {
         width: 200px;
         height: 200px;
         position: absolute;
@@ -2123,7 +2659,7 @@ form input:valid+label::after {
         right: 50px;
     }
 
-    .heroArtikel .bg-patern .hero-img img:last-child {
+    .heroArtikel .bg-patern .container .hero-img img:last-child {
         width: 400px;
         height: 400px;
         position: absolute;
@@ -2132,13 +2668,13 @@ form input:valid+label::after {
     }
 
 
-    .artikel .perArtikel,
+    .artikel .container .perArtikel,
     .events .event {
         width: calc(90%/2);
     }
 
     .events .event .thumbnail,
-    .artikel .perArtikel img {
+    .artikel .container .perArtikel img {
         height: 300px;
         margin-bottom: 10px;
     }
@@ -2147,17 +2683,34 @@ form input:valid+label::after {
 
 
     /* Halaman Event Start */
-    .heroEvent .caption h1 {
+    .heroEvent .container .caption h1 {
         font-size: 2rem;
         margin-bottom: 30px;
     }
 
-    .heroEvent .caption p {
+    .heroEvent .container .caption p {
         font-size: 1rem;
         line-height: 25px;
     }
 
     /* Halaman Artikel End */
+
+
+    /* Event */
+
+    .Event2 .container .program .masihBerlangsung .perMasihBerlangsung {
+        margin: 10px 5px;
+    }
+
+    .Event2 .container .program .masihBerlangsung .perMasihBerlangsung .date p {
+        font-size: .9rem;
+    }
+
+    .Event2 .container .program .masihBerlangsung .perMasihBerlangsung .btn a {
+        font-size: .9rem;
+    }
+
+    /* Event */
 
 
 
@@ -2170,11 +2723,11 @@ form input:valid+label::after {
 @media(max-width: 900px) {
 
     /* Media Partner Start */
-    .partnerUniversitas {
+    .partnerUniversitas .container {
         text-align: center;
     }
 
-    .partnerUniversitas .universitas img {
+    .partnerUniversitas .container .universitas img {
         width: 90px;
         height: 90px;
         margin: 10px;
@@ -2206,7 +2759,42 @@ form input:valid+label::after {
 
 
     /* Halaman per Event end */
+
+
+
+
+    /* event */
+
+    .Event2 .container .sorting {
+        width: 40%;
+    }
+
+    .Event2 .container .program {
+        width: 60%;
+    }
+
+    .Event2 .container .program .masihBerlangsung .perMasihBerlangsung {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .Event2 .container .program .masihBerlangsung .perMasihBerlangsung .btn a {
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    /* event */
+
+
+
 }
+
+
+
+
+
+
+
 
 @media(max-width: 800px) {
 
@@ -2257,35 +2845,35 @@ form input:valid+label::after {
 
     /* Media Partner start */
 
-    .heroMediaPartner {
+    /* .heroMediaPartner {
         padding: 150px 50px 100px 50px;
-    }
+    } */
 
-    .heroMediaPartner .caption h1 {
+    .heroMediaPartner .container .caption h1 {
         font-size: 2.5rem;
         line-height: 50px;
         margin-bottom: 70px;
     }
 
 
-    .eventMediaPartner .title .circle {
+    .eventMediaPartner .container .title .circle {
         font-size: .9rem;
     }
 
-    .eventMediaPartner .promosi .perPromosi img {
+    .eventMediaPartner .container .promosi .perPromosi img {
         height: 100px;
     }
 
-    .eventMediaPartner .promosi .perPromosi h2 {
+    .eventMediaPartner .container .promosi .perPromosi h2 {
         font-size: 1.2rem;
         line-height: 30px;
     }
 
-    .eventMediaPartner .promosi .perPromosi p {
+    .eventMediaPartner .container .promosi .perPromosi p {
         font-size: .9rem;
     }
 
-    .partnerUniversitas .universitas img {
+    .partnerUniversitas .container .universitas img {
         width: 90px;
         height: 90px;
         margin: 20px 10px;
@@ -2295,7 +2883,7 @@ form input:valid+label::after {
     /* Media Partner end */
     /* Halaman Artikel  start */
     .events .event .thumbnail,
-    .artikel .perArtikel img {
+    .artikel .container .perArtikel img {
         height: 220px;
     }
 
@@ -2303,28 +2891,28 @@ form input:valid+label::after {
 
 
     /* Halaman event  start */
-    .heroEvent {
+    .heroEvent .container {
         padding-top: 100px;
         flex-wrap: wrap-reverse;
         text-align: center;
         padding-bottom: 100px;
     }
 
-    .heroEvent img {
+    .heroEvent .container img {
         margin-bottom: 20px;
     }
 
-    .heroEvent .caption h1 {
+    .heroEvent .container .caption h1 {
         margin-bottom: 20px;
     }
 
-    .heroEvent .caption p {
+    .heroEvent .container .caption p {
         font-size: 1.2rem;
         line-height: 30px;
     }
 
-    .heroEvent img,
-    .heroEvent .caption {
+    .heroEvent .container img,
+    .heroEvent .container .caption {
         width: 100%;
     }
 
@@ -2364,6 +2952,22 @@ form input:valid+label::after {
     }
 
     /* Halaman per Event end */
+
+
+
+    /* event */
+
+    .heroEvent2 .container form {
+        width: 100%;
+    }
+
+    .Event2 .container .program .keteranganProgram span {
+        font-size: .9rem;
+        padding: 20px 10px;
+    }
+
+    /* event */
+
 }
 
 
@@ -2487,76 +3091,76 @@ form input:valid+label::after {
 
     /* Halaman Media Partner Start */
 
-    .eventMediaPartner {
+    .eventMediaPartner .container {
         justify-content: center;
         text-align: center;
     }
 
-    .eventMediaPartner .title .circle {
+    .eventMediaPartner .container .title .circle {
         display: none;
     }
 
-    .eventMediaPartner .title .caption h2 {
+    .eventMediaPartner .container .title .caption h2 {
         font-size: 2rem;
         line-height: 45px;
     }
 
-    .eventMediaPartner .title .caption p {
+    .eventMediaPartner .container .title .caption p {
         display: none;
     }
 
-    .eventMediaPartner .promosi .perPromosi {
+    .eventMediaPartner .container .promosi .perPromosi {
         width: 100%;
         margin: 10px 0;
         text-align: center;
     }
 
-    .eventMediaPartner .promosi .perPromosi img {
+    .eventMediaPartner .container .promosi .perPromosi img {
         width: 100%;
         height: 200px;
     }
 
-    .eventMediaPartner .promosi .perPromosi h2 {
+    .eventMediaPartner .container .promosi .perPromosi h2 {
         font-size: 1.6rem;
         line-height: 40px;
     }
 
-    .eventMediaPartner .promosi .perPromosi p {
+    .eventMediaPartner .container .promosi .perPromosi p {
         font-size: 1.1rem;
     }
 
 
-    .tahapanUpload {
+    .tahapanUpload .container {
         text-align: center;
     }
 
     /* Halaman Media Partner End */
 
 
-    .heroArtikel .bg-patern .hero-img img:first-child {
+    .heroArtikel .bg-patern .container .hero-img img:first-child {
         width: 200px;
         height: 200px;
         bottom: 50px;
     }
 
-    .heroArtikel .bg-patern .hero-img img:last-child {
+    .heroArtikel .bg-patern .container .hero-img img:last-child {
         width: 300px;
         height: 300px;
     }
 
-    .heroArtikel .bg-patern .hero-bg .blog-white-mask {
+    .heroArtikel .bg-patern .container .hero-bg .blog-white-mask {
         height: 100px;
     }
 
     .events .event,
-    .artikel .perArtikel {
+    .artikel .container .perArtikel {
         width: 80%;
         margin: 0;
         margin-top: 30px;
     }
 
     .events .event .thumbnail,
-    .artikel .perArtikel img {
+    .artikel .container .perArtikel img {
         height: 300px;
     }
 
@@ -2565,27 +3169,61 @@ form input:valid+label::after {
 
 
     /* Halaman Event Start */
-    .heroEvent {
+    .heroEvent .container {
         padding-bottom: 50px;
     }
 
-    .heroEvent .caption p {
+    .heroEvent .container .caption p {
         font-size: 1rem;
         line-height: 25px;
     }
 
-    .heroEvent img,
-    .heroEvent .caption {
+    .heroEvent .container img,
+    .heroEvent .container .caption {
         width: 100%;
     }
 
     /* Halaman Event End */
 
 
+    /* Event */
+    .heroEvent2 .container h1 {
+        font-size: 1.8rem;
+    }
+
+    .heroEvent2 .container p {
+        font-size: 1rem;
+    }
+
+    .Event2 {
+        display: none;
+    }
+
+    /* Event */
+
+
 
 }
 
 @media(max-width: 600px) {
+
+    #scroll-top img {
+        width: 3.2rem;
+    }
+
+
+    #scroll-top.show {
+        transform: translateY(-50px);
+    }
+
+
+    @keyframes float {
+
+        50% {
+            transform: translateY(-1.5rem);
+        }
+    }
+
     section {
         padding: 0 25px;
     }
@@ -2623,12 +3261,12 @@ form input:valid+label::after {
     /* Halaman Media Partner start*/
     .heroMediaPartner {
         width: 100%;
-        height: 100vh;
-        padding: 50px 25px 0px 25px;
+        /* height: 100vh; */
+        /* padding: 50px 25px 0px 25px; */
     }
 
 
-    .heroMediaPartner .caption .btn button {
+    .heroMediaPartner .container .caption .btn button {
         padding: 15px 20px;
         text-transform: uppercase;
         font-size: 1rem;
@@ -2638,19 +3276,23 @@ form input:valid+label::after {
     }
 
 
-    .tahapanUpload h1 {
+    .tahapanUpload {
+        margin-top: -100px;
+    }
+
+    .tahapanUpload .container h1 {
         font-size: 2rem;
     }
 
 
-    .tahapanUpload .tahapan .perTahapan {
+    .tahapanUpload .container .tahapan .perTahapan {
         width: 100%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .tahapanUpload .tahapan .perTahapan span {
+    .tahapanUpload .container .tahapan .perTahapan span {
         width: 100px;
         height: 100px;
         margin: 0;
@@ -2658,7 +3300,7 @@ form input:valid+label::after {
         font-size: 2rem;
     }
 
-    .tahapanUpload .tahapan .perTahapan h3 {
+    .tahapanUpload .container .tahapan .perTahapan h3 {
         line-height: 35px;
     }
 
@@ -2674,7 +3316,7 @@ form input:valid+label::after {
 
 
     /* Halaman Artikel start*/
-    .heroArtikel .bg-patern .hero-img img:first-child {
+    .heroArtikel .bg-patern .container .hero-img img:first-child {
         right: 50px;
         bottom: 0;
         top: 50px;
@@ -2682,23 +3324,23 @@ form input:valid+label::after {
         height: 150px;
     }
 
-    .heroArtikel .bg-patern .hero-img img:last-child {
+    .heroArtikel .bg-patern .container .hero-img img:last-child {
         left: 50px;
         height: 250px;
         width: 250px;
     }
 
 
-    .heroArtikel .bg-patern .caption {
+    .heroArtikel .bg-patern .container .caption {
         transform: translateY(0);
     }
 
-    .heroArtikel .bg-patern .caption h1 {
+    .heroArtikel .bg-patern .container .caption h1 {
         font-size: 4rem;
     }
 
     .events .event,
-    .artikel .perArtikel {
+    .artikel .container .perArtikel {
         width: 90%;
     }
 
@@ -2706,8 +3348,8 @@ form input:valid+label::after {
     /* Halaman Artikel end*/
 
     /* Halaman Event Start */
-    .heroEvent img {
-        height: 250px;
+    .heroEvent .container img {
+        height: 270px;
     }
 
     /* Halaman Event End */
@@ -2771,29 +3413,29 @@ form input:valid+label::after {
 
 
     /* Halaman Media Partner start */
-    .heroMediaPartner {
+    /* .heroMediaPartner {
         padding: 0 25px;
-    }
+    } */
 
 
-    .heroMediaPartner .caption h1 {
+    .heroMediaPartner .container .caption h1 {
         font-size: 1.7rem;
         line-height: 40px;
         margin-bottom: 50px;
     }
 
 
-    .tahapanUpload h1 {
+    .tahapanUpload .container h1 {
         font-size: 1.7rem;
     }
 
 
-    .tahapanUpload .tahapan .perTahapan h3 {
+    .tahapanUpload .container .tahapan .perTahapan h3 {
         font-size: 1.3rem;
         line-height: 30px;
     }
 
-    .tahapanUpload .tahapan .perTahapan p {
+    .tahapanUpload .container .tahapan .perTahapan p {
         font-size: 1rem;
     }
 
@@ -2803,17 +3445,17 @@ form input:valid+label::after {
 
 
     /* Halaman Artikel start */
-    .heroArtikel .bg-patern .caption h1 {
+    .heroArtikel .bg-patern .container .caption h1 {
         font-size: 3rem;
     }
 
     .events .event,
-    .artikel .perArtikel {
+    .artikel .container .perArtikel {
         width: 100%;
     }
 
     .events .event .thumbnail,
-    .artikel .perArtikel img {
+    .artikel .container .perArtikel img {
         height: 250px;
     }
 
@@ -2829,11 +3471,11 @@ form input:valid+label::after {
     /* Halaman Artikel end */
 
     /* Halaman Event Start */
-    .heroEvent img {
+    .heroEvent .container img {
         height: 230px;
     }
 
-    .heroEvent .caption h1 {
+    .heroEvent .container .caption h1 {
         font-size: 1.5rem;
     }
 
@@ -2865,16 +3507,21 @@ form input:valid+label::after {
 
 
     /* Halaman Media Partner Start */
-    .eventMediaPartner .promosi .perPromosi img {
+    .eventMediaPartner .container .title .caption h2 {
+        font-size: 1.7rem;
+        line-height: 35px;
+    }
+
+    .eventMediaPartner .container .promosi .perPromosi img {
         height: 150px;
     }
 
-    .eventMediaPartner .promosi .perPromosi h2 {
+    .eventMediaPartner .container .promosi .perPromosi h2 {
         font-size: 1.3rem;
         line-height: 30px;
     }
 
-    .eventMediaPartner .promosi .perPromosi p {
+    .eventMediaPartner .container .promosi .perPromosi p {
         font-size: .9rem;
     }
 
@@ -2884,6 +3531,19 @@ form input:valid+label::after {
 
 
     /* Halaman Media Partner End */
+
+
+
+    /* event */
+    .heroEvent2 .container h1 {
+        font-size: 1.5rem;
+    }
+
+    .heroEvent2 .container p {
+        font-size: .9rem;
+    }
+
+    /* event */
 }
 
 @media(max-width: 400px) {
@@ -2990,36 +3650,38 @@ form input:valid+label::after {
 
 
     /* Halaman Media Partner Start  */
-    .heroMediaPartner .caption .btn button {
+    .heroMediaPartner .container .caption .btn button {
         width: 100%;
         margin-bottom: 20px;
     }
 
-    .tahapanUpload {
+    .tahapanUpload .container {
         text-align: center;
     }
 
-    .tahapanUpload .tahapan .perTahapan span {
+    .tahapanUpload .container .tahapan .perTahapan span {
         width: 60px;
         height: 60px;
         font-size: 1.4rem;
     }
 
-    .tahapanUpload .tahapan .perTahapan h3 {
+    .tahapanUpload .container .tahapan .perTahapan h3 {
         font-size: 1.2rem;
         line-height: 25px;
     }
 
-    .tahapanUpload .tahapan .perTahapan p {
+    .tahapanUpload .container .tahapan .perTahapan p {
         font-size: .9rem;
     }
 
-    .partnerUniversitas h1 {
+    .partnerUniversitas .container h1 {
         font-size: 1.9rem;
     }
 
-    .tahapanUpload button {
+    .tahapanUpload .container button {
+        font-size: 1rem;
         width: 100%;
+        padding: 15px 20px;
     }
 
 
@@ -3056,6 +3718,21 @@ form input:valid+label::after {
 
 
 @media(max-width: 350px) {
+
+    #scroll-top {
+        right: 0;
+    }
+
+
+    #scroll-top.show {
+        transform: translateY(-30px);
+    }
+
+    #scroll-top img {
+        width: 2.7rem;
+    }
+
+
 
     .program .caption p {
         font-size: 1rem;
@@ -3109,29 +3786,29 @@ form input:valid+label::after {
         line-height: 30px;
     }
 
-    .eventMediaPartner .promosi .perPromosi img {
+    .eventMediaPartner .container .promosi .perPromosi img {
         height: 120px;
     }
 
-    .eventMediaPartner button {
+    .eventMediaPartner .container button {
         font-size: 1rem;
-        padding: 20px;
+        padding: 15px 20px;
     }
 
     /* Halaman Media Partner End */
 
 
     /* Halaman Artikel start */
-    .heroArtikel .bg-patern .caption h1 {
+    .heroArtikel .bg-patern .container .caption h1 {
         font-size: 2.5rem;
     }
 
 
-    .artikel .perArtikel h2 {
+    .artikel .container .perArtikel h2 {
         font-size: 1.2rem;
     }
 
-    .artikel .perArtikel p {
+    .artikel .container .perArtikel p {
         font-size: .9rem;
     }
 
@@ -3244,29 +3921,29 @@ form input:valid+label::after {
 
 
     /* Media Partner Start */
-    .eventMediaPartner button {
-        font-size: 1rem;
-        padding: 10px 20px;
+    .eventMediaPartner .container button {
+        font-size: .9rem;
+        /* padding: 10px 20px; */
     }
 
-    .tahapanUpload {
+    .tahapanUpload .container {
         text-align: center;
     }
 
-    .tahapanUpload h1 {
+    .tahapanUpload .container h1 {
         font-size: 1.3rem;
     }
 
-    .tahapanUpload .tahapan .perTahapan h3 {
-        font-size: 1rem;
+    .tahapanUpload .container .tahapan .perTahapan h2 {
+        font-size: .9rem;
         line-height: 20px;
     }
 
-    .tahapanUpload .tahapan .perTahapan p {
+    .tahapanUpload .container .tahapan .perTahapan p {
         font-size: .8rem;
     }
 
-    .tahapanUpload button {
+    .tahapanUpload .container button {
         font-size: 1rem;
         padding: 10px 20px;
     }
@@ -3278,16 +3955,16 @@ form input:valid+label::after {
 
 
     /* Halaman Artikel start */
-    .heroArtikel .bg-patern .caption h1 {
+    .heroArtikel .bg-patern .container .caption h1 {
         font-size: 2rem;
     }
 
 
-    .artikel .perArtikel p {
+    .artikel .container .perArtikel p {
         font-size: .8rem;
     }
 
-    .artikel .perArtikel img {
+    .artikel .container .perArtikel img {
         height: 150px;
     }
 
