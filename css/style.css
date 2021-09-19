@@ -25,6 +25,7 @@ body {
 
 button {
     border: none;
+    cursor: pointer;
 }
 
 
@@ -2103,7 +2104,7 @@ footer .container {
 
 
 
-
+    .containerLogin,
     .heroEvent2,
     .Event2,
     .heroArtikel .bg-patern,
@@ -2665,6 +2666,270 @@ footer .container {
 
 
 
+/* Login Start */
+.containerLogin {
+    width: 100%;
+    padding-top: 120px;
+    padding-bottom: 150px;
+    background-color: #F5F5F5;
+}
+
+.containerLogin .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.containerLogin .container h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #5238B8;
+    margin-bottom: 20px;
+}
+
+.containerLogin .container .login {
+    width: 50%;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 2px solid #e4e4e7;
+}
+
+.containerLogin .container .login h2 {
+    font-size: 1.7rem;
+    color: #5441fa;
+}
+
+.containerLogin .container .login p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    color: #4a4b4c;
+    line-height: 25px;
+}
+
+.containerLogin .container .login form {
+    text-align: left;
+    margin: 30px 0;
+}
+
+.containerLogin .container .login form .form-group {
+    margin-bottom: 25px;
+}
+
+.containerLogin .container .login form .form-group label {
+    color: #4a4b4c;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.containerLogin .container .login form .form-group label span {
+    color: #CE231C;
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+.containerLogin .container .login form .form-group .form-control {
+    margin-top: 8px;
+    position: relative;
+    width: 100%;
+    height: 30px;
+    /* padding: 20px 0; */
+}
+
+
+.containerLogin .container .login form .form-group .form-control input {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #e4e4e7;
+    font-size: 1rem;
+    color: #4e4e4e;
+    letter-spacing: .7px;
+    font-weight: 500;
+}
+
+.containerLogin .container .login form .form-group .form-control input:focus+.icon {
+    border-top: 2px solid #2B46A6;
+    border-bottom: 2px solid #2B46A6;
+    border-right: 2px solid #2B46A6;
+}
+
+.containerLogin .container .login form .form-group .form-control input:focus {
+    border: 2px solid #2B46A6;
+}
+
+.containerLogin .container .login form .form-group .form-control .icon {
+    width: 10%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    color: #4a4b4c;
+    align-items: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top: 2px solid #e4e4e7;
+    border-bottom: 2px solid #e4e4e7;
+    border-right: 2px solid #e4e4e7;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+
+
+.containerLogin .container .login form .form-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    font-weight: 500;
+    /* background-color: red; */
+}
+
+.containerLogin .container .login form .form-info .ingatSaya input {
+    width: 15px;
+    height: 15px;
+    /* transform: translateY(2px); */
+    border: 1px solid #e4e4e7;
+}
+
+.containerLogin .container .login form .form-info .ingatSaya label {
+    margin-left: 5px;
+    font-size: 1rem;
+}
+
+.containerLogin .container .login form .form-info a {
+    font-size: 1rem;
+}
+
+.containerLogin .container .login form button {
+    width: 100%;
+    margin-top: 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 10px;
+    color: #fff;
+    border-radius: 10px;
+    background-color: #5238B8;
+}
+
+
+
+.containerLogin .container .login form .syaratDaftar {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.containerLogin .container .login form .syaratDaftar .syaratKetentuan,
+.containerLogin .container .login form .syaratDaftar .newsLetter {
+    margin: 10px 0;
+}
+
+.containerLogin .container .login form .syaratDaftar .syaratKetentuan label,
+.containerLogin .container .login form .syaratDaftar .newsLetter label {
+    color: #3f3f3f;
+    font-size: 1.1rem;
+    margin-left: 10px;
+    line-height: 25px;
+    font-weight: 500;
+}
+
+
+.containerLogin .container .login .BelumPunyaAkun {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+
+.containerLogin .container .login form .form-info a,
+.containerLogin .container .login form .syaratDaftar .syaratKetentuan a,
+.containerLogin .container .login .BelumPunyaAkun a {
+    color: #5441fa;
+}
+
+
+
+
+
+
+
+/* Login End */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3107,6 +3372,17 @@ footer .container {
 
 
 
+    /* Login */
+
+    .containerLogin .container .login {
+        width: 60%;
+    }
+
+    /* Login */
+
+
+
+
 }
 
 
@@ -3360,6 +3636,20 @@ footer .container {
 
     /* event */
 
+
+
+
+    /* Login */
+    .containerLogin .container .login {
+        width: 80%;
+    }
+
+    .containerLogin .container h1 {
+        font-size: 2.5rem;
+    }
+
+    /* Login */
+
 }
 
 
@@ -3596,6 +3886,22 @@ footer .container {
     }
 
     /* Event */
+
+
+
+
+
+    /* Login */
+    .containerLogin .container .login {
+        width: 100%;
+    }
+
+    .containerLogin .container h1 {
+        font-size: 2rem;
+    }
+
+    /* Login */
+
 
 
 
@@ -3971,6 +4277,28 @@ footer .container {
     }
 
     /* event */
+
+
+
+
+
+
+    /* Login */
+
+    .containerLogin .container h1 {
+        font-size: 1.5rem;
+    }
+
+    .containerLogin .container .login h2 {
+        font-size: 1.3rem;
+    }
+
+    .containerLogin .container .login p {
+        font-size: 1rem;
+        line-height: 22px;
+    }
+
+    /* Login */
 }
 
 @media(max-width: 400px) {
@@ -4339,6 +4667,30 @@ footer .container {
     }
 
     /* Event */
+
+
+
+
+    /* Login */
+
+    /* .containerLogin .container h1 {
+        font-size: 1.5rem;
+    }
+
+    .containerLogin .container .login h2 {
+        font-size: 1.3rem;
+    }
+
+    .containerLogin .container .login p {
+        font-size: 1rem;
+        line-height: 22px;
+    } */
+    .containerLogin .container .login form .form-info label,
+    .containerLogin .container .login form .form-info a {
+        font-size: .9rem;
+    }
+
+    /* Login */
 
 
 }
