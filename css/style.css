@@ -89,6 +89,7 @@ header {
     background: linear-gradient(to right, #450b7c, #563cc9);
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
     position: fixed;
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -861,26 +862,53 @@ footer .container {
     border-radius: 7px;
     border: 1px solid #e4e4e7;
     cursor: text;
-    outline: 2px solid transparent;
-    outline-offset: 2px;
     background-color: #fff;
     font-size: 1rem;
     padding: 1rem;
 }
 
 .heroEvent2 .container form button {
-    width: 50px;
+    width: 20%;
     height: 100%;
     position: absolute;
+    bottom: 0;
+    top: 0;
     border-top-right-radius: 7px;
     border-bottom-right-radius: 7px;
     border-top: 1px solid #e4e4e7;
     border-right: 1px solid #e4e4e7;
     border-bottom: 1px solid #e4e4e7;
-    background-color: #fff;
+    background-color: rgb(46, 46, 46);
+    font-weight: 600;
+    text-transform: capitalize;
     right: 0;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
+
+.heroEvent2 .container form button p {
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -906,7 +934,7 @@ footer .container {
     /* background-color: red; */
 }
 
-.Event2 .container .sorting h4 {
+.Event2 .container .sorting h2 {
     font-size: 1.1rem;
     font-weight: 700;
     color: #4a4b4c;
@@ -941,6 +969,8 @@ footer .container {
 
 
 
+
+.EventMobile .sorting .urutkan .isiBoxUrutkan.showIsiBoxUrutkan,
 .Event2 .container .sorting .urutkan .boxUrutkan .isiBoxUrutkan.showIsiBoxUrutkan {
     display: flex;
 }
@@ -1028,7 +1058,7 @@ footer .container {
 
 
 .Event2 .container .sorting .filterProgram .boxFilterProgram .perFilterProgram .keterangan span {
-    color: #3f3f3f;
+    color: #302f2f;
     font-weight: 600;
     text-transform: capitalize;
 }
@@ -1050,9 +1080,9 @@ footer .container {
     margin: 10px 0;
 }
 
-.Event2 .container .sorting .filterProgram .boxFilterProgram .perFilterProgram .isiFilterProgram .perIsiFilterProgram span {
+.Event2 .container .sorting .filterProgram .boxFilterProgram .perFilterProgram .isiFilterProgram .perIsiFilterProgram label {
     font-weight: 500;
-    color: #3f3f3f;
+    color: #302f2f;
     margin-left: 10px;
 }
 
@@ -1073,17 +1103,18 @@ footer .container {
     font-size: 1rem;
     color: #fff;
     font-weight: 600;
-    background-color: #563cc9;
+    background-color: #2B46A6;
     border-radius: 7px;
-    border: 1px solid #563cc9;
+    border: 2px solid #2B46A6;
     text-transform: capitalize;
     cursor: pointer;
+
 }
 
 .Event2 .container .sorting .filterProgram .boxFilterProgram .btn button:last-child {
     background-color: #fff;
     color: #3f3f3f;
-    border: 1px solid #e4e4e7;
+    border: 2px solid #e4e4e7;
 }
 
 
@@ -1133,6 +1164,17 @@ footer .container {
 
 
 
+.EventMobile .program .sudahBerakhir {
+    width: 100%;
+    height: 70vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
 .Event2 .container .program .sudahBerakhir {
     width: 100%;
     min-height: 70vh;
@@ -1140,10 +1182,13 @@ footer .container {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
 }
 
+.EventMobile .program .sudahBerakhir h1,
 .Event2 .container .program .sudahBerakhir h1 {
     font-size: 2rem;
+    text-align: center;
     margin-top: 20px;
     color: #CE231C;
 }
@@ -1151,6 +1196,7 @@ footer .container {
 
 
 
+.EventMobile .program .masihBerlangsung,
 .Event2 .container .program .masihBerlangsung {
     width: 100%;
     display: flex;
@@ -1159,9 +1205,18 @@ footer .container {
     flex-wrap: wrap;
 }
 
+.EventMobile .program .masihBerlangsung .perMasihBerlangsung {
+    width: 100%;
+    background-color: #fff;
+    border: 2px solid #e4e4e7;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+
 .Event2 .container .program .masihBerlangsung .perMasihBerlangsung {
     width: calc(90%/2);
-    margin: 0 10px;
     background-color: #fff;
     border: 2px solid #e4e4e7;
     padding-bottom: 15px;
@@ -1169,9 +1224,22 @@ footer .container {
     margin: 20px 10px;
 }
 
+.EventMobile .program .masihBerlangsung .perMasihBerlangsung img {
+    width: 100%;
+    height: 350px;
+}
+
 .Event2 .container .program .masihBerlangsung .perMasihBerlangsung img {
     width: 100%;
     height: 250px;
+}
+
+.EventMobile .program .masihBerlangsung .perMasihBerlangsung h2 {
+    font-size: 1.5rem;
+    line-height: 30px;
+    padding: 10px;
+    text-transform: capitalize;
+    color: #302f2f;
 }
 
 .Event2 .container .program .masihBerlangsung .perMasihBerlangsung h2 {
@@ -1179,10 +1247,19 @@ footer .container {
     line-height: 25px;
     padding: 10px;
     text-transform: capitalize;
-    color: #4a4b4c;
+    color: #302f2f;
 }
 
-.Event2 .container .program .masihBerlangsung .perMasihBerlangsung h4 {
+.EventMobile .program .masihBerlangsung .perMasihBerlangsung h3 {
+    font-size: 1.5rem;
+    color: #CE231C;
+    padding: 10px;
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+
+.Event2 .container .program .masihBerlangsung .perMasihBerlangsung h3 {
     font-size: 1.2rem;
     color: #CE231C;
     padding: 10px;
@@ -1190,12 +1267,20 @@ footer .container {
     font-weight: 600;
 }
 
+.EventMobile .masihBerlangsung .perMasihBerlangsung p {
+    font-size: 1.1rem;
+    padding: 10px;
+    color: #302f2f;
+}
+
+
 .Event2 .container .program .masihBerlangsung .perMasihBerlangsung p {
     font-size: .9rem;
     padding: 10px;
-    color: #828282;
+    color: #302f2f;
 }
 
+.EventMobile .program .masihBerlangsung .perMasihBerlangsung .date,
 .Event2 .container .program .masihBerlangsung .perMasihBerlangsung .date {
     display: flex;
     align-items: center;
@@ -1204,15 +1289,19 @@ footer .container {
 }
 
 
+.EventMobile .program .masihBerlangsung .perMasihBerlangsung .date p,
 .Event2 .container .program .masihBerlangsung .perMasihBerlangsung .date p {
-    color: #4a4b4c;
-    font-weight: 500;
+    color: #302f2f;
+    font-weight: 600;
 }
 
-.Event2 .container .program .masihBerlangsung .perMasihBerlangsung .date i {
+.EventMobile .program .masihBerlangsung .perMasihBerlangsung .date .icon,
+.Event2 .container .program .masihBerlangsung .perMasihBerlangsung .date .icon {
     margin-right: 10px;
+    color: #302f2f;
 }
 
+.EventMobile .program .masihBerlangsung .perMasihBerlangsung .btn,
 .Event2 .container .program .masihBerlangsung .perMasihBerlangsung .btn {
     width: 100%;
     display: flex;
@@ -1220,8 +1309,20 @@ footer .container {
     align-items: center;
 }
 
+.EventMobile .program .masihBerlangsung .perMasihBerlangsung .btn a:hover,
 .Event2 .container .program .masihBerlangsung .perMasihBerlangsung .btn a:hover {
     opacity: .9;
+}
+
+.EventMobile .program .masihBerlangsung .perMasihBerlangsung .btn a {
+    text-align: center;
+    width: 95%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #3629a7;
 }
 
 .Event2 .container .program .masihBerlangsung .perMasihBerlangsung .btn a {
@@ -1233,7 +1334,233 @@ footer .container {
     font-weight: 600;
     color: #fff;
     background-color: #3629a7;
+}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Event Mobile Start */
+.EventMobile {
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #f8fafc;
+    display: none;
+}
+
+.EventMobile .keterangan {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 4px solid #e4e4e7;
+    margin-bottom: 20px;
+    padding: 10px 0;
+
+}
+
+.EventMobile .keterangan span {
+    width: 50%;
+    text-align: center;
+    color: #3629a7;
+    position: relative;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.EventMobile .sorting {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* .EventMobile .sorting .filter {} */
+
+.EventMobile .sorting .filter .tombol {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    color: #4a4b4c;
+    border-radius: 7px;
+    border: 2px solid #e4e4e7;
+    background-color: #f8fafc;
+    cursor: pointer;
+
+}
+
+.EventMobile .sorting .filter h4 {
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
+.EventMobile .sorting .filter .containerFilter {
+    /* display: none; */
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.349);
+    z-index: 99999999999;
+    padding: 1rem;
+}
+
+
+
+.EventMobile .sorting .filter .containerFilter .boxFilter {
+    width: 100%;
+    /* height: 400px; */
+    padding: 1rem;
+    border: 2px solid #e4e4e7;
+    background-color: #f8fafc;
+    border-radius: 10px;
+}
+
+.EventMobile .sorting .filter .containerFilter .boxFilter .containerTitle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.7rem;
+    color: #4a4b4c;
+    margin-bottom: 20px;
+    /* padding: .5rem 1rem; */
+}
+
+.EventMobile .sorting .filter .containerFilter .boxFilter .containerTitle .title {
+    display: flex;
+}
+
+.EventMobile .sorting .filter .containerFilter .boxFilter .containerTitle .title .icon {
+    font-size: 1.4rem;
+}
+
+.EventMobile .sorting .filter .containerFilter .boxFilter .containerTitle .title h4 {
+    font-size: 1.4rem;
+    font-weight: 550;
+}
+
+.EventMobile .sorting .filter .containerFilter .boxFilter .containerTitle .close:hover>* {
+    color: #2B46A6;
+    cursor: pointer;
+}
+
+
+
+.EventMobile .sorting .filter .containerFilter .boxFilter .content {
+    width: 100%;
+    height: 300px;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* flex-direction: column; */
+    overflow: auto;
+    /* margin: 10px 0; */
+}
+
+.EventMobile .sorting .filter .containerFilter .boxFilter .content .perFIlter {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.EventMobile .sorting .filter .containerFilter .boxFilter .content .perFilter .title {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #4a4b4c;
+    font-weight: 600;
+    text-transform: capitalize;
+    cursor: pointer;
+    background-color: #fff;
+    padding: .5rem 1rem;
+    border: 1px solid #e4e4e7;
+    border-radius: 7px;
+    margin: 10px 0;
+    /* position: relative; */
+}
+
+.EventMobile .sorting .filter .containerFilter .boxFilter .content .perFilter .isiFilterProgram {
+    /* height: 0; */
+    display: none;
+}
+
+.EventMobile .sorting .filter .containerFilter .boxFilter .content .perFilter .isiFilterProgram.show {
+    height: 100%;
+    display: inherit;
+    padding: 0 1rem;
+}
+
+.EventMobile .sorting .filter .containerFilter .boxFilter .content .perFilter .isiFilterProgram .perIsiFilterProgram {
+    margin: 10px 0;
+}
+
+.EventMobile .sorting .filter .containerFilter .boxFilter .content .perFilter .isiFilterProgram .perIsiFilterProgram label {
+    margin-left: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #3f3f3f;
+}
+
+
+.EventMobile .sorting .filter .containerFilter .boxFilter .btn {
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+}
+
+.EventMobile .sorting .filter .containerFilter .boxFilter .btn button {
+    width: calc(90%/2);
+    background-color: #fff;
+    border: 2px solid #e4e4e7;
+    margin: 0 10px;
+    border-radius: 7px;
+    padding: 10px;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.EventMobile .sorting .filter .containerFilter .boxFilter .btn button:last-child {
+    background-color: #3629a7;
+    border: 2px solid #3629a7;
+    color: #fff;
 }
 
 
@@ -1252,11 +1579,76 @@ footer .container {
 
 
 
+.EventMobile .sorting .urutkan {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    color: #4a4b4c;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 7px;
+    background-color: #fff;
+    border: 2px solid #e4e4e7;
+    /* transform: translateY(-10px); */
+}
+
+.EventMobile .sorting .urutkan h4 {
+    margin-right: 100px;
+}
+
+
+.EventMobile .sorting .urutkan .isiBoxUrutkan {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    /* z-index: 9999999999; */
+    background-color: #fff;
+    border: 1px solid #e4e4e7;
+    border-radius: 7px;
+    padding: .5rem 0;
+
+}
+
+.EventMobile .sorting .urutkan .isiBoxUrutkan .perIsiBoxUrutkan:hover {
+    background-color: #afc0ff;
+    cursor: pointer;
+}
+
+
+.EventMobile .sorting .urutkan .isiBoxUrutkan .perIsiBoxUrutkan.active:hover {
+    background-color: #5441fa;
+}
+
+.EventMobile .sorting .urutkan .isiBoxUrutkan .perIsiBoxUrutkan {
+    width: 100%;
+    padding: 1rem;
+}
+
+.EventMobile .sorting .urutkan .isiBoxUrutkan .perIsiBoxUrutkan.active {
+    background-color: #5441fa;
+    border: 1px solid #e4e4e7;
+}
+
+.EventMobile .sorting .urutkan .isiBoxUrutkan .perIsiBoxUrutkan.active span {
+    color: #fff;
+}
+
+.EventMobile .sorting .urutkan .isiBoxUrutkan .perIsiBoxUrutkan span {
+    color: #3f3f3f;
+    font-weight: 600;
+}
 
 
 
 
 
+/* Event Mobile End */
 
 
 
@@ -3199,6 +3591,10 @@ footer .container {
         display: none;
     }
 
+    .EventMobile {
+        display: inherit;
+    }
+
     /* Event */
 
 
@@ -3497,6 +3893,22 @@ footer .container {
 
     /* Halaman per Event end */
 
+
+
+    /* Event */
+
+    .EventMobile .program .masihBerlangsung .perMasihBerlangsung img {
+        height: 300px;
+    }
+
+    .EventMobile .program .masihBerlangsung .perMasihBerlangsung .date p,
+    .EventMobile .program .masihBerlangsung .perMasihBerlangsung .date .icon,
+    .EventMobile .program .masihBerlangsung .perMasihBerlangsung p {
+        font-size: 1rem;
+    }
+
+    /* Event */
+
 }
 
 @media(max-width: 450px) {
@@ -3541,6 +3953,21 @@ footer .container {
 
     .heroEvent2 .container p {
         font-size: .9rem;
+    }
+
+
+    .EventMobile .sorting .filter .containerFilter .boxFilter .btn {
+        flex-wrap: wrap-reverse;
+    }
+
+    .EventMobile .sorting .filter .containerFilter .boxFilter .btn button {
+        margin: 0;
+        width: 100%;
+        padding: 8px 10px;
+    }
+
+    .EventMobile .sorting .filter .containerFilter .boxFilter .btn button:first-child {
+        margin-top: 10px;
     }
 
     /* event */
@@ -3712,6 +4139,37 @@ footer .container {
 
     /* Halaman per Event end*/
 
+
+    /* Event */
+
+    .EventMobile .sorting .urutkan h4 {
+        margin-right: 50px;
+    }
+
+    .EventMobile .keterangan span {
+        font-size: .9rem;
+    }
+
+
+    .EventMobile .program .masihBerlangsung .perMasihBerlangsung img {
+        height: 250px;
+    }
+
+    .EventMobile .program .masihBerlangsung .perMasihBerlangsung .date .icon,
+    .EventMobile .program .masihBerlangsung .perMasihBerlangsung .date p {
+        font-size: .9rem;
+    }
+
+
+
+    .EventMobile .program .masihBerlangsung .perMasihBerlangsung h2 {
+        font-size: 1.2rem;
+        line-height: 25px;
+    }
+
+
+    /* Event */
+
 }
 
 
@@ -3856,6 +4314,31 @@ footer .container {
     }
 
     /* Halaman per Event end */
+
+
+
+    /* Event */
+
+    .EventMobile .sorting .filter .containerFilter .boxFilter .containerTitle .title .icon {
+        font-size: 1.2rem;
+    }
+
+    .EventMobile .sorting .filter .containerFilter .boxFilter .containerTitle .title h4 {
+        font-size: 1.2rem;
+    }
+
+    .EventMobile .sorting .filter .containerFilter .boxFilter .containerTitle .close {
+        font-size: 1.5rem;
+        padding: 0;
+        margin-top: -5px;
+    }
+
+
+    .EventMobile .program .masihBerlangsung .perMasihBerlangsung p {
+        font-size: .9rem;
+    }
+
+    /* Event */
 
 
 }
@@ -4012,6 +4495,63 @@ footer .container {
 
 
     /* Halaman per Event start */
+
+
+    /* Event */
+    .EventMobile .sorting .filter,
+    .EventMobile .sorting .urutkan {
+        width: 100%;
+    }
+
+    .EventMobile .sorting .filter .tombol {
+        flex-direction: row-reverse;
+    }
+
+    .EventMobile .sorting .urutkan {
+        margin-top: 20px;
+    }
+
+
+    .EventMobile .sorting {
+        flex-wrap: wrap;
+    }
+
+    .EventMobile .sorting .urutkan h4 {
+        margin-right: 10px;
+    }
+
+    .EventMobile .sorting .filter .containerFilter .boxFilter .containerTitle .title .icon,
+    .EventMobile .sorting .filter .containerFilter .boxFilter .containerTitle .title h4 {
+        font-size: 1rem;
+    }
+
+    .EventMobile .sorting .filter .containerFilter .boxFilter .containerTitle .close {
+        font-size: 1.5rem;
+        padding: 0;
+        margin-top: -5px;
+    }
+
+
+
+    .EventMobile .program .masihBerlangsung .perMasihBerlangsung h2 {
+        font-size: 1rem;
+        line-height: 20px;
+    }
+
+    .EventMobile .program .masihBerlangsung .perMasihBerlangsung img {
+        height: 220px;
+    }
+
+    .EventMobile .program .masihBerlangsung .perMasihBerlangsung h3 {
+        font-size: 1.2rem;
+    }
+
+    /* .EventMobile .program .masihBerlangsung .perMasihBerlangsung p{ */
+    /* font-size: .9rem; */
+    /* } */
+
+
+    /* Event */
 
 }
 
