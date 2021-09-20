@@ -14,6 +14,7 @@
     list-style: none;
     font-display: sans-serif;
     word-wrap: break-word;
+    scroll-behavior: smooth;
 }
 
 
@@ -2020,35 +2021,71 @@ footer .container {
     background-image: linear-gradient(180deg, #f3f4f9, #f3f4f9, #fff 75%);
 }
 
+.rekomendasiArtikel .container .perArtikel,
 .artikel .container .perArtikel {
     width: calc(90%/3);
-    margin: 20px 10px;
-    padding: 20px;
-    border-radius: 20px;
+    margin: 15px 10px;
+    /* padding: 20px; */
+    border-radius: 10px;
+    border: 2px solid #e4e4e7;
     background-color: #fff;
-    box-shadow: 0 .5rem .5rem rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 .5rem .5rem rgba(0, 0, 0, 0.1); */
 }
 
+.rekomendasiArtikel .container .perArtikel:hover h2,
 .artikel .container .perArtikel:hover h2 {
     color: #3629a7;
 }
 
+.rekomendasiArtikel .container .perArtikel img,
 .artikel .container .perArtikel img {
     width: 100%;
     height: 250px;
-    border-radius: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
+
+.rekomendasiArtikel .container .perArtikel h2,
 .artikel .container .perArtikel h2 {
-    font-size: 1.4rem;
-    line-height: 25px;
-    color: #000;
-    margin-bottom: 10px;
+    font-size: 1.3rem;
+    line-height: 27px;
+    text-transform: capitalize;
+    color: #302f2f;
+    margin: 10px 0;
+    padding: 0 10px;
 }
 
+.rekomendasiArtikel .container .perArtikel p,
 .artikel .container .perArtikel p {
-    color: #000;
+    color: #302f2f;
+    font-size: .9rem;
+    /* font-weight: 500; */
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+
+
+.rekomendasiArtikel .container .perArtikel .btn,
+.artikel .container .perArtikel .btn {
+    margin-bottom: 15px;
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+
+
+.rekomendasiArtikel .container .perArtikel .btn button,
+.artikel .container .perArtikel .btn button {
+    width: 95%;
+    border-radius: 7px;
+    padding: 10px 40px;
+    color: #fff;
     font-size: 1rem;
+    font-weight: 600;
+    background-color: #3629a7;
 }
 
 /* Halaman Artikel End */
@@ -2103,7 +2140,7 @@ footer .container {
 
 
 
-
+    .rekomendasiArtikel,
     .containerLogin,
     .heroEvent2,
     .Event2,
@@ -2164,52 +2201,85 @@ footer .container {
 
 /* Halaman Per Artikel start */
 .contentArtikel {
-    padding: 150px 250px 200px 250px;
+    /* width: 60%; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 120px;
+    padding-bottom: 100px;
+    /* padding: 150px 250px 200px 250px; */
 }
 
-.contentArtikel .titleArtikel {
-    font-size: 2.7rem;
-    font-weight: 800;
+.contentArtikel .container {
+    width: 60%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
 }
 
-.contentArtikel .writer {
-    font-size: 1.2rem;
+.contentArtikel .container .titleArtikel {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 40px;
+    color: #302f2f;
+}
+
+.contentArtikel .container .writer {
+    font-size: 1rem;
+    color: #302f2f;
     margin: 20px 0;
 }
 
-.contentArtikel .thumbnail {
+.contentArtikel .container .thumbnail {
     width: 100%;
-    height: 400px;
+    height: 350px;
     border-radius: 8px;
     margin-bottom: 20px;
 }
 
-.contentArtikel h3 {
-    font-size: 2rem;
+.contentArtikel .container h3 {
+    font-size: 1.5rem;
+    color: #302f2f;
 }
 
-.contentArtikel h4 {
-    font-size: 1.7rem;
-}
-
-.contentArtikel p {
-    font-size: 1.3rem;
+.contentArtikel .container p {
+    font-size: 1rem;
     margin: 10px 0;
+    color: #302f2f;
     line-height: 30px;
 }
 
 
-.contentArtikel .share {
+.rekomendasiArtikel {
     width: 100%;
-    display: flex;
-    background-color: red;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
-.contentArtikel .share img {
-    width: 100%;
-    height: 50px;
-    padding: 10px;
+.rekomendasiArtikel .title {
+    font-size: 2rem;
+    color: #302f2f;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
 }
+
+.rekomendasiArtikel .container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.rekomendasiArtikel {
+    width: 100%;
+    background-color: #eff2f6;
+}
+
 
 /* Halaman Per Artikel end */
 
@@ -2751,14 +2821,15 @@ footer .container {
     font-weight: 500;
 }
 
+
 .containerLogin .container .login form .form-group .form-control input:focus+.icon {
-    border-top: 2px solid #2B46A6;
-    border-bottom: 2px solid #2B46A6;
-    border-right: 2px solid #2B46A6;
+    border-top: 2px solid #0175F4;
+    border-bottom: 2px solid #0175F4;
+    border-right: 2px solid #0175F4;
 }
 
 .containerLogin .container .login form .form-group .form-control input:focus {
-    border: 2px solid #2B46A6;
+    border: 2px solid #0175F4;
 }
 
 .containerLogin .container .login form .form-group .form-control .icon {
@@ -2803,10 +2874,15 @@ footer .container {
 .containerLogin .container .login form .form-info .ingatSaya label {
     margin-left: 5px;
     font-size: 1rem;
+    cursor: pointer;
 }
 
 .containerLogin .container .login form .form-info a {
     font-size: 1rem;
+}
+
+.containerLogin .container .login form button:hover {
+    opacity: .9;
 }
 
 .containerLogin .container .login form button {
@@ -2817,7 +2893,7 @@ footer .container {
     padding: 10px;
     color: #fff;
     border-radius: 10px;
-    background-color: #5238B8;
+    background-color: #0175F4;
 }
 
 
@@ -2840,6 +2916,7 @@ footer .container {
     margin-left: 10px;
     line-height: 25px;
     font-weight: 500;
+    cursor: pointer;
 }
 
 
@@ -2853,7 +2930,7 @@ footer .container {
 .containerLogin .container .login form .form-info a,
 .containerLogin .container .login form .syaratDaftar .syaratKetentuan a,
 .containerLogin .container .login .BelumPunyaAkun a {
-    color: #5441fa;
+    color: #0175F4;
 }
 
 
@@ -3175,6 +3252,27 @@ footer .container {
 
     /* Media Partner end */
 
+
+
+
+    /* Per Artikel */
+    .contentArtikel .container {
+        width: 80%;
+    }
+
+    .contentArtikel .container .thumbnail {
+        height: 270px;
+    }
+
+    /* Per Artikel */
+
+
+
+
+
+
+
+
 }
 
 @media(max-width: 1000px) {
@@ -3325,12 +3423,14 @@ footer .container {
     }
 
 
+    .rekomendasiArtikel .container .perArtikel,
     .artikel .container .perArtikel,
     .events .event {
         width: calc(90%/2);
     }
 
     .events .event .thumbnail,
+    .rekomendasiArtikel .container .perArtikel img,
     .artikel .container .perArtikel img {
         height: 300px;
         margin-bottom: 10px;
@@ -3379,7 +3479,6 @@ footer .container {
     }
 
     /* Login */
-
 
 
 
@@ -3551,6 +3650,7 @@ footer .container {
     /* Media Partner end */
     /* Halaman Artikel  start */
     .events .event .thumbnail,
+    .rekomendasiArtikel .container .perArtikel img,
     .artikel .container .perArtikel img {
         height: 220px;
     }
@@ -3835,6 +3935,7 @@ footer .container {
     }
 
     .events .event,
+    .rekomendasiArtikel .container .perArtikel,
     .artikel .container .perArtikel {
         width: 80%;
         margin: 0;
@@ -3842,6 +3943,7 @@ footer .container {
     }
 
     .events .event .thumbnail,
+    .rekomendasiArtikel .container .perArtikel img,
     .artikel .container .perArtikel img {
         height: 300px;
     }
@@ -3901,6 +4003,21 @@ footer .container {
     }
 
     /* Login */
+
+
+
+
+
+    /* Per Artikel */
+    .contentArtikel .container {
+        width: 100%;
+    }
+
+    .contentArtikel .container .thumbnail {
+        height: 250px;
+    }
+
+    /* Per Artikel */
 
 
 
@@ -4042,6 +4159,7 @@ footer .container {
     }
 
     .events .event,
+    .rekomendasiArtikel .container .perArtikel,
     .artikel .container .perArtikel {
         width: 90%;
     }
@@ -4152,11 +4270,13 @@ footer .container {
     }
 
     .events .event,
+    .rekomendasiArtikel .container .perArtikel,
     .artikel .container .perArtikel {
         width: 100%;
     }
 
     .events .event .thumbnail,
+    .rekomendasiArtikel .container .perArtikel img,
     .artikel .container .perArtikel img {
         height: 250px;
     }
@@ -4299,6 +4419,26 @@ footer .container {
     }
 
     /* Login */
+
+
+
+    /* Per Artikel */
+
+    .contentArtikel .container .titleArtikel {
+        font-size: 1.5rem;
+        line-height: 30px;
+    }
+
+    .contentArtikel .container .writer {
+        font-size: .8rem;
+        line-height: 20px;
+    }
+
+    .contentArtikel .container h3 {
+        font-size: 1.3rem;
+    }
+
+    /* Per Artikel */
 }
 
 @media(max-width: 400px) {
@@ -4590,12 +4730,20 @@ footer .container {
     }
 
 
+    .rekomendasiArtikel .container .perArtikel h2,
     .artikel .container .perArtikel h2 {
         font-size: 1.2rem;
     }
 
+    .rekomendasiArtikel .container .perArtikel p,
     .artikel .container .perArtikel p {
         font-size: .9rem;
+    }
+
+    .rekomendasiArtikel .container .perArtikel .btn button,
+    .artikel .container .perArtikel .btn button {
+        font-size: .8rem;
+        padding: 8px 0;
     }
 
     /* Halaman Artikel end */
@@ -4646,6 +4794,10 @@ footer .container {
 
 
     /* Event */
+
+    .heroEvent2 .container form button {
+        width: 30%;
+    }
 
     .EventMobile .sorting .filter .containerFilter .boxFilter .containerTitle .title .icon {
         font-size: 1.2rem;
@@ -4795,10 +4947,12 @@ footer .container {
     }
 
 
+    .rekomendasiArtikel .container .perArtikel p,
     .artikel .container .perArtikel p {
         font-size: .8rem;
     }
 
+    .rekomendasiArtikel .container .perArtikel img,
     .artikel .container .perArtikel img {
         height: 150px;
     }
@@ -4898,12 +5052,18 @@ footer .container {
         font-size: 1.2rem;
     }
 
-    /* .EventMobile .program .masihBerlangsung .perMasihBerlangsung p{ */
-    /* font-size: .9rem; */
-    /* } */
-
 
     /* Event */
+
+
+
+    /* Per Artikel */
+
+    .contentArtikel .container .thumbnail {
+        height: 200px;
+    }
+
+    /* Per Artikel */
 
 }
 
