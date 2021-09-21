@@ -73,7 +73,6 @@
     <!-- Login Start -->
     <section class="containerLogin">
         <div class="container">
-            <h1>Selamat Datang di TasBee</h1>
 
             <div class="login">
                 <h2>Masuk sebagai pelanggan</h2>
@@ -84,7 +83,7 @@
                         <label for="email">Alamat Email <span>*</span> </label>
 
                         <div class="form-control">
-                            <input type="email" id="email" required>
+                            <input type="email" id="email" autocomplete required>
                             <div class="icon">
                                 <i class="fas fa-at"></i>
                             </div>
@@ -100,7 +99,7 @@
                             <input type="password" id="password" autocomplete required>
 
                             <div class="icon">
-                                <i class="fas fa-eye-slash"></i>
+                                <i class="fas fa-eye-slash passwordIcon"></i>
                             </div>
                         </div>
 
@@ -194,6 +193,20 @@
 
     <script>
         let masuk = document.querySelector(".masuk")
+        /*let password = document.querySelector("#password")
+        let icon = document.querySelector(".passwordIcon")
+        console.log(icon)
+
+
+
+        password.nextElementSibling.addEventListener("click", () => {
+            icon.className.contain
+            icon.setAttribute("class", "fas fa-eye passwordIcon")
+            console.log(icon)
+        })*/
+
+
+
 
         masuk.addEventListener("click", () => {
             alert("Anda berhasil masuk")
