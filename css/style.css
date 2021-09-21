@@ -231,12 +231,14 @@ header nav ul li a:hover {
     text-transform: capitalize;
     font-family: serif;
     text-align: center;
+    color: #fff;
 }
 
 .hero .caption p {
     font-size: 1.5rem;
     margin: 10px 0 25px 0;
     text-align: center;
+    color: #fff;
 }
 
 .hero .caption button {
@@ -324,10 +326,12 @@ header nav ul li a:hover {
 .program .caption h2 {
     font-size: 2rem;
     font-weight: 600;
+    color: #302f2f;
 }
 
 .program .caption p {
     margin: 30px 0;
+    color: #302f2f;
     font-size: 1.1rem;
     line-height: 30px;
 }
@@ -417,6 +421,7 @@ header nav ul li a:hover {
 .titleHome {
     font-size: 2.2rem;
     margin-top: 100px;
+    color: #302f2f;
     text-transform: capitalize;
 }
 
@@ -466,12 +471,14 @@ header nav ul li a:hover {
 .homePartner .container .keterangan .profil .perProfil .caption span {
     font-size: 1.8rem;
     font-weight: 600;
+    color: #302f2f;
     margin-bottom: 5px;
 }
 
 
 .homePartner .container .keterangan .profil .perProfil .caption p {
     font-size: .9rem;
+    color: #302f2f;
 }
 
 
@@ -545,6 +552,7 @@ header nav ul li a:hover {
 .homePartner .container .tawaran .perTawaran .caption p {
     line-height: 1.4em;
     letter-spacing: .03em;
+    color: #302f2f;
 }
 
 
@@ -581,6 +589,7 @@ header nav ul li a:hover {
 .uploadEvent .container .caption p {
     font-size: 1.5rem;
     margin-bottom: 25px;
+    color: #302f2f;
 }
 
 
@@ -703,6 +712,7 @@ header nav ul li a:hover {
     font-weight: 600;
     letter-spacing: 2px;
     margin-left: 20px;
+    color: #302f2f;
 }
 
 /* join end */
@@ -732,13 +742,14 @@ header nav ul li a:hover {
 
 .footer .box h2 {
     font-size: 2rem;
-    color: #000;
+    font-weight: 600;
+    color: #302f2f;
     padding: 1rem 0;
 }
 
 .footer .box p {
     font-size: 1rem;
-    color: #000;
+    color: #302f2f;
     padding: .5rem 0;
     line-height: 25px;
     margin-bottom: 30px;
@@ -1219,7 +1230,7 @@ footer .container {
 
 
 
-.EventMobile .program .masihBerlangsung .perMasihBerlangsung:hover h2 ,
+.EventMobile .program .masihBerlangsung .perMasihBerlangsung:hover h2,
 .Event2 .container .program .masihBerlangsung .perMasihBerlangsung:hover h2 {
     color: #2b46a6;
 }
@@ -2099,82 +2110,6 @@ footer .container {
 
 /* Halaman Artikel End */
 
-@media(min-width:1500px) {
-
-    header .container nav ul li a {
-        margin: 0 0px;
-    }
-
-    section {
-        padding: 0;
-    }
-
-    .heroMediaPartner .container img {
-        width: 40%;
-        height: 50%;
-    }
-
-    .container {
-        max-width: 1140px;
-        /* background-color: red; */
-    }
-
-
-    .join .container {
-        height: 50vh;
-    }
-
-    /* .join img { height: 50%; }*/
-
-    .join {
-        height: 60vh;
-    }
-
-    .heroArtikel .bg-patern .container .hero-img img:first-child {
-        width: 500px;
-        height: 500px;
-        position: absolute;
-        bottom: 100px;
-        right: 400px;
-    }
-
-    .heroArtikel .bg-patern .container .hero-img img:last-child {
-        width: 600px;
-        height: 600px;
-        position: absolute;
-        bottom: 0;
-        left: 400px;
-    }
-
-
-
-
-    .rekomendasiArtikel,
-    .containerLogin,
-    .heroEvent2,
-    .Event2,
-    .heroArtikel .bg-patern,
-    .eventMediaPartner,
-    .tahapanUpload,
-    .partnerUniversitas,
-    .heroEvent,
-    .events,
-    .fitur,
-    footer,
-    .footer,
-    .join,
-    .testimoni,
-    .uploadEvent,
-    .containerTitleHome,
-    .homePartner,
-    .program {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
-
 
 
 
@@ -2524,7 +2459,7 @@ footer .container {
 
 
 
-/* Halaman Per Event start */
+/* Halaman Detail Event start */
 .contentEvent {
     width: 100%;
     height: 30rem;
@@ -2536,7 +2471,7 @@ footer .container {
 .contentEvent .container {
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
 }
 
 .contentEvent .container .caption {
@@ -2649,6 +2584,8 @@ footer .container {
     color: #3f3f3f;
 }
 
+
+.detailEvent .container .detailHarga .detailTiket .perTiket p,
 .detailEvent .container .detailAcara .waktuPelaksanaan .date .waktu p,
 .detailEvent .container .detailAcara .waktuPelaksanaan .date .tanggal p {
     font-size: 1rem;
@@ -2764,7 +2701,7 @@ footer .container {
     background-color: #5238B8;
 }
 
-/* Halaman Per Event end */
+/* Halaman Detail Event end */
 
 
 
@@ -2826,203 +2763,6 @@ footer .container {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Halaman per Event start */
-.containerDetailEvent {
-    display: flex;
-    /* align-items: center; */
-    justify-content: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    position: relative;
-}
-
-.containerDetailEvent .detailEvent {
-    width: 60%;
-    margin-right: 20px;
-}
-
-.containerDetailEvent .detailEvent .thumbnail {
-    width: 100%;
-    height: 520px;
-}
-
-
-.containerDetailEvent .detailEvent h1 {
-    font-size: 2rem;
-    margin-top: 20px;
-}
-
-.containerDetailEvent .detailEvent .date {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 0;
-    margin: 10px 0 20px 0;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
-}
-
-.containerDetailEvent .detailEvent .date .tanggal,
-.containerDetailEvent .detailEvent .date .waktu {
-    display: flex;
-    align-items: center;
-}
-
-.containerDetailEvent .detailEvent .date .tanggal p,
-.containerDetailEvent .detailEvent .date .waktu p {
-    font-weight: 600;
-}
-
-.containerDetailEvent .detailEvent .date .icon {
-    font-size: 1.1rem;
-    margin-right: 15px;
-}
-
-.containerDetailEvent .form {
-    width: 40%;
-    position: sticky;
-    top: 0;
-    align-self: flex-start;
-}
-
-
-.form h2 {
-    font-size: 2rem;
-    text-transform: capitalize;
-}
-
-.containerDetailEvent .form form button {
-    width: 100%;
-    padding: 10px 0;
-    background-color: #2B46A6;
-    border-radius: 7px;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 1rem;
-    margin-top: 50px;
-}
-
-
-
-.containerDetailEvent .form form .form-group {
-    width: 100%;
-    position: relative;
-    height: 60px;
-    background-color: blue;
-    overflow: hidden;
-    margin-top: 20px;
-}
-
-.containerDetailEvent .form form input {
-    width: 100%;
-    height: 100%;
-    color: #595f6e;
-    padding-top: 20px;
-    border: none;
-    outline: none;
-}
-
-
-.containerDetailEvent .form form label {
-    position: absolute;
-    bottom: 0px;
-    left: 0%;
-    height: 100%;
-    width: 100%;
-    pointer-events: none;
-    border-bottom: 1px solid #000;
-}
-
-.containerDetailEvent .form form label::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    height: 100%;
-    width: 100%;
-    border-bottom: 3px solid #5fa8d3;
-    transform: translateX(-100%);
-    transition: transform .3s ease;
-}
-
-
-.containerDetailEvent .form form label span {
-    position: absolute;
-    bottom: 5px;
-    left: 0px;
-    transition: all .3s ease;
-}
-
-
-.containerDetailEvent .form form input:focus+label span,
-.containerDetailEvent .form form input:valid+label span {
-    transform: translateY(-150%);
-    font-size: 14px;
-    color: #5fa8d3;
-}
-
-
-
-.containerDetailEvent .form form input:focus+label::after,
-.containerDetailEvent .form form input:valid+label::after {
-    transform: translateX(0);
-}
-
-/* Halaman per Event end */
 
 
 
@@ -3617,6 +3357,40 @@ footer .container {
 
 
 
+    /* Detail Event Start*/
+    .contentEvent .container .caption {
+        width: 50%;
+        margin-right: 10px;
+    }
+
+    .contentEvent .container .caption h1 {
+        font-size: 1.7rem;
+        font-weight: 650;
+        line-height: 35px;
+        margin-bottom: 30px;
+    }
+
+    .contentEvent .container .img {
+        width: 50%;
+    }
+
+
+    .detailEvent .container .detailAcara .waktuPelaksanaan .date .waktu .icon,
+    .detailEvent .container .detailAcara .waktuPelaksanaan .date .tanggal .icon {
+        font-size: .9rem;
+        margin-right: 10px;
+    }
+
+
+
+    .detailEvent .container .detailHarga {
+        width: 40%;
+    }
+
+    /* Detail Event End */
+
+
+
 
 
 
@@ -3855,28 +3629,6 @@ footer .container {
 
 
 
-    /* Halaman per Event start */
-
-    .containerDetailEvent .detailEvent .thumbnail {
-        height: 400px;
-    }
-
-
-    .containerDetailEvent .detailEvent h1 {
-        font-size: 1.5rem;
-        margin-top: 0;
-    }
-
-    .form h2 {
-        font-size: 1.7rem;
-    }
-
-
-    /* Halaman per Event end */
-
-
-
-
     /* event */
 
     .Event2 .container .sorting {
@@ -3898,6 +3650,71 @@ footer .container {
     }
 
     /* event */
+
+
+
+    /* Halaman Detail Event start */
+    .contentEvent {
+        height: 100%;
+    }
+
+    .contentEvent .container {
+        flex-wrap: wrap-reverse;
+    }
+
+    .contentEvent .container .caption {
+        width: 100%;
+        margin: 0;
+    }
+
+    .contentEvent .container .caption h1 {
+        font-size: 2rem;
+        font-weight: 650;
+        line-height: 45px;
+        margin: 30px 0;
+    }
+
+    .contentEvent .container .caption p {
+        font-size: 1.2rem;
+    }
+
+    .contentEvent .container .img {
+        width: 100%;
+        height: 300px;
+    }
+
+
+
+
+
+    .detailEvent .container {
+        flex-wrap: wrap;
+    }
+
+    .detailEvent .container .detailAcara {
+        width: 100%;
+        margin-bottom: 30px;
+        margin-right: 0px;
+    }
+
+
+    .detailEvent .container .detailHarga {
+        width: 100%;
+        position: static;
+        top: 0;
+    }
+
+
+
+    .detailEvent .container .detailHarga button {
+        padding: 15px;
+    }
+
+    /* Halaman Detail Event end */
+
+
+
+
 
 
 
@@ -4038,35 +3855,6 @@ footer .container {
 
 
 
-
-
-    /* Halaman per Event start */
-    .containerDetailEvent {
-        flex-wrap: wrap;
-    }
-
-    .containerDetailEvent .detailEvent {
-        width: 100%;
-        margin-right: 0;
-    }
-
-    .containerDetailEvent .detailEvent .thumbnail {
-        height: 450px;
-    }
-
-
-    .containerDetailEvent .detailEvent h1 {
-        font-size: 2rem;
-        margin-top: 20px;
-    }
-
-    .containerDetailEvent .form {
-        width: 100%;
-        position: static;
-        margin-top: 50px;
-    }
-
-    /* Halaman per Event end */
 
 
 
@@ -4520,6 +4308,38 @@ footer .container {
     }
 
     /* Halaman Event End */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Halaman Detail Event Start */
+
+    .contentEvent .container .caption h1 {
+        font-size: 1.7rem;
+        line-height: 37px;
+        margin: 20px 0;
+    }
+
+    .contentEvent .container .caption p {
+        font-size: 1.1rem;
+    }
+
+    .contentEvent .container .img {
+        height: 250px;
+    }
+
+    /* Halaman Detail Event End */
 }
 
 
@@ -4652,22 +4472,6 @@ footer .container {
 
 
 
-    /* Halaman per Event start */
-
-    .containerDetailEvent .detailEvent .thumbnail {
-        height: 320px;
-    }
-
-    .containerDetailEvent .detailEvent h1 {
-        font-size: 1.5rem;
-        margin-top: 0px;
-    }
-
-
-    /* Halaman per Event end */
-
-
-
     /* Event */
 
     .EventMobile .program .masihBerlangsung .perMasihBerlangsung img {
@@ -4681,6 +4485,33 @@ footer .container {
     }
 
     /* Event */
+
+
+
+
+    /* Detail Event Start */
+
+    .detailEvent .container .detailAcara .waktuPelaksanaan .date {
+        flex-wrap: wrap;
+    }
+
+    .detailEvent .container .detailAcara .waktuPelaksanaan .date .tanggal p,
+    .detailEvent .container .detailAcara .waktuPelaksanaan .date .waktu p {
+        font-size: 1rem;
+    }
+
+    .detailEvent .container .detailAcara .waktuPelaksanaan .date .tanggal .icon,
+    .detailEvent .container .detailAcara .waktuPelaksanaan .date .waktu .icon {
+        font-size: 1rem;
+        margin-right: 15px;
+    }
+
+
+    .detailEvent .container .detailAcara .waktuPelaksanaan .date .tanggal p {
+        margin-bottom: 15px;
+    }
+
+    /* Detail Event End */
 
 }
 
@@ -4786,6 +4617,39 @@ footer .container {
     }
 
     /* Per Artikel */
+
+
+
+
+
+
+
+    /* Halaman Detail Event Start */
+
+    .contentEvent .container .caption h2 {
+        font-size: 1.6rem;
+    }
+
+    .contentEvent .container .caption h1 {
+        font-size: 1.4rem;
+        line-height: 30px;
+    }
+
+    .contentEvent .container .caption p {
+        font-size: 1rem;
+    }
+
+    .contentEvent .container .img {
+        height: 200px;
+    }
+
+
+    .detailEvent .container .detailHarga button {
+        padding: 10px;
+    }
+
+
+    /* Halaman Detail Event End */
 }
 
 @media(max-width: 400px) {
@@ -4931,28 +4795,6 @@ footer .container {
 
 
 
-
-    /* Halaman per Event start */
-
-    .containerDetailEvent .detailEvent .thumbnail {
-        height: 270px;
-    }
-
-    .containerDetailEvent .detailEvent p {
-        font-size: .9rem;
-    }
-
-    .containerDetailEvent .detailEvent .date .tanggal p,
-    .containerDetailEvent .detailEvent .date .waktu p {
-        font-size: .8rem;
-    }
-
-    .containerDetailEvent .detailEvent .date .icon {
-        font-size: .8rem;
-        margin-right: 10px;
-    }
-
-    /* Halaman per Event end*/
 
 
     /* Event */
@@ -5124,22 +4966,6 @@ footer .container {
 
 
 
-
-    /* Halaman per Event start */
-    .containerDetailEvent .detailEvent .thumbnail {
-        height: 250px;
-    }
-
-
-    .containerDetailEvent .detailEvent h1 {
-        font-size: 1.2rem;
-        line-height: 25px;
-    }
-
-    /* Halaman per Event end */
-
-
-
     /* Event */
 
     .heroEvent2 .container form button {
@@ -5190,6 +5016,65 @@ footer .container {
     }
 
     /* Login */
+
+
+
+
+
+    /* Halaman Detail Event Start */
+
+    .contentEvent .container .caption h2 {
+        font-size: 1.2rem;
+    }
+
+    .contentEvent .container .caption h1 {
+        font-size: 1.2rem;
+        line-height: 25px;
+    }
+
+    .contentEvent .container .caption p {
+        font-size: .9rem;
+    }
+
+    .contentEvent .container .img {
+        height: 170px;
+    }
+
+
+
+
+
+    .detailEvent .container .detailAcara .deskripsi p,
+    .detailEvent .container .detailAcara .deskripsi ol {
+        font-size: 1rem;
+        margin: 10px 0;
+    }
+
+    .detailEvent .container .detailAcara .deskripsi ol {
+        padding: 0 10px;
+    }
+
+    .detailEvent .container .detailAcara .deskripsi ol li {
+        padding: 5px;
+    }
+
+
+
+
+    .detailEvent .container .tentangPembicara .orang .profilOrang {
+        flex-wrap: wrap;
+    }
+
+    .detailEvent .container .tentangPembicara .orang .profilOrang img {
+        width: 100%;
+        height: 150px;
+        border-radius: 10px;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+
+    /* Halaman Detail Event End */
 
 
 }
@@ -5310,46 +5195,6 @@ footer .container {
 
 
 
-
-    /* Halaman per Event start */
-
-    .containerDetailEvent .detailEvent p {
-        font-size: .8rem;
-    }
-
-    .containerDetailEvent .detailEvent .thumbnail {
-        height: 210px;
-    }
-
-    .containerDetailEvent .detailEvent .date .tanggal p,
-    .containerDetailEvent .detailEvent .date .waktu p {
-        font-size: .7rem;
-    }
-
-    .containerDetailEvent .detailEvent .date .icon {
-        font-size: .7rem;
-        margin-right: 5px;
-    }
-
-    .containerDetailEvent .form {
-        margin-top: 40px;
-    }
-
-
-    .form h2 {
-        font-size: 1.4rem;
-        margin-bottom: -20px;
-    }
-
-    .containerDetailEvent .form form button {
-        padding: 10px;
-        margin-top: 30px;
-    }
-
-
-    /* Halaman per Event start */
-
-
     /* Event */
     .EventMobile .sorting .filter,
     .EventMobile .sorting .urutkan {
@@ -5412,6 +5257,38 @@ footer .container {
 
     /* Per Artikel */
 
+
+
+
+    /* Halaman Detail Event Start */
+
+    .detailEvent .container .detailAcara .deskripsi p,
+    .detailEvent .container .detailAcara .deskripsi ol {
+        font-size: .9rem;
+    }
+
+
+
+    .detailEvent .container .tentangPembicara .orang {
+        padding: 0;
+        border: none;
+    }
+
+    .detailEvent .container .tentangPembicara .orang p {
+        font-size: .9rem;
+    }
+
+    .detailEvent .container .tentangPembicara .orang .profilOrang img {
+        width: 100%;
+        border-radius: 10px;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+
+    /* Halaman Detail Event End */
+
+
 }
 
 
@@ -5447,7 +5324,8 @@ footer .container {
 
 
 
-@media(min-width: 1500px) {
+
+@media(min-width:1500px) {
     header nav ul li a {
         font-size: 1.5rem;
         margin: 0 20px;
@@ -5476,5 +5354,77 @@ footer .container {
     .hero .caption button {
         padding: 15px 100px;
         font-size: 2rem;
+    }
+
+    header .container nav ul li a {
+        margin: 0 0px;
+    }
+
+    section {
+        padding: 0;
+    }
+
+    .heroMediaPartner .container img {
+        width: 40%;
+        height: 50%;
+    }
+
+    .container {
+        max-width: 1140px;
+        /* background-color: red; */
+    }
+
+
+    .join .container {
+        height: 50vh;
+    }
+
+    /* .join img { height: 50%; }*/
+
+    .join {
+        height: 60vh;
+    }
+
+    .heroArtikel .bg-patern .container .hero-img img:first-child {
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        bottom: 100px;
+        right: 400px;
+    }
+
+    .heroArtikel .bg-patern .container .hero-img img:last-child {
+        width: 600px;
+        height: 600px;
+        position: absolute;
+        bottom: 0;
+        left: 400px;
+    }
+
+
+    .contentEvent,
+    .detailEvent,
+    .rekomendasiArtikel,
+    .containerLogin,
+    .heroEvent2,
+    .Event2,
+    .heroArtikel .bg-patern,
+    .eventMediaPartner,
+    .tahapanUpload,
+    .partnerUniversitas,
+    .heroEvent,
+    .events,
+    .fitur,
+    footer,
+    .footer,
+    .join,
+    .testimoni,
+    .uploadEvent,
+    .containerTitleHome,
+    .homePartner,
+    .program {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
