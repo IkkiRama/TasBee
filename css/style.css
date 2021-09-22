@@ -2600,7 +2600,6 @@ footer .container {
 
 
 .containerModal.show {
-    display: flex;
     transform: translateY(0);
     transition: .5s;
 }
@@ -2620,6 +2619,24 @@ footer .container {
     z-index: 99999999999;
     padding: 1rem;
 }
+
+.containerModal .modal.zoom {
+    animation-name: zoom;
+    animation-duration: .4s;
+    animation-iteration-count: 2;
+}
+
+
+@keyframes zoom {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.02);
+    }
+}
+
 
 .containerModal .modal {
     width: 60%;
@@ -2707,10 +2724,6 @@ footer .container {
     padding: 0 20px;
 }
 
-.containerModal .modal .modal-body form .form-group .form-control select option {
-    /* padding: 20px; */
-}
-
 
 .containerModal .modal .modal-body form .form-group .form-control input {
     width: 100%;
@@ -2769,8 +2782,9 @@ footer .container {
     color: #4a4b4c;
     font-size: 1rem;
     text-transform: capitalize;
-
 }
+
+
 
 .containerModal .modal .modal-footer h2 span {
     color: #CE231C;
@@ -3442,6 +3456,11 @@ footer .container {
         width: 40%;
     }
 
+
+    .containerModal .modal {
+        width: 80%;
+    }
+
     /* Detail Event End */
 
 
@@ -3899,6 +3918,15 @@ footer .container {
     }
 
     /* Login */
+
+
+    /* Detail Event */
+
+    .containerModal .modal {
+        width: 100%;
+    }
+
+    /* Detail Event */
 
 }
 
@@ -4806,6 +4834,31 @@ footer .container {
 
 
     /* Event */
+
+
+
+    /* Detail Event */
+
+    .containerModal .modal .modal-footer {
+        flex-wrap: wrap;
+    }
+
+    .containerModal .modal .modal-footer button {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .containerModal .modal .modal-footer h2 {
+        font-size: 1.1rem;
+        margin: 20px 0;
+    }
+
+
+    .containerModal .modal .modal-body form .form-group label {
+        font-size: .9rem;
+    }
+
+    /* Detail Event */
 
 }
 

@@ -368,10 +368,6 @@
                                 <option value="">VIP</option>
                                 <option value="">VVIP</option>
                             </select>
-
-                            <div class="icon">
-                                <i class="fas fa-eye-slash passwordIcon"></i>
-                            </div>
                         </div>
 
                     </div>
@@ -387,61 +383,6 @@
 
     </div>
     <!-- Modal Daftar End -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- 
-
-
-    <br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br>
-
- -->
 
 
 
@@ -520,7 +461,12 @@
     <script>
         let daftar = document.querySelector(".daftar")
         let containerModal = document.querySelector(".containerModal")
+        let modal = document.querySelector(".modal")
         let close = document.querySelector(".modal-title .icon")
+
+        containerModal.addEventListener("click", () => {
+            modal.classList.toggle("zoom")
+        })
 
         close.addEventListener("click", () => {
             containerModal.classList.toggle("show")
