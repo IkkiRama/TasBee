@@ -2621,23 +2621,6 @@ footer .container {
     padding: 1rem;
 }
 
-.containerModal .modal.zoom {
-    animation-name: zoom;
-    animation-duration: .4s;
-    animation-iteration-count: 2;
-}
-
-
-@keyframes zoom {
-    from {
-        transform: scale(1);
-    }
-
-    to {
-        transform: scale(1.02);
-    }
-}
-
 
 .containerModal .modal {
     width: 60%;
