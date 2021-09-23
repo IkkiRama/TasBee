@@ -190,6 +190,7 @@ header nav ul li a:hover {
     width: 100%;
     height: 100vh;
     margin-bottom: 50px;
+    position: relative;
     background: linear-gradient(to top right, #450b7c, #563cc9, #49e9fb);
 }
 
@@ -497,6 +498,7 @@ header nav ul li a:hover {
 .homePartner .container .keterangan .btnJoin button {
     padding: 15px 40px;
     font-size: 1.1rem;
+    font-weight: 600;
     border-radius: 10px;
     border: 1px solid #2B46A6;
 }
@@ -3543,14 +3545,16 @@ footer .container {
     }
 
     .heroMediaPartner .container {
-        height: 100vh;
-        width: 100%;
-        margin: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #fff;
+        /* height: 100vh; */
+        /* width: 100%; */
+        /* margin: 0; */
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: center; */
+        /* background-color: #fff; */
+        flex-wrap: wrap-reverse;
     }
+
 
     .heroMediaPartner .container img {
         display: none;
@@ -4501,6 +4505,12 @@ footer .container {
 
     .detailEvent .container .detailAcara .waktuPelaksanaan .date .tanggal p {
         margin-bottom: 15px;
+    }
+
+
+    .detailEvent .container .tentangPembicara .orang .profilOrang img {
+        width: 70px;
+        height: 60px;
     }
 
     /* Detail Event End */
