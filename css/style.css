@@ -1750,6 +1750,7 @@ footer .container {
 
 .heroMediaPartner .container .caption h1 {
     font-size: 3rem;
+    font-weight: 700;
     line-height: 70px;
     color: #1B1B4B;
     margin-bottom: 100px;
@@ -1760,7 +1761,7 @@ footer .container {
 }
 
 
-.heroMediaPartner .container .caption .btn button {
+.heroMediaPartner .container .btn button {
     padding: 20px 30px;
     text-transform: uppercase;
     font-size: 1rem;
@@ -1771,11 +1772,11 @@ footer .container {
     bottom: 20px;
 }
 
-.heroMediaPartner .container .caption .btn button:first-child {
+.heroMediaPartner .container .btn button:first-child {
     background-color: #2B46A6;
 }
 
-.heroMediaPartner .container .caption .btn button:last-child {
+.heroMediaPartner .container .btn button:last-child {
     background-color: #B73D60;
 }
 
@@ -4120,7 +4121,8 @@ footer .container {
 
     /* Event */
     .heroEvent2 .container h1 {
-        font-size: 1.8rem;
+        font-size: 1.9rem;
+        font-weight: 700;
     }
 
     .heroEvent2 .container p {
@@ -4233,7 +4235,7 @@ footer .container {
     }
 
 
-    .heroMediaPartner .container .caption .btn button {
+    .heroMediaPartner .container .btn button {
         padding: 15px 20px;
         text-transform: uppercase;
         font-size: 1rem;
@@ -4764,8 +4766,8 @@ footer .container {
 
 
     /* Halaman Media Partner Start  */
-    .heroMediaPartner .container .caption .btn button {
-        width: 100%;
+    .heroMediaPartner .container .btn button {
+        width: 90%;
         margin-bottom: 20px;
     }
 
