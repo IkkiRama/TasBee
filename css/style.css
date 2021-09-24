@@ -131,14 +131,14 @@ header nav ul li a:hover {
 
 .navbarMobile {
     width: 100%;
-    height: 50px;
+    height: 60px;
     position: fixed;
     bottom: 0;
     display: none;
     background-color: #fff;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    box-shadow: 1rem 1rem 1rem 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 1rem 1rem 1rem 10px rgba(0, 0, 0, 0.226);
     z-index: 99999999999999;
 }
 
@@ -148,8 +148,22 @@ header nav ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.navbarMobile .perNavbarMobile .icon {
     font-size: 1.5rem;
     color: #000;
+    padding-top: 10px;
+}
+
+.navbarMobile .perNavbarMobile h3 {
+    font-size: .9rem;
+    color: #000;
+    font-weight: 500;
+    margin-bottom: 10px;
 }
 
 .navbarMobile .perNavbarMobile:hover {
@@ -1434,7 +1448,7 @@ footer .container {
 
 }
 
-.EventMobile .sorting .filter h4 {
+.EventMobile .sorting .filter h2 {
     margin-left: 10px;
 }
 
@@ -1625,7 +1639,7 @@ footer .container {
     /* transform: translateY(-10px); */
 }
 
-.EventMobile .sorting .urutkan h4 {
+.EventMobile .sorting .urutkan h2 {
     margin-right: 100px;
 }
 
@@ -2418,7 +2432,7 @@ footer .container {
 
 .detailEvent {
     width: 100%;
-    background-color: #FAFAFA;
+    background-color: #F5F5F5;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -4709,7 +4723,7 @@ footer .container {
     }
 
 
-    .navbarMobile .perNavbarMobile {
+    .navbarMobile .perNavbarMobile .icon {
         font-size: 1.2rem;
     }
 
@@ -4809,7 +4823,7 @@ footer .container {
 
     /* Event */
 
-    .EventMobile .sorting .urutkan h4 {
+    .EventMobile .sorting .urutkan h2 {
         margin-right: 50px;
     }
 
@@ -4869,6 +4883,10 @@ footer .container {
 
 @media(max-width: 350px) {
 
+    .navbarMobile .perNavbarMobile h3 {
+        font-size: .8rem;
+    }
+
     #scroll-top {
         right: 0;
     }
@@ -4907,7 +4925,7 @@ footer .container {
     }
 
 
-    .navbarMobile .perNavbarMobile {
+    .navbarMobile .perNavbarMobile .icon {
         font-size: 1.1rem;
     }
 
@@ -5141,7 +5159,7 @@ footer .container {
     }
 
 
-    .navbarMobile .perNavbarMobile {
+    .navbarMobile .perNavbarMobile .icon {
         font-size: 1rem;
     }
 
@@ -5249,7 +5267,7 @@ footer .container {
         flex-wrap: wrap;
     }
 
-    .EventMobile .sorting .urutkan h4 {
+    .EventMobile .sorting .urutkan h2 {
         margin-right: 10px;
     }
 
