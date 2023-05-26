@@ -1,0 +1,380 @@
+/* Halaman Detail Event start */
+.contentEvent {
+  width: 100%;
+  height: 30rem;
+  background-color: #e5e5e5;
+  padding-top: 120px;
+  padding-bottom: 50px;
+}
+
+.contentEvent .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentEvent .container .caption {
+  width: 60%;
+  color: #333333;
+}
+
+.contentEvent .container .caption h1 {
+  font-size: 2.5rem;
+  font-weight: 650;
+  line-height: 55px;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+
+.contentEvent .container .caption p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.contentEvent .container .caption h2 {
+  color: #ce231c;
+  font-weight: 650;
+  font-size: 1.7rem;
+}
+
+.contentEvent .container .img {
+  width: 40%;
+  height: 100%;
+  border-radius: 10px;
+  background-image: url("../img/paperpilar/calendar-works.jpg");
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.detailEvent {
+  width: 100%;
+  background-color: #f5f5f5;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.detailEvent .container {
+  display: flex;
+  justify-content: center;
+}
+
+.detailEvent .container .detailAcara {
+  width: 70%;
+  padding-bottom: 20px;
+  margin-right: 30px;
+  border-radius: 10px;
+  border: 1px solid #e4e4e7;
+  background-color: #fff;
+}
+
+.detailEvent .container .detailHarga .detailTiket h2,
+.detailEvent .container .detailAcara h2 {
+  color: #ce231c;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 20px;
+  border-bottom: 2px solid #e4e4e7;
+  text-transform: capitalize;
+}
+
+.detailEvent .container .detailAcara h3 {
+  color: #0175f4;
+  font-size: 1.2rem;
+  font-weight: 650;
+  text-transform: capitalize;
+}
+
+.detailEvent .container .tentangPembicara,
+.detailEvent .container .detailAcara .deskripsi,
+.detailEvent .container .detailAcara .waktuPelaksanaan {
+  padding: 30px 20px 20px 20px;
+}
+
+.detailEvent .container .detailAcara .waktuPelaksanaan .date {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.detailEvent .container .detailAcara .waktuPelaksanaan .date .tanggal,
+.detailEvent .container .detailAcara .waktuPelaksanaan .date .waktu {
+  display: flex;
+}
+
+.detailEvent .container .detailAcara .waktuPelaksanaan .date .waktu .icon,
+.detailEvent .container .detailAcara .waktuPelaksanaan .date .tanggal .icon {
+  margin-right: 20px;
+  font-size: 1rem;
+  color: #3f3f3f;
+}
+
+.detailEvent .container .detailHarga .detailTiket .perTiket p,
+.detailEvent .container .detailAcara .waktuPelaksanaan .date .waktu p,
+.detailEvent .container .detailAcara .waktuPelaksanaan .date .tanggal p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #3f3f3f;
+}
+
+.detailEvent .container .detailAcara .deskripsi p,
+.detailEvent .container .detailAcara .deskripsi ol {
+  font-size: 1rem;
+  color: #3f3f3f;
+  font-weight: 500;
+  margin: 15px 0;
+}
+
+.detailEvent .container .detailAcara .deskripsi ol {
+  padding: 0 20px;
+}
+
+.detailEvent .container .detailAcara .deskripsi ol li {
+  padding: 5px 10px;
+  list-style: inherit;
+  list-style-type: decimal;
+}
+
+.detailEvent .container .detailAcara .deskripsi ol li span,
+.detailEvent .container .detailAcara .deskripsi p span {
+  font-weight: 800;
+}
+
+.detailEvent .container .tentangPembicara h3 {
+  margin-bottom: 30px;
+}
+
+.detailEvent .container .tentangPembicara .orang {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #e4e4e7;
+}
+
+.detailEvent .container .tentangPembicara .orang .profilOrang {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.detailEvent .container .tentangPembicara .orang .profilOrang h3 {
+  margin-bottom: 0;
+  color: #3f3f3f;
+}
+
+.detailEvent .container .tentangPembicara .orang p,
+.detailEvent .container .tentangPembicara .orang .profilOrang p {
+  color: #3f3f3f;
+  font-weight: 500;
+}
+
+.detailEvent .container .tentangPembicara .orang .profilOrang img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.detailEvent .container .detailHarga {
+  width: 30%;
+  position: sticky;
+  top: 100px;
+  align-self: flex-start;
+}
+
+.detailEvent .container .detailHarga .detailTiket {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #e4e4e7;
+}
+
+.detailEvent .container .detailHarga .detailTiket .perTiket {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.detailEvent .container .detailHarga button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 20px;
+  color: #fff;
+  border-radius: 10px;
+  background-color: #5238b8;
+}
+
+.containerModal.show {
+  transform: translateY(0);
+  transition: 0.5s;
+}
+
+.containerModal {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  position: fixed;
+  transition: 0.5s;
+  transform: translateY(-150%);
+  background-color: rgba(0, 0, 0, 0.349);
+  z-index: 99999999999;
+  padding: 1rem;
+}
+
+.containerModal .modal {
+  width: 60%;
+  padding: 1rem;
+  border: 2px solid #e4e4e7;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.containerModal .modal .modal-title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #4a4b4c;
+  margin-bottom: 20px;
+}
+
+.containerModal .modal .modal-title h2 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.containerModal .modal .modal-title .icon {
+  font-size: 1.5rem;
+}
+
+.containerModal .modal .modal-title .icon:hover > * {
+  color: #2b46a6;
+  cursor: pointer;
+}
+
+.containerModal .modal .modal-body {
+  width: 100%;
+  height: 300px;
+  overflow: auto;
+}
+
+.containerModal .modal .modal-body form .form-group {
+  margin-bottom: 23px;
+}
+
+.containerModal .modal .modal-body form .form-group label {
+  color: #4a4b4c;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.containerModal .modal .modal-body form .form-group label span {
+  color: #ce231c;
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
+.containerModal .modal .modal-body form .form-group .form-control {
+  margin-top: 8px;
+  position: relative;
+  width: 100%;
+  height: 30px;
+}
+
+.containerModal .modal .modal-body form .form-group .form-control select {
+  width: 100%;
+  height: 44px;
+  border-radius: 10px;
+  border: 2px solid #e4e4e7;
+  font-size: 1rem;
+  color: #4e4e4e;
+  letter-spacing: 0.7px;
+  font-weight: 500;
+  padding: 0 20px;
+}
+
+.containerModal .modal .modal-body form .form-group .form-control input {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #e4e4e7;
+  font-size: 1rem;
+  color: #4e4e4e;
+  letter-spacing: 0.7px;
+  font-weight: 500;
+}
+
+.containerModal
+  .modal
+  .modal-body
+  form
+  .form-group
+  .form-control
+  input:focus
+  + .icon {
+  border-top: 2px solid #0175f4;
+  border-bottom: 2px solid #0175f4;
+  border-right: 2px solid #0175f4;
+}
+
+.containerModal .modal .modal-body form .form-group .form-control input:focus {
+  border: 2px solid #0175f4;
+}
+
+.containerModal .modal .modal-body form .form-group .form-control .icon {
+  width: 10%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 20px;
+  cursor: pointer;
+  color: #4a4b4c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top: 2px solid #e4e4e7;
+  border-bottom: 2px solid #e4e4e7;
+  border-right: 2px solid #e4e4e7;
+}
+
+.containerModal .modal .modal-footer {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.containerModal .modal .modal-footer h2 {
+  color: #4a4b4c;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+.containerModal .modal .modal-footer h2 span {
+  color: #ce231c;
+}
+
+.containerModal .modal .modal-footer button {
+  padding: 8px 30px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #3629a7;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+/* Halaman Detail Event end */

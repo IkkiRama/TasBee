@@ -1,0 +1,153 @@
+/* Halaman Artikel Start */
+.heroArtikel .bg-patern .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroArtikel .bg-patern {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/Artikel/blog-pattern-bg.png");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  object-fit: cover;
+  position: relative;
+}
+
+.heroArtikel {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top right, #3629a7, #c238be);
+}
+
+.blog-white-mask-lg {
+  display: none;
+}
+
+.heroArtikel .bg-patern .container .caption {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transform: translateY(-100px);
+  position: relative;
+}
+
+.heroArtikel .bg-patern .container .caption h1 {
+  font-size: 6rem;
+  color: #fff;
+  font-family: serif;
+}
+
+.heroArtikel .bg-patern .container .hero-img img:first-child {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+}
+
+.heroArtikel .bg-patern .container .hero-img img:last-child {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  bottom: 0;
+  left: 100px;
+}
+
+.heroArtikel .bg-patern .container .hero-bg .blog-white-mask {
+  width: 100%;
+  left: 0;
+  bottom: -10px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.artikel .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.artikel {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  background-image: linear-gradient(180deg, #f3f4f9, #f3f4f9, #fff 75%);
+}
+
+.rekomendasiArtikel .container .perArtikel,
+.artikel .container .perArtikel {
+  width: calc(90% / 3);
+  margin: 15px 10px;
+  /* padding: 20px; */
+  border-radius: 10px;
+  border: 2px solid #e4e4e7;
+  background-color: #fff;
+  /* box-shadow: 0 .5rem .5rem rgba(0, 0, 0, 0.1); */
+}
+
+.rekomendasiArtikel .container .perArtikel:hover h2,
+.artikel .container .perArtikel:hover h2 {
+  color: #3629a7;
+}
+
+.rekomendasiArtikel .container .perArtikel img,
+.artikel .container .perArtikel img {
+  width: 100%;
+  height: 250px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.rekomendasiArtikel .container .perArtikel h2,
+.artikel .container .perArtikel h2 {
+  font-size: 1.3rem;
+  line-height: 27px;
+  text-transform: capitalize;
+  color: #302f2f;
+  margin: 10px 0;
+  padding: 0 10px;
+}
+
+.rekomendasiArtikel .container .perArtikel p,
+.artikel .container .perArtikel p {
+  color: #302f2f;
+  font-size: 0.9rem;
+  /* font-weight: 500; */
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+
+.rekomendasiArtikel .container .perArtikel .btn,
+.artikel .container .perArtikel .btn {
+  margin-bottom: 15px;
+  width: 100%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.rekomendasiArtikel .container .perArtikel .btn button,
+.artikel .container .perArtikel .btn button {
+  width: 95%;
+  border-radius: 7px;
+  padding: 10px 40px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #3629a7;
+}
+
+/* Halaman Artikel End */

@@ -1,228 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="keywords" content="TasBee">
-    <meta http-equiv="X-UA-Compatible" content="IE=7">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Silahkan isi form yang tersedia untuk masuk ke website TasBee dan menikmati semua fitur yang ada">
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="TasBee" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Silahkan isi form yang tersedia untuk masuk ke website TasBee dan menikmati semua fitur yang ada"
+    />
 
     <title>Login | TasBee</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
-
-
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script> -->
-
-    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/Reset.css" />
+    <link rel="stylesheet" href="css/Auth.css" />
+    <link rel="stylesheet" href="css/Responsive.css" />
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
     <script src="fontawesome/js/all.min.js"></script>
-</head>
+  </head>
 
-<body>
-
-
+  <body>
     <!-- header start -->
     <header>
-        <div class="container">
+      <div class="container">
+        <a href="Index.html"
+          ><img src="img/logo.svg" alt="Logo" class="logo"
+        /></a>
 
-            <a href="index.html"><img src="img/logo.svg" alt="Logo" class="logo"></a>
-
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="event.html">Event</a></li>
-                    <li><a href="mediaPartner.html">Media Partner</a></li>
-                    <li><a href="artikel.html">Artikel</a></li>
-                    <li><a href="login.html">Login</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav>
+          <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="Event.html">Event</a></li>
+            <li><a href="MediaPartner.html">Media Partner</a></li>
+            <li><a href="Artikel.html">Artikel</a></li>
+            <li><a href="Login.html">Login</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <!-- header end -->
 
-
-
-
-
-
     <!-- navbar mobile start -->
     <div class="navbarMobile">
+      <a href="Index.html" class="perNavbarMobile">
+        <div class="icon">
+          <i class="fas fa-home"></i>
+        </div>
+        <h3>Home</h3>
+      </a>
 
-        <a href="index.html" class="perNavbarMobile">
-            <div class="icon">
-                <i class="fas fa-home"></i>
-            </div>
-            <h3>Home</h3>
-        </a>
+      <a href="Event.html" class="perNavbarMobile">
+        <div class="icon">
+          <i class="fas fa-medal"></i>
+        </div>
+        <h3>Event</h3>
+      </a>
 
-        <a href="event.html" class="perNavbarMobile">
-            <div class="icon">
-                <i class="fas fa-medal"></i>
-            </div>
-            <h3>Event</h3>
-        </a>
+      <a href="Artikel.html" class="perNavbarMobile">
+        <div class="icon">
+          <i class="fas fa-book-open"></i>
+        </div>
+        <h3>Artikel</h3>
+      </a>
 
-        <a href="artikel.html" class="perNavbarMobile">
-            <div class="icon">
-                <i class="fas fa-book-open"></i>
-            </div>
-            <h3>Artikel</h3>
-        </a>
-
-        <a href="login.html" class="perNavbarMobile">
-            <div class="icon">
-                <i class="fas fa-user-circle"></i>
-            </div>
-            <h3>Login</h3>
-        </a>
-
+      <a href="Login.html" class="perNavbarMobile">
+        <div class="icon">
+          <i class="fas fa-user-circle"></i>
+        </div>
+        <h3>Login</h3>
+      </a>
     </div>
     <!-- navbar mobile end -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <!-- Login Start -->
     <section class="containerLogin">
-        <div class="container">
+      <div class="container">
+        <div class="login">
+          <h2>Masuk sebagai pelanggan</h2>
+          <p>
+            Sudah punya akun TasBee? Yuk masuk untuk mengakses beragam fitur
+            TasBee
+          </p>
 
-            <div class="login">
-                <h2>Masuk sebagai pelanggan</h2>
-                <p>Sudah punya akun TasBee? Yuk masuk untuk mengakses beragam fitur TasBee</p>
+          <form action="">
+            <div class="form-group">
+              <label for="email">Alamat Email <span>*</span> </label>
 
-                <form action="">
-                    <div class="form-group">
-                        <label for="email">Alamat Email <span>*</span> </label>
-
-                        <div class="form-control">
-                            <input type="email" id="email" autocomplete required>
-                            <div class="icon">
-                                <i class="fas fa-at"></i>
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                    <div class="form-group">
-                        <label for="password">Password <span>*</span> </label>
-
-                        <div class="form-control">
-                            <input type="password" id="password" autocomplete required>
-
-                            <div class="icon">
-                                <i class="fas fa-eye-slash"></i>
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                    <div class="form-info">
-                        <div class="ingatSaya">
-                            <input type="checkbox" id="ingatSaya">
-                            <label for="ingatSaya">Ingat Saya</label>
-                        </div>
-
-                        <a href="register.html">Lupa Password?</a>
-                    </div>
-
-                    <button type="submit" class="masuk">Masuk</button>
-
-                </form>
-
-                <p class="BelumPunyaAkun">Belum punya akun? <a href="register.html">Daftar di sini</a></p>
-
-
+              <div class="form-control">
+                <input type="email" id="email" autocomplete required />
+                <div class="icon">
+                  <i class="fas fa-at"></i>
+                </div>
+              </div>
             </div>
+
+            <div class="form-group">
+              <label for="password">Password <span>*</span> </label>
+
+              <div class="form-control">
+                <input type="password" id="password" autocomplete required />
+
+                <div class="icon">
+                  <i class="fas fa-eye-slash"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-info">
+              <div class="ingatSaya">
+                <input type="checkbox" id="ingatSaya" />
+                <label for="ingatSaya">Ingat Saya</label>
+              </div>
+
+              <a href="Register.html">Lupa Password?</a>
+            </div>
+
+            <button type="submit" class="masuk">Masuk</button>
+          </form>
+
+          <p class="BelumPunyaAkun">
+            Belum punya akun? <a href="Register.html">Daftar di sini</a>
+          </p>
         </div>
+      </div>
     </section>
     <!-- Login End -->
 
-
-
     <!-- footer start -->
     <section class="footer" id="footer">
-        <div class="container">
-            <div class="box">
-                <h2>About Us</h2>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum nisi dolorem reprehenderit? Eos quas
-                    perferendis velit porro nemo tempora ab!
-                </p>
-                <div class="sosmed">
-                    <div class="perSosmed">
-                        <i class="fab fa-instagram"></i>
-                    </div>
-
-
-                    <div class="perSosmed">
-                        <i class="fab fa-youtube"></i>
-                    </div>
-
-                    <div class="perSosmed">
-                        <i class="fab fa-linkedin-in"></i>
-                    </div>
-
-                    <div class="perSosmed">
-                        <i class="fab fa-github"></i>
-                    </div>
-
-                </div>
+      <div class="container">
+        <div class="box">
+          <h2>About Us</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum nisi
+            dolorem reprehenderit? Eos quas perferendis velit porro nemo tempora
+            ab!
+          </p>
+          <div class="sosmed">
+            <div class="perSosmed">
+              <i class="fab fa-instagram"></i>
             </div>
 
-            <div class="box">
-                <h2>Product</h2>
-                <a href="index.html">Lomba</a>
-                <a href="index.html">Webinar</a>
-                <a href="index.html">Beasiswa</a>
-                <a href="index.html">Volunteer</a>
-                <a href="index.html">Exchange</a>
-                <a href="index.html">Conference</a>
+            <div class="perSosmed">
+              <i class="fab fa-youtube"></i>
             </div>
 
-
-            <div class="box">
-                <h2>Quick Link</h2>
-                <a href="index.html">Home</a>
-                <a href="login.html">Login</a>
-                <a href="event.html">Event</a>
-                <a href="artikel.html">Artikel</a>
-                <a href="mediaPartner.html">Media Partner</a>
+            <div class="perSosmed">
+              <i class="fab fa-linkedin-in"></i>
             </div>
 
+            <div class="perSosmed">
+              <i class="fab fa-github"></i>
+            </div>
+          </div>
         </div>
+
+        <div class="box">
+          <h2>Product</h2>
+          <a href="Event.html">Lomba</a>
+          <a href="Event.html">Webinar</a>
+          <a href="Event.html">Beasiswa</a>
+          <a href="Event.html">Volunteer</a>
+          <a href="Event.html">Exchange</a>
+          <a href="Event.html">Conference</a>
+        </div>
+
+        <div class="box">
+          <h2>Quick Link</h2>
+          <a href="Index.html">Home</a>
+          <a href="Login.html">Login</a>
+          <a href="Event.html">Event</a>
+          <a href="Artikel.html">Artikel</a>
+          <a href="MediaPartner.html">Media Partner</a>
+        </div>
+      </div>
     </section>
     <!-- footer end -->
 
-
-
     <footer>
-        <div class="container">
-            TasBee &copy; 2021 | Website Penyedia Event.
-        </div>
+      <div class="container">TasBee &copy; 2021 | Website Penyedia Event.</div>
     </footer>
 
     <script>
-        let masuk = document.querySelector(".masuk")
-        /*let password = document.querySelector("#password")
+      let masuk = document.querySelector(".masuk");
+      /*let password = document.querySelector("#password")
         let icon = document.querySelector(".passwordIcon")
         console.log(icon)
 
@@ -234,18 +197,9 @@
             console.log(icon)
         })*/
 
-
-
-
-        masuk.addEventListener("click", () => {
-            alert("Anda berhasil masuk")
-        })
+      masuk.addEventListener("click", () => {
+        alert("Anda berhasil masuk");
+      });
     </script>
-
-
-
-
-
-</body>
-
+  </body>
 </html>

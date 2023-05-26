@@ -1,0 +1,448 @@
+/* hero section */
+.hero {
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 50px;
+  position: relative;
+  background: linear-gradient(to top right, #450b7c, #563cc9, #49e9fb);
+}
+
+.hero .container {
+  width: 100%;
+  height: 100%;
+}
+
+.hero .caption {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  transform: translateY(100px);
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+.hero .bg-patern {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* position: relative; */
+  background-image: url("../img/paperpilar/hero-pattern-bg.png");
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  background-attachment: fixed;
+}
+
+.hero .caption h1 {
+  font-size: 6rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-family: serif;
+  text-align: center;
+  color: #fff;
+}
+
+.hero .caption p {
+  font-size: 1.5rem;
+  margin: 10px 0 25px 0;
+  text-align: center;
+  color: #fff;
+}
+
+.hero .caption button {
+  padding: 10px 50px;
+  background: #fff;
+  color: #5238b8;
+  font-size: 1.2rem;
+  border-radius: 20px;
+}
+
+.hero .hero-bg {
+  width: 100%;
+  height: 100%;
+}
+
+.hero .hero-bg .hero-guy-1,
+.hero .hero-bg .hero-guy-1-lg {
+  width: 100%;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  object-fit: cover;
+}
+
+.hero .hero-bg .hero-guy-1 {
+  display: block;
+}
+
+.hero .hero-bg .hero-guy-1-lg {
+  display: none;
+}
+
+/* fitur section */
+
+.fitur h1 {
+  font-size: 2.2rem;
+  text-align: center;
+  color: #302f2f;
+  letter-spacing: 0.5px;
+  line-height: 50px;
+}
+
+.fitur .imgFitur {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 75px 0;
+}
+
+.fitur .imgFitur img {
+  width: 80px;
+  height: 80px;
+  margin: 15px 25px;
+}
+
+/* program section */
+.program {
+  width: 100%;
+  height: 100%;
+}
+
+.program .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.program .caption {
+  position: relative;
+}
+
+.program .caption h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #302f2f;
+}
+
+.program .caption p {
+  margin: 30px 0;
+  color: #302f2f;
+  font-size: 1.1rem;
+  line-height: 30px;
+}
+
+.program .event {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.program .event .beasiswa {
+  background: #df2069;
+}
+
+.program .event .lombaNasional {
+  background: #5238b8;
+}
+
+.program .event .cerdasCermat {
+  background: #1d247b;
+}
+
+.program .event .festival {
+  background: #1d247b;
+}
+
+.program .event .perEvent {
+  height: 300px;
+  width: calc(90% / 2);
+  margin: 5px;
+  padding: 20px 10px;
+  border-radius: 20px;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.program .event .perEvent .waktuEvent {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  color: #302f2f;
+  padding: 5px 15px;
+  border-radius: 20px;
+  background: #fff;
+}
+
+.program .event .perEvent h3 {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 1.7rem;
+  line-height: 35px;
+}
+
+.program .event .perEvent p {
+  margin: 20px 0 0 0;
+  color: #fff;
+  font-size: 0.9rem;
+  line-height: 20px;
+}
+
+.program .event .perEvent button {
+  position: absolute;
+  bottom: 16px;
+  margin-top: 32px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #2b46a6;
+  background: #fff;
+  border: 1px solid #2b46a6;
+  font-weight: 600;
+}
+
+/* program section end */
+
+/* homePartner start */
+.containerTitleHome {
+  width: 100%;
+  height: 100%;
+}
+
+.titleHome {
+  font-size: 2.2rem;
+  margin-top: 100px;
+  color: #302f2f;
+  text-transform: capitalize;
+}
+
+.homePartner {
+  width: 100%;
+  display: flex;
+  margin-top: 50px;
+  position: relative;
+}
+
+.homePartner .container {
+  width: 100%;
+  display: flex;
+}
+
+.homePartner .container .keterangan {
+  width: 50%;
+}
+
+.homePartner .container .keterangan .profil {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.homePartner .container .keterangan .profil .perProfil {
+  width: 50%;
+  display: flex;
+  margin: 20px 0;
+}
+
+.homePartner .container .keterangan .profil .perProfil img {
+  width: 50px;
+  height: 50px;
+}
+
+.homePartner .container .keterangan .profil .perProfil .caption {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.homePartner .container .keterangan .profil .perProfil .caption span {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #302f2f;
+  margin-bottom: 5px;
+}
+
+.homePartner .container .keterangan .profil .perProfil .caption p {
+  font-size: 0.9rem;
+  color: #302f2f;
+}
+
+.homePartner .container .keterangan .captionKeterangan {
+  font-size: 1.1rem;
+  line-height: 25px;
+}
+
+.homePartner .container .keterangan .btnJoin {
+  position: absolute;
+  bottom: 0;
+}
+
+.homePartner .container .keterangan .btnJoin button {
+  padding: 15px 40px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 10px;
+  border: 1px solid #2b46a6;
+}
+
+.homePartner .container .keterangan .btnJoin button:first-child {
+  color: #fff;
+  background-color: #2b46a6;
+}
+
+.homePartner .container .keterangan .btnJoin button:last-child {
+  background-color: #fff;
+  color: #2b46a6;
+}
+
+.homePartner .container .tawaran {
+  width: 50%;
+  margin-left: 20px;
+}
+
+.homePartner .container .tawaran .perTawaran {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 20px 30px;
+  background-color: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.homePartner .container .tawaran .perTawaran:first-child {
+  margin-bottom: 50px;
+}
+
+.homePartner .container .tawaran .perTawaran .caption h2 {
+  font-size: 1.5rem;
+  line-height: 35px;
+  color: #1a1a4b;
+  margin-bottom: 20px;
+}
+
+.homePartner .container .tawaran .perTawaran .caption p {
+  line-height: 1.4em;
+  letter-spacing: 0.03em;
+  color: #302f2f;
+}
+
+/* homePartner end */
+
+/* uploadEvent start */
+.uploadEvent {
+  width: 100%;
+  height: 100%;
+}
+
+.uploadEvent .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.uploadEvent .container img {
+  width: 40%;
+}
+
+.uploadEvent .container .caption {
+  width: 60%;
+}
+
+.uploadEvent .container .caption p {
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+  color: #302f2f;
+}
+
+/* uploadEvent end */
+
+/* testimoni start */
+.testimoni {
+  width: 100%;
+  height: 100%;
+}
+
+.testimoni .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.testimoni .container .perTestimoni {
+  width: calc(90% / 3);
+  height: 600px;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  background-color: #1d247b;
+  color: #fff;
+}
+
+.testimoni .container .perTestimoni img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.testimoni .container .perTestimoni h2 {
+  font-size: 1.3rem;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.testimoni .container .perTestimoni span {
+  font-size: 0.9rem;
+  margin-top: 3px;
+}
+
+.testimoni .container .perTestimoni p {
+  margin-top: 1rem !important;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+/* testimoni end */
+
+/* join start */
+.join {
+  width: 100%;
+  height: 100%;
+  background: url("../img/bg-5.webp");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  margin-top: 70px;
+}
+
+.join .container {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+.join .container img {
+  width: 50%;
+  height: 80%;
+}
+
+.join .container h1 {
+  font-size: 2.5rem;
+  line-height: 60px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-left: 20px;
+  color: #302f2f;
+}
+
+/* join end */
