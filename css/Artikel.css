@@ -26,7 +26,7 @@
   display: none;
 }
 
-.heroArtikel .bg-patern .container .caption {
+.heroArtikel .bg-patern .caption {
   width: 100%;
   height: 100%;
   display: flex;
@@ -37,13 +37,13 @@
   position: relative;
 }
 
-.heroArtikel .bg-patern .container .caption h1 {
+.heroArtikel .bg-patern .caption h1 {
   font-size: 6rem;
   color: #fff;
   font-family: serif;
 }
 
-.heroArtikel .bg-patern .container .hero-img img:first-child {
+.heroArtikel .bg-patern .hero-img img:first-child {
   width: 300px;
   height: 300px;
   position: absolute;
@@ -51,7 +51,7 @@
   right: 100px;
 }
 
-.heroArtikel .bg-patern .container .hero-img img:last-child {
+.heroArtikel .bg-patern .hero-img img:last-child {
   width: 400px;
   height: 400px;
   position: absolute;
@@ -59,19 +59,12 @@
   left: 100px;
 }
 
-.heroArtikel .bg-patern .container .hero-bg .blog-white-mask {
+.heroArtikel .bg-patern .hero-bg .blog-white-mask {
   width: 100%;
   left: 0;
   bottom: -10px;
   position: absolute;
   object-fit: cover;
-}
-
-.artikel .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
 }
 
 .artikel {
@@ -87,8 +80,14 @@
   background-image: linear-gradient(180deg, #f3f4f9, #f3f4f9, #fff 75%);
 }
 
-.rekomendasiArtikel .container .perArtikel,
-.artikel .container .perArtikel {
+.artikel .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.artikel .perArtikel {
   width: calc(90% / 3);
   margin: 15px 10px;
   /* padding: 20px; */
@@ -98,40 +97,49 @@
   /* box-shadow: 0 .5rem .5rem rgba(0, 0, 0, 0.1); */
 }
 
-.rekomendasiArtikel .container .perArtikel:hover h2,
-.artikel .container .perArtikel:hover h2 {
+.perArtikel:hover h2 {
   color: #3629a7;
 }
 
-.rekomendasiArtikel .container .perArtikel img,
-.artikel .container .perArtikel img {
+.perArtikel img {
   width: 100%;
-  height: 250px;
+  height: 220px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  object-fit: cover;
 }
 
-.rekomendasiArtikel .container .perArtikel h2,
-.artikel .container .perArtikel h2 {
+.perArtikel h2,
+.perArtikel p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.perArtikel h2 {
+  -webkit-line-clamp: 2;
+}
+
+.perArtikel p {
+  -webkit-line-clamp: 3;
+}
+
+.perArtikel h2 {
   font-size: 1.3rem;
   line-height: 27px;
   text-transform: capitalize;
-  color: #302f2f;
   margin: 10px 0;
   padding: 0 10px;
 }
 
-.rekomendasiArtikel .container .perArtikel p,
-.artikel .container .perArtikel p {
-  color: #302f2f;
+.perArtikel p {
   font-size: 0.9rem;
-  /* font-weight: 500; */
   padding: 0 10px;
   margin-bottom: 20px;
 }
 
-.rekomendasiArtikel .container .perArtikel .btn,
-.artikel .container .perArtikel .btn {
+.perArtikel .btn {
   margin-bottom: 15px;
   width: 100%;
   display: flex;
@@ -139,8 +147,7 @@
   justify-content: center;
 }
 
-.rekomendasiArtikel .container .perArtikel .btn button,
-.artikel .container .perArtikel .btn button {
+.perArtikel .btn button {
   width: 95%;
   border-radius: 7px;
   padding: 10px 40px;

@@ -4,7 +4,12 @@
   height: 100vh;
   margin-bottom: 50px;
   position: relative;
-  background: linear-gradient(to top right, #450b7c, #563cc9, #49e9fb);
+  background: linear-gradient(
+    to top right,
+    var(--secondary-color),
+    var(--primary-color),
+    #49e9fb
+  );
 }
 
 .hero .container {
@@ -16,10 +21,10 @@
   width: 100%;
   height: 100%;
   display: flex;
-  transform: translateY(100px);
+  transform: translateY(20%);
   flex-direction: column;
   align-items: center;
-  color: #fff;
+  color: var(--putih);
 }
 
 .hero .bg-patern {
@@ -29,7 +34,7 @@
   align-items: center;
   justify-content: center;
   /* position: relative; */
-  background-image: url("../img/paperpilar/hero-pattern-bg.png");
+  background-image: url("../img/Home/hero-pattern-bg.png");
   background-size: cover;
   background-position: center;
   object-fit: cover;
@@ -42,22 +47,19 @@
   text-transform: capitalize;
   font-family: serif;
   text-align: center;
-  color: #fff;
+  color: var(--putih);
 }
 
 .hero .caption p {
   font-size: 1.5rem;
   margin: 10px 0 25px 0;
   text-align: center;
-  color: #fff;
+  color: var(--putih);
 }
 
-.hero .caption button {
+.hero .caption a {
   padding: 10px 50px;
-  background: #fff;
-  color: #5238b8;
   font-size: 1.2rem;
-  border-radius: 20px;
 }
 
 .hero .hero-bg {
@@ -160,7 +162,7 @@
   margin: 5px;
   padding: 20px 10px;
   border-radius: 20px;
-  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1rem 1rem var(--color-shadow);
   position: relative;
 }
 
@@ -170,35 +172,28 @@
   color: #302f2f;
   padding: 5px 15px;
   border-radius: 20px;
-  background: #fff;
+  background: var(--putih);
 }
 
 .program .event .perEvent h3 {
   margin-top: 20px;
-  color: #fff;
+  color: var(--putih);
   font-size: 1.7rem;
   line-height: 35px;
 }
 
 .program .event .perEvent p {
   margin: 20px 0 0 0;
-  color: #fff;
+  color: var(--putih);
   font-size: 0.9rem;
   line-height: 20px;
 }
 
-.program .event .perEvent button {
+.program .event .perEvent a {
   position: absolute;
   bottom: 16px;
   margin-top: 32px;
-  padding: 10px;
-  border-radius: 10px;
-  font-size: 1rem;
   text-transform: uppercase;
-  color: #2b46a6;
-  background: #fff;
-  border: 1px solid #2b46a6;
-  font-weight: 600;
 }
 
 /* program section end */
@@ -232,52 +227,52 @@
   width: 50%;
 }
 
-.homePartner .container .keterangan .profil {
+.homePartner .keterangan .profil {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 20px;
 }
 
-.homePartner .container .keterangan .profil .perProfil {
+.homePartner .keterangan .profil .perProfil {
   width: 50%;
   display: flex;
   margin: 20px 0;
 }
 
-.homePartner .container .keterangan .profil .perProfil img {
+.homePartner .keterangan .profil .perProfil img {
   width: 50px;
   height: 50px;
 }
 
-.homePartner .container .keterangan .profil .perProfil .caption {
+.homePartner .keterangan .profil .perProfil .caption {
   display: flex;
   flex-direction: column;
   margin-left: 10px;
 }
 
-.homePartner .container .keterangan .profil .perProfil .caption span {
+.homePartner .keterangan .profil .perProfil .caption span {
   font-size: 1.8rem;
   font-weight: 600;
   color: #302f2f;
   margin-bottom: 5px;
 }
 
-.homePartner .container .keterangan .profil .perProfil .caption p {
+.homePartner .keterangan .profil .perProfil .caption p {
   font-size: 0.9rem;
   color: #302f2f;
 }
 
-.homePartner .container .keterangan .captionKeterangan {
+.homePartner .keterangan .captionKeterangan {
   font-size: 1.1rem;
   line-height: 25px;
 }
 
-.homePartner .container .keterangan .btnJoin {
+.btnJoin {
   position: absolute;
   bottom: 0;
 }
 
-.homePartner .container .keterangan .btnJoin button {
+.btnJoin button {
   padding: 15px 40px;
   font-size: 1.1rem;
   font-weight: 600;
@@ -285,43 +280,52 @@
   border: 1px solid #2b46a6;
 }
 
-.homePartner .container .keterangan .btnJoin button:first-child {
-  color: #fff;
+.btnJoin button:first-child {
+  color: var(--putih);
   background-color: #2b46a6;
 }
 
-.homePartner .container .keterangan .btnJoin button:last-child {
-  background-color: #fff;
+.btnJoin button:last-child {
+  background-color: var(--putih);
   color: #2b46a6;
 }
 
-.homePartner .container .tawaran {
+.tawaran {
   width: 50%;
   margin-left: 20px;
 }
 
-.homePartner .container .tawaran .perTawaran {
+.perTawaran {
   width: 100%;
   display: flex;
   align-items: center;
   padding: 20px 30px;
-  background-color: #fff;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  background-color: var(--putih);
+  box-shadow: 0 0.5rem 1rem var(--color-shadow);
   border-radius: 20px;
 }
 
-.homePartner .container .tawaran .perTawaran:first-child {
+.perTawaran:first-child {
   margin-bottom: 50px;
 }
 
-.homePartner .container .tawaran .perTawaran .caption h2 {
+.perTawaran img {
+  width: 20%;
+  height: auto;
+}
+
+.perTawaran .caption {
+  width: 80%;
+}
+
+.perTawaran .caption h2 {
   font-size: 1.5rem;
   line-height: 35px;
   color: #1a1a4b;
   margin-bottom: 20px;
 }
 
-.homePartner .container .tawaran .perTawaran .caption p {
+.perTawaran .caption p {
   line-height: 1.4em;
   letter-spacing: 0.03em;
   color: #302f2f;
@@ -383,14 +387,15 @@
   text-align: center;
   padding: 20px;
   border-radius: 20px;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.5rem 1rem var(--color-shadow);
   background-color: #1d247b;
-  color: #fff;
+  color: var(--putih);
 }
 
 .testimoni .container .perTestimoni img {
   width: 150px;
   height: 150px;
+  object-fit: cover;
   border-radius: 50%;
 }
 
@@ -398,17 +403,21 @@
   font-size: 1.3rem;
   margin-top: 20px;
   margin-bottom: 5px;
+  color: var(--putih);
 }
 
 .testimoni .container .perTestimoni span {
   font-size: 0.9rem;
   margin-top: 3px;
+  color: var(--putih);
 }
 
 .testimoni .container .perTestimoni p {
   margin-top: 1rem !important;
   font-weight: 500;
   line-height: 20px;
+  color: var(--putih);
+  /* text-align: justify; */
 }
 
 /* testimoni end */
@@ -417,7 +426,7 @@
 .join {
   width: 100%;
   height: 100%;
-  background: url("../img/bg-5.webp");
+  background: url("../img/Home/bg-5.webp");
   background-position: center;
   background-attachment: fixed;
   background-size: cover;

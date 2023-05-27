@@ -1,79 +1,292 @@
 /* Halaman Per Artikel start */
 .contentArtikel {
-  /* width: 60%; */
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 120px;
-  padding-bottom: 100px;
-  /* padding: 150px 250px 200px 250px; */
+  padding-top: 13vh;
+  padding-bottom: 75px;
 }
 
 .contentArtikel .container {
-  width: 60%;
-  /* display: flex;
-    align-items: center;
-    justify-content: center; */
+  display: flex;
+  justify-content: center;
 }
 
-.contentArtikel .container .titleArtikel {
+.contentArtikel .content {
+  width: 80%;
+}
+
+.content .titleArtikel {
   font-size: 2rem;
   font-weight: 700;
   line-height: 40px;
-  color: #302f2f;
 }
 
-.contentArtikel .container .writer {
+.content .writer {
   font-size: 1rem;
-  color: #302f2f;
-  margin: 20px 0;
+  margin: 20px 0 10px 0;
 }
 
-.contentArtikel .container .thumbnail {
+.content .writer span {
+  color: #0175f4;
+  font-weight: 600;
+}
+
+.content .kategori {
+  margin-bottom: 10px;
+}
+
+.content .kategori .perKategori:first-child {
+  margin-left: 0;
+}
+
+.content .kategori .perKategori {
+  margin: 3px 2px;
+  color: #fff;
+  padding: 6px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  display: inline-block;
+  border-radius: 7px;
+  background-color: #2eb5c0;
+}
+
+.content .thumbnail {
   width: 100%;
   height: 350px;
   border-radius: 8px;
   margin-bottom: 20px;
+  object-fit: cover;
+  object-position: center;
 }
 
-.contentArtikel .container h3 {
+.content h3 {
   font-size: 1.5rem;
-  color: #302f2f;
 }
 
-.contentArtikel .container p {
+.content p {
   font-size: 1rem;
   margin: 10px 0;
-  color: #302f2f;
   line-height: 30px;
+}
+
+.content .identitas {
+  display: flex;
+}
+
+.content .identitas .perIdentitas:first-child {
+  margin-left: 0;
+}
+
+.content .identitas .perIdentitas {
+  width: 50%;
+  margin: 0 10px;
+}
+
+.share {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  margin-top: 75px;
+  border-top: 2px solid #e4e4e7;
+  border-bottom: 2px solid #e4e4e7;
+}
+
+.share h4 {
+  font-weight: 600;
+}
+
+.share .sosialMedia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+.share .sosialMedia .perSosialMedia {
+  width: 35px;
+  height: 35px;
+  color: #fff;
+  margin: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.3rem;
+}
+
+.whatsapp {
+  background-color: #25d366;
+}
+
+.facebook {
+  background-color: #3b5998;
+}
+
+.twitter {
+  background-color: #55acee;
+}
+
+.linkedin {
+  background-color: #007ab9;
+}
+
+.contentArtikel .author {
+  display: flex;
+  padding-top: 25px;
+}
+
+.contentArtikel .author img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.contentArtikel .author .authorDetail {
+  width: 80%;
+  margin-left: 20px;
+}
+
+.contentArtikel .author .authorDetail h3 {
+  font-size: 1.3rem;
+}
+
+.contentArtikel .author .authorDetail h3 a:hover {
+  color: #007ab9;
+  text-decoration: underline;
+}
+
+.contentArtikel .author .authorDetail span {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.containerArtikelLainnya {
+  margin: 30px 0 50px 0;
+}
+
+.containerArtikelLainnya h3 {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+.containerArtikelLainnya .artikelLainnya {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerArtikelLainnya .artikelLainnya .perArtikelLainnya:hover p {
+  color: #007ab9;
+}
+
+.containerArtikelLainnya .artikelLainnya .perArtikelLainnya {
+  padding: 5px;
+  width: calc(100% / 4);
+}
+
+.containerArtikelLainnya .artikelLainnya .perArtikelLainnya img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.rekomendasiArtikel .perArtikel h3,
+.containerArtikelLainnya .artikelLainnya .perArtikelLainnya p {
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.rekomendasiArtikel .perArtikel h3 {
+  -webkit-line-clamp: 2;
+}
+
+.containerArtikelLainnya .artikelLainnya .perArtikelLainnya p {
+  -webkit-line-clamp: 3;
+}
+
+.containerArtikelLainnya .artikelLainnya .perArtikelLainnya p {
+  font-weight: 500;
+  font-size: 0.9rem;
+  line-height: 1.1rem;
+  color: #434856;
+  min-height: 3.5rem;
 }
 
 .rekomendasiArtikel {
   width: 100%;
-  padding-top: 100px;
   padding-bottom: 100px;
-  background-color: #eff2f6;
-}
-
-.rekomendasiArtikel .container .title {
-  width: 100%;
-  font-size: 2rem;
-  color: #302f2f;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin-bottom: 50px;
 }
 
 .rekomendasiArtikel .container {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.rekomendasiArtikel .perArtikel {
+  width: calc(93% / 3);
+  border-radius: 7px;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding-bottom: 20px;
+  margin: 20px 10px;
+}
+
+.rekomendasiArtikel .perArtikel .thumbnail {
+  width: 100%;
+  height: 170px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  object-fit: cover;
+}
+
+.rekomendasiArtikel .perArtikel .caption {
+  padding: 0.8rem 0.8rem;
+}
+.rekomendasiArtikel .perArtikel h3 {
+  font-size: 1.2rem;
+}
+
+.rekomendasiArtikel .perArtikel h3 a:hover {
+  color: #0175f4;
+}
+
+.rekomendasiArtikel .perArtikel .authorRekomendasiArtikel {
+  display: flex;
+  padding-top: 30px;
+  align-items: center;
+}
+
+.rekomendasiArtikel .perArtikel .authorRekomendasiArtikel img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.rekomendasiArtikel .perArtikel .authorRekomendasiArtikel .detailAuthor {
+  margin-left: 20px;
+}
+
+.rekomendasiArtikel .perArtikel .authorRekomendasiArtikel .detailAuthor span {
+  line-height: 15px;
+  font-weight: 600;
+}
+
+.rekomendasiArtikel
+  .perArtikel
+  .authorRekomendasiArtikel
+  .detailAuthor
+  span:hover {
+  color: #007ab9;
+}
+
+.rekomendasiArtikel .perArtikel .authorRekomendasiArtikel .detailAuthor p {
+  font-size: 0.8rem;
 }
 
 /* Halaman Per Artikel end */

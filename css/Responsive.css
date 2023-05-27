@@ -29,6 +29,10 @@
     font-size: 2rem;
   }
 
+  header {
+    min-height: 7vh;
+  }
+
   header .container nav ul li a {
     margin: 0 0px;
   }
@@ -37,10 +41,28 @@
     padding: 0;
   }
 
-  .heroMediaPartner .container img {
-    width: 40%;
-    height: 50%;
+  .keteranganProgram {
+    top: 7vh;
   }
+
+  .Event .sorting {
+    top: 10vh;
+  }
+
+  footer {
+    height: 4vh;
+  }
+
+  .heroMediaPartner {
+    height: 60vh;
+  }
+
+  .heroMediaPartner .container img {
+    /* width: 40%; */
+    /* height: 50%; */
+  }
+
+
 
   .container {
     max-width: 1140px;
@@ -48,7 +70,7 @@
   }
 
   .join .container {
-    height: 50vh;
+    height: 30vh;
   }
 
   /* .join img { height: 50%; }*/
@@ -88,6 +110,14 @@
 
 /* media kueri */
 @media (max-width: 1300px) {
+  .perTawaran img {
+    width: 12%;
+  }
+
+  .perTawaran .caption {
+    width: 88%;
+  }
+
   /* program section */
   .program .container {
     flex-wrap: wrap;
@@ -184,6 +214,14 @@
 }
 
 @media (max-width: 1200px) {
+  .perTawaran img {
+    width: 15%;
+  }
+
+  .perTawaran .caption {
+    width: 85%;
+  }
+
   .testimoni .container .perTestimoni {
     width: calc(90% / 2);
     height: 600px;
@@ -241,39 +279,24 @@
     flex-wrap: wrap;
   }
 
-  .keunggulanMediaPartner .container .containerKeunggulan {
+  .containerKeunggulan {
     width: 100%;
     margin-bottom: 50px;
   }
 
-  .keunggulanMediaPartner
-    .container
-    .containerKeunggulan
-    .keunggulan
-    .perKeunggulan
-    .img {
+  .containerKeunggulan .keunggulan .perKeunggulan .img {
     margin-bottom: 20px;
   }
 
-  .keunggulanMediaPartner .container .containerAlurPendaftaran {
+  .containerAlurPendaftaran {
     width: 100%;
   }
 
-  .keunggulanMediaPartner
-    .container
-    .containerAlurPendaftaran
-    .alurPendaftaran
-    .perAlurPendaftaran
-    .urutan {
+  .containerAlurPendaftaran .alurPendaftaran .perAlurPendaftaran .urutan {
     width: 7%;
   }
 
-  .keunggulanMediaPartner
-    .container
-    .containerAlurPendaftaran
-    .alurPendaftaran
-    .perAlurPendaftaran
-    p {
+  .containerAlurPendaftaran .alurPendaftaran .perAlurPendaftaran p {
     width: 93%;
   }
 
@@ -481,13 +504,7 @@
     font-size: 0.9rem;
   }
 
-  .Event2
-    .container
-    .program
-    .masihBerlangsung
-    .perMasihBerlangsung
-    .btn
-    button {
+  .Event2 .container .program .masihBerlangsung .perMasihBerlangsung .btn button {
     font-size: 0.9rem;
   }
 
@@ -503,6 +520,7 @@
 }
 
 @media (max-width: 900px) {
+
   /* Media Partner Start */
   .partnerUniversitas .container {
     text-align: center;
@@ -514,21 +532,11 @@
     margin: 10px;
   }
 
-  .keunggulanMediaPartner
-    .container
-    .containerAlurPendaftaran
-    .alurPendaftaran
-    .perAlurPendaftaran
-    .urutan {
+  .containerAlurPendaftaran .alurPendaftaran .perAlurPendaftaran .urutan {
     width: 10%;
   }
 
-  .keunggulanMediaPartner
-    .container
-    .containerAlurPendaftaran
-    .alurPendaftaran
-    .perAlurPendaftaran
-    p {
+  .containerAlurPendaftaran .alurPendaftaran .perAlurPendaftaran p {
     width: 90%;
   }
 
@@ -549,13 +557,7 @@
     margin: 10px 0;
   }
 
-  .Event2
-    .container
-    .program
-    .masihBerlangsung
-    .perMasihBerlangsung
-    .btn
-    button {
+  .Event2 .container .program .masihBerlangsung .perMasihBerlangsung .btn button {
     font-size: 1rem;
     padding: 12px;
   }
@@ -669,30 +671,21 @@
     margin-bottom: 70px;
   }
 
-  .keunggulanMediaPartner .container .containerKeunggulan {
+  .containerKeunggulan {
     margin-right: 0;
   }
 
-  .keunggulanMediaPartner .container .containerKeunggulan .keunggulan {
+  .containerKeunggulan .keunggulan {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   }
 
-  .keunggulanMediaPartner
-    .container
-    .containerKeunggulan
-    .keunggulan
-    .perKeunggulan {
+  .containerKeunggulan .keunggulan .perKeunggulan {
     width: 100%;
   }
 
-  .keunggulanMediaPartner
-    .container
-    .containerKeunggulan
-    .keunggulan
-    .perKeunggulan
-    .img {
+  .containerKeunggulan .keunggulan .perKeunggulan .img {
     height: 200px;
   }
 
@@ -765,8 +758,6 @@
 @media (max-width: 700px) {
   header {
     min-height: 12vh;
-    /* padding-top: 10px; */
-    /* padding-bottom: 10px; */
     max-height: 100%;
   }
 
@@ -776,6 +767,10 @@
 
   .navbarMobile {
     display: flex;
+  }
+
+  .footer {
+    padding-bottom: 50px;
   }
 
   .fitur h1 {
@@ -827,6 +822,15 @@
     flex-wrap: wrap-reverse;
     justify-content: center;
     text-align: center;
+    width: 100%;
+  }
+
+  .perTawaran img {
+    width: auto;
+    margin-bottom: 10px;
+  }
+
+  .perTawaran .caption {
     width: 100%;
   }
 
@@ -910,21 +914,11 @@
     text-align: center;
   }
 
-  .keunggulanMediaPartner
-    .container
-    .containerAlurPendaftaran
-    .alurPendaftaran
-    .perAlurPendaftaran
-    .urutan {
+  .containerAlurPendaftaran .alurPendaftaran .perAlurPendaftaran .urutan {
     width: 13%;
   }
 
-  .keunggulanMediaPartner
-    .container
-    .containerAlurPendaftaran
-    .alurPendaftaran
-    .perAlurPendaftaran
-    p {
+  .containerAlurPendaftaran .alurPendaftaran .perAlurPendaftaran p {
     width: 88%;
   }
 
@@ -1055,7 +1049,7 @@
     /* padding: 50px 25px 0px 25px; */
   }
 
-  .heroMediaPartner .container .btn button {
+  .heroMediaPartner .container .cta button {
     padding: 15px 20px;
     text-transform: uppercase;
     font-size: 1rem;
@@ -1064,30 +1058,20 @@
     font-weight: 600;
   }
 
-  .keunggulanMediaPartner .container .containerKeunggulan {
+  .containerKeunggulan {
     text-align: center;
   }
 
-  .keunggulanMediaPartner .container .containerKeunggulan h2 {
+  .containerKeunggulan h2 {
     font-size: 1.2rem;
     padding: 20px 5px;
   }
 
-  .keunggulanMediaPartner
-    .container
-    .containerAlurPendaftaran
-    .alurPendaftaran
-    .perAlurPendaftaran
-    .urutan {
+  .containerAlurPendaftaran .alurPendaftaran .perAlurPendaftaran .urutan {
     width: 15%;
   }
 
-  .keunggulanMediaPartner
-    .container
-    .containerAlurPendaftaran
-    .alurPendaftaran
-    .perAlurPendaftaran
-    p {
+  .containerAlurPendaftaran .alurPendaftaran .perAlurPendaftaran p {
     width: 85%;
   }
 
@@ -1335,21 +1319,11 @@
     font-size: 0.9rem;
   }
 
-  .keunggulanMediaPartner
-    .container
-    .containerAlurPendaftaran
-    .alurPendaftaran
-    .perAlurPendaftaran
-    .urutan {
+  .containerAlurPendaftaran .alurPendaftaran .perAlurPendaftaran .urutan {
     width: 20%;
   }
 
-  .keunggulanMediaPartner
-    .container
-    .containerAlurPendaftaran
-    .alurPendaftaran
-    .perAlurPendaftaran
-    p {
+  .containerAlurPendaftaran .alurPendaftaran .perAlurPendaftaran p {
     font-size: 0.9rem;
     width: 80%;
   }
@@ -1379,13 +1353,7 @@
     padding: 8px 10px;
   }
 
-  .EventMobile
-    .sorting
-    .filter
-    .containerFilter
-    .boxFilter
-    .btn
-    button:first-child {
+  .EventMobile .sorting .filter .containerFilter .boxFilter .btn button:first-child {
     margin-top: 10px;
   }
 
@@ -1475,8 +1443,8 @@
   }
 
   .fitur .imgFitur img {
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
     margin: 10px 5px;
   }
 
@@ -1493,7 +1461,7 @@
     height: 325px;
   }
 
-  .program .event .perEvent button {
+  .program .event .perEvent a {
     font-size: 0.8rem;
   }
 
@@ -1547,7 +1515,7 @@
   }
 
   /* Halaman Media Partner Start  */
-  .heroMediaPartner .container .btn button {
+  .heroMediaPartner .container .cta button {
     width: 90%;
     margin-bottom: 20px;
   }
@@ -1581,39 +1549,25 @@
     padding: 15px 20px;
   }
 
-  .keunggulanMediaPartner
-    .container
-    .containerAlurPendaftaran
-    .alurPendaftaran
-    .perAlurPendaftaran {
+  .containerAlurPendaftaran .alurPendaftaran .perAlurPendaftaran {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     text-align: center;
   }
 
-  .keunggulanMediaPartner .container .containerAlurPendaftaran h2 {
+  .containerAlurPendaftaran h2 {
     padding: 15px 0;
     text-align: center;
   }
 
-  .keunggulanMediaPartner
-    .container
-    .containerAlurPendaftaran
-    .alurPendaftaran
-    .perAlurPendaftaran
-    .urutan {
+  .containerAlurPendaftaran .alurPendaftaran .perAlurPendaftaran .urutan {
     width: 50px;
     margin-right: 0;
     margin-bottom: 10px;
   }
 
-  .keunggulanMediaPartner
-    .container
-    .containerAlurPendaftaran
-    .alurPendaftaran
-    .perAlurPendaftaran
-    p {
+  .containerAlurPendaftaran .alurPendaftaran .perAlurPendaftaran p {
     width: 100%;
   }
 
@@ -1703,7 +1657,7 @@
     font-size: 0.9rem;
   }
 
-  .program .event .perEvent button {
+  .program .event .perEvent a {
     font-size: 0.8rem;
   }
 
@@ -1716,14 +1670,8 @@
     line-height: 30px;
   }
 
-  .fitur .imgFitur img {
-    /* height: 50px; */
-    margin: 10px 5px;
-  }
-
   .join .container h1 {
     font-size: 1.5rem;
-    /* margin-top: 20px; */
     line-height: 35px;
   }
 
@@ -1742,12 +1690,7 @@
     padding: 15px 20px;
   }
 
-  .keunggulanMediaPartner
-    .container
-    .containerKeunggulan
-    .keunggulan
-    .perKeunggulan
-    .img {
+  .containerKeunggulan .keunggulan .perKeunggulan .img {
     height: 150px;
   }
 
@@ -1782,35 +1725,15 @@
     width: 30%;
   }
 
-  .EventMobile
-    .sorting
-    .filter
-    .containerFilter
-    .boxFilter
-    .containerTitle
-    .title
-    .icon {
+  .EventMobile .sorting .filter .containerFilter .boxFilter .containerTitle .title .icon {
     font-size: 1.2rem;
   }
 
-  .EventMobile
-    .sorting
-    .filter
-    .containerFilter
-    .boxFilter
-    .containerTitle
-    .title
-    h4 {
+  .EventMobile .sorting .filter .containerFilter .boxFilter .containerTitle .title h4 {
     font-size: 1.2rem;
   }
 
-  .EventMobile
-    .sorting
-    .filter
-    .containerFilter
-    .boxFilter
-    .containerTitle
-    .close {
+  .EventMobile .sorting .filter .containerFilter .boxFilter .containerTitle .close {
     font-size: 1.5rem;
     padding: 0;
     margin-top: -5px;
@@ -1898,8 +1821,8 @@
   }
 
   .fitur .imgFitur img {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
   }
 
   .program .caption p {
@@ -1910,7 +1833,7 @@
     height: 370px;
   }
 
-  .program .event .perEvent button {
+  .program .event .perEvent a {
     font-size: 0.7rem;
   }
 
@@ -1918,15 +1841,15 @@
     font-size: 1rem;
   }
 
-  .homePartner .container .keterangan .captionKeterangan {
+  .captionKeterangan {
     font-size: 1rem;
   }
 
-  .homePartner .container .keterangan .btnJoin button {
+  .btnJoin button {
     padding: 15px;
   }
 
-  .homePartner .container .tawaran .perTawaran img {
+  .perTawaran img {
     width: 70px;
     height: 70px;
   }
@@ -1972,7 +1895,7 @@
     padding: 10px 20px;
   }
 
-  .keunggulanMediaPartner .container .containerAlurPendaftaran h2 {
+  .containerAlurPendaftaran h2 {
     font-size: 1rem;
     padding: 10px 0;
   }
@@ -2018,32 +1941,12 @@
     margin-right: 10px;
   }
 
-  .EventMobile
-    .sorting
-    .filter
-    .containerFilter
-    .boxFilter
-    .containerTitle
-    .title
-    .icon,
-  .EventMobile
-    .sorting
-    .filter
-    .containerFilter
-    .boxFilter
-    .containerTitle
-    .title
-    h4 {
+  .EventMobile .sorting .filter .containerFilter .boxFilter .containerTitle .title .icon,
+  .EventMobile .sorting .filter .containerFilter .boxFilter .containerTitle .title h4 {
     font-size: 1rem;
   }
 
-  .EventMobile
-    .sorting
-    .filter
-    .containerFilter
-    .boxFilter
-    .containerTitle
-    .close {
+  .EventMobile .sorting .filter .containerFilter .boxFilter .containerTitle .close {
     font-size: 1.5rem;
     padding: 0;
     margin-top: -5px;

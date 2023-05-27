@@ -1,12 +1,11 @@
 /* Event */
-.heroEvent2 {
+.heroEvent {
   width: 100%;
   height: 70vh;
   background-color: #eff2f6;
-  /* padding-top: 100px; */
 }
 
-.heroEvent2 .container {
+.heroEvent .container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,72 +13,35 @@
   text-align: center;
 }
 
-.heroEvent2 .container h1 {
+.heroEvent .container h1 {
   font-size: 2.5rem;
   font-weight: 600;
   margin-bottom: 10px;
   color: #302f2f;
 }
 
-.heroEvent2 .container p {
+.heroEvent .container p {
   font-size: 1.2rem;
   margin-bottom: 20px;
   color: #302f2f;
 }
 
-.heroEvent2 .container form {
+.heroEvent .container form {
   width: 40%;
   height: 50px;
   /* background-color: red; */
   position: relative;
 }
 
-.heroEvent2 .container form input:focus {
-  border: 2px solid #0176f4bd;
+.heroEvent .container form input:focus ~ button {
+  outline: 2px ridge #302f2f;
 }
 
-.heroEvent2 .container form input {
-  width: 100%;
-  height: 100%;
-  border-radius: 7px;
-  border: 1px solid #e4e4e7;
-  cursor: text;
-  background-color: #fff;
-  font-size: 1rem;
-  color: #302f2f;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  padding: 1rem;
-}
-
-.heroEvent2 .container form button {
-  width: 20%;
-  height: 100%;
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  border-top-right-radius: 7px;
-  border-bottom-right-radius: 7px;
-  border-top: 1px solid #e4e4e7;
-  border-right: 1px solid #e4e4e7;
-  border-bottom: 1px solid #e4e4e7;
+.heroEvent .container form button {
   background-color: rgb(46, 46, 46);
-  font-weight: 600;
-  text-transform: capitalize;
-  right: 0;
-  font-size: 1rem;
 }
 
-.heroEvent2 .container form button p {
-  color: #fff;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.Event2 {
+.Event {
   width: 100%;
   height: 100%;
   padding-top: 50px;
@@ -87,21 +49,20 @@
   background-color: #f8fafc;
 }
 
-.Event2 .container {
+.Event .container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.Event2 .container .sorting {
+.Event .sorting {
   width: 30%;
-  top: 100px;
+  top: 12vh;
   position: sticky;
   align-self: flex-start;
-  /* background-color: red; */
 }
 
-.Event2 .container .sorting h2 {
+.Event .sorting h2 {
   font-size: 1.1rem;
   font-weight: 700;
   color: #4a4b4c;
@@ -109,11 +70,11 @@
   text-transform: capitalize;
 }
 
-.Event2 .container .sorting .urutkan .boxUrutkan:hover {
+.Event .sorting .urutkan .boxUrutkan:hover {
   cursor: pointer;
 }
 
-.Event2 .container .sorting .urutkan .boxUrutkan {
+.Event .sorting .urutkan .boxUrutkan {
   width: 90%;
   height: 40px;
   display: flex;
@@ -128,21 +89,15 @@
   position: relative;
 }
 
-.Event2 .container .sorting .urutkan .boxUrutkan span {
+.Event .sorting .urutkan .boxUrutkan span {
   font-weight: 600;
 }
 
-.EventMobile .sorting .urutkan .isiBoxUrutkan.showIsiBoxUrutkan,
-.Event2
-  .container
-  .sorting
-  .urutkan
-  .boxUrutkan
-  .isiBoxUrutkan.showIsiBoxUrutkan {
+.Event .sorting .urutkan .boxUrutkan .isiBoxUrutkan.show {
   display: flex;
 }
 
-.Event2 .container .sorting .urutkan .boxUrutkan .isiBoxUrutkan {
+.Event .sorting .urutkan .boxUrutkan .isiBoxUrutkan {
   width: 100%;
   position: absolute;
   top: 50px;
@@ -157,33 +112,27 @@
   padding: 0.5rem 0;
 }
 
-.Event2 .container .sorting .urutkan .boxUrutkan .isiBoxUrutkan span {
+.Event .sorting .urutkan .boxUrutkan .isiBoxUrutkan span {
   padding: 1rem;
 }
 
-.Event2 .container .sorting .urutkan .boxUrutkan .isiBoxUrutkan span.active {
+.Event .sorting .urutkan .boxUrutkan .isiBoxUrutkan span.active {
   background-color: #5441fa;
   border: 1px solid #e4e4e7;
   color: #fff;
 }
 
-.Event2
-  .container
-  .sorting
-  .urutkan
-  .boxUrutkan
-  .isiBoxUrutkan
-  span.active:hover {
+.Event .sorting .urutkan .boxUrutkan .isiBoxUrutkan span.active:hover {
   background-color: #5441fa;
   cursor: pointer;
 }
 
-.Event2 .container .sorting .urutkan .boxUrutkan .isiBoxUrutkan span:hover {
+.Event .sorting .urutkan .boxUrutkan .isiBoxUrutkan span:hover {
   background-color: #afc0ff;
   cursor: pointer;
 }
 
-.Event2 .container .sorting .filterProgram .boxFilterProgram {
+.Event .sorting .filterProgram .boxFilterProgram {
   width: 90%;
   height: 100%;
   display: flex;
@@ -195,27 +144,18 @@
   position: relative;
 }
 
-.Event2 .container .sorting .filterProgram .boxFilterProgram .perFilterProgram {
-  /* background-color: red; */
+.Event .sorting .filterProgram .boxFilterProgram .perFilterProgram {
   overflow-y: hidden;
-  /* margin-bottom: 10px; */
 }
 
-.Event2
-  .container
-  .sorting
-  .filterProgram
-  .boxFilterProgram
-  .perFilterProgram
-  .keterangan {
+.Event .sorting .filterProgram .boxFilterProgram .perFilterProgram .keterangan {
   padding: 0.5rem 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.Event2
-  .container
+.Event
   .sorting
   .filterProgram
   .boxFilterProgram
@@ -225,8 +165,7 @@
   background-color: #e4e4e7;
 }
 
-.Event2
-  .container
+.Event
   .sorting
   .filterProgram
   .boxFilterProgram
@@ -238,8 +177,7 @@
   text-transform: capitalize;
 }
 
-.Event2
-  .container
+.Event
   .sorting
   .filterProgram
   .boxFilterProgram
@@ -248,8 +186,7 @@
   height: 0;
 }
 
-.Event2
-  .container
+.Event
   .sorting
   .filterProgram
   .boxFilterProgram
@@ -260,8 +197,7 @@
   /* transform: translateY(-100px); */
 }
 
-.Event2
-  .container
+.Event
   .sorting
   .filterProgram
   .boxFilterProgram
@@ -271,8 +207,7 @@
   margin: 10px 0;
 }
 
-.Event2
-  .container
+.Event
   .sorting
   .filterProgram
   .boxFilterProgram
@@ -285,7 +220,7 @@
   margin-left: 10px;
 }
 
-.Event2 .container .sorting .filterProgram .boxFilterProgram .btn {
+.Event .sorting .filterProgram .boxFilterProgram .button {
   width: 100%;
   display: flex;
   align-items: center;
@@ -294,7 +229,7 @@
   margin-top: 30px;
 }
 
-.Event2 .container .sorting .filterProgram .boxFilterProgram .btn button {
+.Event .sorting .filterProgram .boxFilterProgram .button button {
   width: 80%;
   padding: 7px 10px;
   margin-bottom: 10px;
@@ -308,19 +243,13 @@
   cursor: pointer;
 }
 
-.Event2
-  .container
-  .sorting
-  .filterProgram
-  .boxFilterProgram
-  .btn
-  button:last-child {
+.Event .sorting .filterProgram .boxFilterProgram .button button:last-child {
   background-color: #fff;
   color: #3f3f3f;
   border: 2px solid #e4e4e7;
 }
 
-.Event2 .container .program {
+.Event .program {
   width: 70%;
   display: flex;
   align-items: center;
@@ -329,9 +258,8 @@
   flex-wrap: wrap;
 }
 
-.Event2 .container .program .keteranganProgram {
+.keteranganProgram {
   width: 100%;
-  /* background-color: red; */
   padding: 10px 0;
   border-bottom: 4px solid #e4e4e7;
   background-color: #f8fafc;
@@ -341,24 +269,19 @@
   margin-bottom: 30px;
 }
 
-.Event2 .container .program .keteranganProgram span {
+.keteranganProgram span.active {
   color: #3629a7;
+}
+
+.keteranganProgram span {
+  color: #302f2f;
   position: relative;
   padding: 0 20px;
   font-weight: 600;
   cursor: pointer;
 }
 
-.EventMobile .program .sudahBerakhir {
-  width: 100%;
-  height: 70vh;
-  display: none;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.Event2 .container .program .sudahBerakhir {
+.Event .program .sudahBerakhir {
   width: 100%;
   min-height: 70vh;
   display: none;
@@ -368,16 +291,14 @@
   text-align: center;
 }
 
-.EventMobile .program .sudahBerakhir h1,
-.Event2 .container .program .sudahBerakhir h1 {
+.Event .program .sudahBerakhir h1 {
   font-size: 2rem;
   text-align: center;
   margin-top: 20px;
   color: #ce231c;
 }
 
-.EventMobile .program .masihBerlangsung,
-.Event2 .container .program .masihBerlangsung {
+.Event .program .masihBerlangsung {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -385,21 +306,11 @@
   flex-wrap: wrap;
 }
 
-.EventMobile .program .masihBerlangsung .perMasihBerlangsung {
-  width: 100%;
-  background-color: #fff;
-  border: 2px solid #e4e4e7;
-  padding-bottom: 15px;
-  border-radius: 10px;
-  margin: 20px 0;
-}
-
-.EventMobile .program .masihBerlangsung .perMasihBerlangsung:hover h2,
-.Event2 .container .program .masihBerlangsung .perMasihBerlangsung:hover h2 {
+.Event .program .masihBerlangsung .perMasihBerlangsung:hover h2 {
   color: #2b46a6;
 }
 
-.Event2 .container .program .masihBerlangsung .perMasihBerlangsung {
+.Event .program .masihBerlangsung .perMasihBerlangsung {
   width: calc(90% / 2);
   background-color: #fff;
   border: 2px solid #e4e4e7;
@@ -408,29 +319,15 @@
   margin: 20px 10px;
 }
 
-.EventMobile .program .masihBerlangsung .perMasihBerlangsung img {
+.Event .program .masihBerlangsung .perMasihBerlangsung img {
   width: 100%;
-  height: 350px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-.Event2 .container .program .masihBerlangsung .perMasihBerlangsung img {
-  width: 100%;
-  height: 250px;
+  height: 200px;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
+  object-fit: cover;
 }
 
-.EventMobile .program .masihBerlangsung .perMasihBerlangsung h2 {
-  font-size: 1.5rem;
-  line-height: 30px;
-  padding: 10px;
-  text-transform: capitalize;
-  color: #302f2f;
-}
-
-.Event2 .container .program .masihBerlangsung .perMasihBerlangsung h2 {
+.Event .program .masihBerlangsung .perMasihBerlangsung h2 {
   font-size: 1.2rem;
   line-height: 25px;
   padding: 10px;
@@ -438,15 +335,7 @@
   color: #302f2f;
 }
 
-.EventMobile .program .masihBerlangsung .perMasihBerlangsung h3 {
-  font-size: 1.5rem;
-  color: #ce231c;
-  padding: 10px;
-  margin: 10px 0;
-  font-weight: 600;
-}
-
-.Event2 .container .program .masihBerlangsung .perMasihBerlangsung h3 {
+.Event .program .masihBerlangsung .perMasihBerlangsung h3 {
   font-size: 1.2rem;
   color: #ce231c;
   padding: 10px;
@@ -454,69 +343,41 @@
   font-weight: 600;
 }
 
-.EventMobile .masihBerlangsung .perMasihBerlangsung p {
-  font-size: 1.1rem;
-  padding: 10px;
-  color: #302f2f;
-}
-
-.Event2 .container .program .masihBerlangsung .perMasihBerlangsung p {
+.Event .program .masihBerlangsung .perMasihBerlangsung p {
   font-size: 0.9rem;
   padding: 10px;
   color: #302f2f;
 }
 
-.EventMobile .program .masihBerlangsung .perMasihBerlangsung .date,
-.Event2 .container .program .masihBerlangsung .perMasihBerlangsung .date {
+.Event .program .masihBerlangsung .perMasihBerlangsung .date {
   display: flex;
   align-items: center;
   padding: 10px;
   border-bottom: 1px solid #e4e4e7;
 }
 
-.EventMobile .program .masihBerlangsung .perMasihBerlangsung .date p,
-.Event2 .container .program .masihBerlangsung .perMasihBerlangsung .date p {
+.Event .program .masihBerlangsung .perMasihBerlangsung .date p {
   color: #302f2f;
   font-weight: 600;
 }
 
-.EventMobile .program .masihBerlangsung .perMasihBerlangsung .date .icon,
-.Event2 .container .program .masihBerlangsung .perMasihBerlangsung .date .icon {
+.Event .program .masihBerlangsung .perMasihBerlangsung .date .icon {
   margin-right: 10px;
   color: #302f2f;
 }
 
-.EventMobile .program .masihBerlangsung .perMasihBerlangsung .btn,
-.Event2 .container .program .masihBerlangsung .perMasihBerlangsung .btn {
+.Event .program .masihBerlangsung .perMasihBerlangsung .button {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.EventMobile .program .masihBerlangsung .perMasihBerlangsung .btn button:hover,
-.Event2
-  .container
-  .program
-  .masihBerlangsung
-  .perMasihBerlangsung
-  .btn
-  button:hover {
+.Event .program .masihBerlangsung .perMasihBerlangsung .button button:hover {
   opacity: 0.9;
 }
 
-.EventMobile .program .masihBerlangsung .perMasihBerlangsung .btn button {
-  text-align: center;
-  width: 95%;
-  padding: 10px;
-  font-size: 1rem;
-  border-radius: 10px;
-  font-weight: 600;
-  color: #fff;
-  background-color: #3629a7;
-}
-
-.Event2 .container .program .masihBerlangsung .perMasihBerlangsung .btn button {
+.Event .program .masihBerlangsung .perMasihBerlangsung .button button {
   text-align: center;
   width: 95%;
   padding: 8px;
@@ -527,45 +388,23 @@
   background-color: #3629a7;
 }
 
+.masihBerlangsung .button-ungu {
+  background-color: #3629a7;
+  width: 100%;
+}
+
 /* Event Mobile Start */
-.EventMobile {
+
+.sortingMobile {
   width: 100%;
   height: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background-color: #f8fafc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   display: none;
 }
 
-.EventMobile .keterangan {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 4px solid #e4e4e7;
-  margin-bottom: 20px;
-  padding: 10px 0;
-}
-
-.EventMobile .keterangan span {
-  width: 50%;
-  text-align: center;
-  color: #3629a7;
-  position: relative;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.EventMobile .sorting {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-/* .EventMobile .sorting .filter {} */
-
-.EventMobile .sorting .filter .tombol {
+.sortingMobile .filter .tombol {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -577,13 +416,12 @@
   cursor: pointer;
 }
 
-.EventMobile .sorting .filter h2 {
+.sortingMobile .filter h2 {
   margin-left: 10px;
   font-size: 1rem;
 }
 
-/*  */
-.EventMobile .sorting .filter .containerFilter {
+.sortingMobile .filter .containerFilter {
   /* display: none; */
   width: 100%;
   height: 100%;
@@ -598,7 +436,7 @@
   padding: 1rem;
 }
 
-.EventMobile .sorting .filter .containerFilter .boxFilter {
+.sortingMobile .filter .containerFilter .boxFilter {
   width: 100%;
   /* height: 400px; */
   padding: 1rem;
@@ -607,7 +445,7 @@
   border-radius: 10px;
 }
 
-.EventMobile .sorting .filter .containerFilter .boxFilter .containerTitle {
+.sortingMobile .filter .containerFilter .boxFilter .containerTitle {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -617,18 +455,11 @@
   /* padding: .5rem 1rem; */
 }
 
-.EventMobile
-  .sorting
-  .filter
-  .containerFilter
-  .boxFilter
-  .containerTitle
-  .title {
+.sortingMobile .filter .containerFilter .boxFilter .containerTitle .title {
   display: flex;
 }
 
-.EventMobile
-  .sorting
+.sortingMobile
   .filter
   .containerFilter
   .boxFilter
@@ -638,20 +469,12 @@
   font-size: 1.4rem;
 }
 
-.EventMobile
-  .sorting
-  .filter
-  .containerFilter
-  .boxFilter
-  .containerTitle
-  .title
-  h4 {
+.sortingMobile .filter .containerFilter .boxFilter .containerTitle .title h4 {
   font-size: 1.4rem;
   font-weight: 550;
 }
 
-.EventMobile
-  .sorting
+.sortingMobile
   .filter
   .containerFilter
   .boxFilter
@@ -662,18 +485,13 @@
   cursor: pointer;
 }
 
-.EventMobile .sorting .filter .containerFilter .boxFilter .content {
+.sortingMobile .filter .containerFilter .boxFilter .content {
   width: 100%;
   height: 300px;
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* flex-direction: column; */
   overflow: auto;
-  /* margin: 10px 0; */
 }
 
-.EventMobile .sorting .filter .containerFilter .boxFilter .content .perFIlter {
+.sortingMobile .filter .containerFilter .boxFilter .content .perFIlter {
   width: 100%;
   height: 30px;
   display: flex;
@@ -683,14 +501,7 @@
   overflow: hidden;
 }
 
-.EventMobile
-  .sorting
-  .filter
-  .containerFilter
-  .boxFilter
-  .content
-  .perFilter
-  .title {
+.sortingMobile .filter .containerFilter .boxFilter .content .perFilter .title {
   width: 100%;
   height: 100%;
   display: flex;
@@ -705,23 +516,19 @@
   border: 1px solid #e4e4e7;
   border-radius: 7px;
   margin: 10px 0;
-  /* position: relative; */
 }
 
-.EventMobile
-  .sorting
+.sortingMobile
   .filter
   .containerFilter
   .boxFilter
   .content
   .perFilter
   .isiFilterProgram {
-  /* height: 0; */
   display: none;
 }
 
-.EventMobile
-  .sorting
+.sortingMobile
   .filter
   .containerFilter
   .boxFilter
@@ -733,8 +540,7 @@
   padding: 0 1rem;
 }
 
-.EventMobile
-  .sorting
+.sortingMobile
   .filter
   .containerFilter
   .boxFilter
@@ -745,8 +551,7 @@
   margin: 10px 0;
 }
 
-.EventMobile
-  .sorting
+.sortingMobile
   .filter
   .containerFilter
   .boxFilter
@@ -761,13 +566,13 @@
   color: #3f3f3f;
 }
 
-.EventMobile .sorting .filter .containerFilter .boxFilter .btn {
+.sortingMobile .filter .containerFilter .boxFilter .button {
   width: 100%;
   display: flex;
   margin-top: 50px;
 }
 
-.EventMobile .sorting .filter .containerFilter .boxFilter .btn button {
+.sortingMobile .filter .containerFilter .boxFilter .button button {
   width: calc(90% / 2);
   background-color: #fff;
   border: 2px solid #e4e4e7;
@@ -780,19 +585,13 @@
   cursor: pointer;
 }
 
-.EventMobile
-  .sorting
-  .filter
-  .containerFilter
-  .boxFilter
-  .btn
-  button:last-child {
+.sortingMobile .filter .containerFilter .boxFilter .button button:last-child {
   background-color: #3629a7;
   border: 2px solid #3629a7;
   color: #fff;
 }
 
-.EventMobile .sorting .urutkan {
+.sortingMobile .urutkan {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -806,12 +605,12 @@
   /* transform: translateY(-10px); */
 }
 
-.EventMobile .sorting .urutkan h2 {
+.sortingMobile .urutkan h2 {
   margin-right: 100px;
   font-size: 1rem;
 }
 
-.EventMobile .sorting .urutkan .isiBoxUrutkan {
+.sortingMobile .urutkan .isiBoxUrutkan {
   display: none;
   width: 100%;
   position: absolute;
@@ -820,42 +619,43 @@
   justify-content: center;
   align-items: start;
   flex-direction: column;
-  /* z-index: 9999999999; */
   background-color: #fff;
   border: 1px solid #e4e4e7;
   border-radius: 7px;
   padding: 0.5rem 0;
 }
 
-.EventMobile .sorting .urutkan .isiBoxUrutkan .perIsiBoxUrutkan:hover {
+.sortingMobile .urutkan .isiBoxUrutkan.show {
+  display: flex;
+}
+
+.sortingMobile .urutkan .isiBoxUrutkan .perIsiBoxUrutkan:hover {
   background-color: #afc0ff;
   cursor: pointer;
 }
 
-.EventMobile .sorting .urutkan .isiBoxUrutkan .perIsiBoxUrutkan.active:hover {
+.sortingMobile .urutkan .isiBoxUrutkan .perIsiBoxUrutkan.active:hover {
   background-color: #5441fa;
 }
 
-.EventMobile .sorting .urutkan .isiBoxUrutkan .perIsiBoxUrutkan {
+.sortingMobile .urutkan .isiBoxUrutkan .perIsiBoxUrutkan {
   width: 100%;
   padding: 1rem;
 }
 
-.EventMobile .sorting .urutkan .isiBoxUrutkan .perIsiBoxUrutkan.active {
+.sortingMobile .urutkan .isiBoxUrutkan .perIsiBoxUrutkan.active {
   background-color: #5441fa;
   border: 1px solid #e4e4e7;
 }
 
-.EventMobile .sorting .urutkan .isiBoxUrutkan .perIsiBoxUrutkan.active span {
+.sortingMobile .urutkan .isiBoxUrutkan .perIsiBoxUrutkan.active span {
   color: #fff;
 }
 
-.EventMobile .sorting .urutkan .isiBoxUrutkan .perIsiBoxUrutkan span {
+.sortingMobile .urutkan .isiBoxUrutkan .perIsiBoxUrutkan span {
   color: #3f3f3f;
   font-weight: 600;
 }
-
-/* Event Mobile End */
 
 .program .masihBerlangsung .selengkapnya:hover,
 .artikel .container .selengkapnya:hover {
@@ -875,3 +675,5 @@
   font-size: 1rem;
   text-transform: uppercase;
 }
+
+/* Event Mobile End */
