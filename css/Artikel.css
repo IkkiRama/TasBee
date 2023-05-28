@@ -90,11 +90,9 @@
 .artikel .perArtikel {
   width: calc(90% / 3);
   margin: 15px 10px;
-  /* padding: 20px; */
   border-radius: 10px;
   border: 2px solid #e4e4e7;
   background-color: #fff;
-  /* box-shadow: 0 .5rem .5rem rgba(0, 0, 0, 0.1); */
 }
 
 .perArtikel:hover h2 {
@@ -139,22 +137,21 @@
   margin-bottom: 20px;
 }
 
-.perArtikel .btn {
+.perArtikel .cta {
   margin-bottom: 15px;
   width: 100%;
   display: flex;
-  /* align-items: center; */
   justify-content: center;
 }
 
-.perArtikel .btn button {
+button {
+  color: #fff !important;
+  background-color: #3629a7 !important;
+}
+
+.perArtikel .cta button {
   width: 95%;
-  border-radius: 7px;
   padding: 10px 40px;
-  color: #fff;
-  font-size: 1rem;
-  font-weight: 600;
-  background-color: #3629a7;
 }
 
 /* Halaman Artikel End */

@@ -1,0 +1,28 @@
+/* page kontak start */
+.kontak {
+    width: 100%;
+    padding-top: 15vh;
+}
+
+.kontak .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.kontak .container .caption,
+.kontak .container img {
+    height: 100%;
+    width: 50%;
+}
+
+.kontak .container .caption {
+    margin-left: 50px;
+}
+
+.kontak .container .caption h1 {
+    font-size: 2.1rem;
+    margin-bottom: 20px;
+}
+
+/* page kontak end */

@@ -1,6 +1,5 @@
 Event.html belum responsive
-Auth, detailEvent belum rapi formnya
-Tambahin contact.html
+Tambahin lupa password
 
 
 Penyesuaian lagi dii responsivenya, siapa tau ada ukuran yang belum ideal
