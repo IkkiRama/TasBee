@@ -475,6 +475,13 @@ header nav ul li a:hover {
   margin-bottom: 30px;
 }
 
+
+.footer .box p span {
+  display: flex;
+  color: var(--font);
+  flex-direction: column;
+}
+
 .footer .box .sosmed {
   display: flex;
 }
