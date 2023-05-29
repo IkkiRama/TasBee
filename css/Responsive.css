@@ -131,11 +131,6 @@
     font-size: 3rem;
   }
 
-  .program .event {
-    justify-content: center;
-    margin-top: 20px;
-  }
-
   .program .caption p {
     margin: 20px 0;
     font-size: 1.4rem;
@@ -415,17 +410,9 @@
   .heroMediaPartner {
     width: 100%;
     padding: 0;
-    /* padding: 150px 100px 0 100px; */
   }
 
   .heroMediaPartner .container {
-    /* height: 100vh; */
-    /* width: 100%; */
-    /* margin: 0; */
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* background-color: #fff; */
     flex-wrap: wrap-reverse;
   }
 
@@ -451,6 +438,23 @@
   }
 
   /* Halaman Media Partner End*/
+
+  /* Event */
+
+  .Event .container .program .masihBerlangsung .perMasihBerlangsung {
+    margin: 10px 5px;
+  }
+
+  .Event .container .program .masihBerlangsung .perMasihBerlangsung .date p {
+    font-size: .9rem;
+  }
+
+  .Event .container .program .masihBerlangsung .perMasihBerlangsung .btn button {
+    font-size: .9rem;
+  }
+
+  /* Event */
+
 
   /* Halaman Artikel Start */
   .heroArtikel .bg-patern .container .caption h1 {
@@ -488,22 +492,6 @@
 
   /* Halaman Artikel End */
 
-  /* Event */
-
-  .Event2 .container .program .masihBerlangsung .perMasihBerlangsung {
-    margin: 10px 5px;
-  }
-
-  .Event2 .container .program .masihBerlangsung .perMasihBerlangsung .date p {
-    font-size: 0.9rem;
-  }
-
-  .Event2 .container .program .masihBerlangsung .perMasihBerlangsung .btn button {
-    font-size: 0.9rem;
-  }
-
-  /* Event */
-
   /* Login */
 
   .containerLogin .container .login {
@@ -538,20 +526,20 @@
 
   /* event */
 
-  .Event2 .container .sorting {
+  .Event .container .sorting {
     width: 40%;
   }
 
-  .Event2 .container .program {
+  .Event .container .program {
     width: 60%;
   }
 
-  .Event2 .container .program .masihBerlangsung .perMasihBerlangsung {
+  .Event .container .program .masihBerlangsung .perMasihBerlangsung {
     width: 100%;
     margin: 10px 0;
   }
 
-  .Event2 .container .program .masihBerlangsung .perMasihBerlangsung .btn button {
+  .Event .container .program .masihBerlangsung .perMasihBerlangsung .btn button {
     font-size: 1rem;
     padding: 12px;
   }
@@ -655,10 +643,6 @@
 
   /* Media Partner start */
 
-  /* .heroMediaPartner {
-        padding: 150px 50px 100px 50px;
-    } */
-
   .heroMediaPartner .container .caption h1 {
     font-size: 2.5rem;
     line-height: 50px;
@@ -708,6 +692,18 @@
 
   /* Media Partner end */
 
+  /* event */
+  .heroEvent .container form {
+    width: 100%;
+  }
+
+  .keteranganProgram span {
+    font-size: .9rem;
+    padding: 20px 10px;
+  }
+
+  /* event */
+
   /* Halaman Artikel  start */
   .rekomendasiArtikel .container .perArtikel img,
   .artikel .container .perArtikel img {
@@ -716,18 +712,6 @@
 
   /* Halaman Artikel  end */
 
-  /* event */
-
-  .heroEvent2 .container form {
-    width: 100%;
-  }
-
-  .Event2 .container .program .keteranganProgram span {
-    font-size: 0.9rem;
-    padding: 20px 10px;
-  }
-
-  /* event */
 
   /* Login */
   .containerLogin .container .login {
@@ -864,6 +848,67 @@
     line-height: 30px;
   }
 
+  /* Event */
+  .heroEvent .container h1 {
+    font-size: 1.9rem;
+    font-weight: 700;
+  }
+
+  .heroEvent .container p {
+    font-size: 1rem;
+  }
+
+  .Event .sorting {
+    display: none;
+  }
+
+  .Event .container .program {
+    width: 100%;
+    padding: 0;
+  }
+
+  .keteranganProgram {
+    display: flex;
+    position: inherit;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 4px solid #e4e4e7;
+    margin-bottom: 20px;
+    padding: 10px 0;
+  }
+
+  .keteranganProgram span {
+    width: 50%;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0 20px;
+    position: relative;
+  }
+
+  .sortingMobile {
+    display: inherit;
+  }
+
+  .Event .program .masihBerlangsung .perMasihBerlangsung img {
+    height: 350px;
+  }
+
+  .Event .program .masihBerlangsung .perMasihBerlangsung h2 {
+    font-size: 1.5rem;
+    line-height: 30px;
+  }
+
+  .Event .program .masihBerlangsung .perMasihBerlangsung h3 {
+    font-size: 1.5rem
+  }
+
+  .Event .program .masihBerlangsung .perMasihBerlangsung p {
+    font-size: 1.1rem;
+  }
+
+  /* Event */
+
+
   /* Halaman Media Partner Start */
 
   .eventMediaPartner .container {
@@ -947,25 +992,6 @@
 
   /* Halaman Artikel End */
 
-  /* Event */
-  .heroEvent2 .container h1 {
-    font-size: 1.9rem;
-    font-weight: 700;
-  }
-
-  .heroEvent2 .container p {
-    font-size: 1rem;
-  }
-
-  .Event2 {
-    display: none;
-  }
-
-  .EventMobile {
-    display: inherit;
-  }
-
-  /* Event */
 
   /* Login */
   .containerLogin .container .login {
@@ -1195,11 +1221,15 @@
     line-height: 40px;
   }
 
-  /* Halaman Media Partner start */
-  /* .heroMediaPartner {
-        padding: 0 25px;
-    } */
+  /* Event */
+  .Event .program .masihBerlangsung .perMasihBerlangsung img {
+    height: 200px;
+  }
 
+  /* Event */
+
+
+  /* Halaman Media Partner start */
   .heroMediaPartner .container .caption h1 {
     font-size: 1.7rem;
     line-height: 40px;
@@ -1246,19 +1276,6 @@
 
   /* Halaman Artikel end */
 
-  /* Event */
-
-  .EventMobile .program .masihBerlangsung .perMasihBerlangsung img {
-    height: 300px;
-  }
-
-  .EventMobile .program .masihBerlangsung .perMasihBerlangsung .date p,
-  .EventMobile .program .masihBerlangsung .perMasihBerlangsung .date .icon,
-  .EventMobile .program .masihBerlangsung .perMasihBerlangsung p {
-    font-size: 1rem;
-  }
-
-  /* Event */
 
   /* Detail Event Start */
 
@@ -1294,6 +1311,32 @@
     font-size: 0.9rem;
   }
 
+  /* event */
+  .heroEvent .container h1 {
+    font-size: 1.5rem;
+  }
+
+  .heroEvent .container p {
+    font-size: .9rem;
+  }
+
+  .sortingMobile .filter .containerFilter .boxFilter .button {
+    flex-wrap: wrap-reverse;
+  }
+
+  .sortingMobile .filter .containerFilter .boxFilter .button button {
+    margin: 0;
+    width: 100%;
+    padding: 8px 10px;
+  }
+
+  .sortingMobile .filter .containerFilter .boxFilter .button button:first-child {
+    margin-top: 10px;
+  }
+
+  /* event */
+
+
   /* Halaman Media Partner Start */
   .eventMediaPartner .container .title .caption h2 {
     font-size: 1.7rem;
@@ -1327,31 +1370,6 @@
   }
 
   /* Halaman Media Partner End */
-
-  /* event */
-  .heroEvent2 .container h1 {
-    font-size: 1.5rem;
-  }
-
-  .heroEvent2 .container p {
-    font-size: 0.9rem;
-  }
-
-  .EventMobile .sorting .filter .containerFilter .boxFilter .btn {
-    flex-wrap: wrap-reverse;
-  }
-
-  .EventMobile .sorting .filter .containerFilter .boxFilter .btn button {
-    margin: 0;
-    width: 100%;
-    padding: 8px 10px;
-  }
-
-  .EventMobile .sorting .filter .containerFilter .boxFilter .btn button:first-child {
-    margin-top: 10px;
-  }
-
-  /* event */
 
   /* Login */
 
@@ -1508,6 +1526,29 @@
     background: rgb(255, 160, 17);
   }
 
+  /* Event */
+
+  .sortingMobile .urutkan h2 {
+    margin-right: 50px;
+  }
+
+  .keteranganProgram span {
+    font-size: .9rem;
+  }
+
+  .Event .program .masihBerlangsung .perMasihBerlangsung .date .icon,
+  .Event .program .masihBerlangsung .perMasihBerlangsung .date p {
+    font-size: .9rem;
+  }
+
+  .Event .program .masihBerlangsung .perMasihBerlangsung h2 {
+    font-size: 1.2rem;
+    line-height: 25px;
+  }
+
+  /* Event */
+
+
   /* Halaman Media Partner Start  */
   .heroMediaPartner .container .cta button {
     width: 90%;
@@ -1566,32 +1607,6 @@
   }
 
   /* Halaman Media Partner End  */
-
-  /* Event */
-
-  .EventMobile .sorting .urutkan h2 {
-    margin-right: 50px;
-  }
-
-  .EventMobile .keterangan span {
-    font-size: 0.9rem;
-  }
-
-  .EventMobile .program .masihBerlangsung .perMasihBerlangsung img {
-    height: 250px;
-  }
-
-  .EventMobile .program .masihBerlangsung .perMasihBerlangsung .date .icon,
-  .EventMobile .program .masihBerlangsung .perMasihBerlangsung .date p {
-    font-size: 0.9rem;
-  }
-
-  .EventMobile .program .masihBerlangsung .perMasihBerlangsung h2 {
-    font-size: 1.2rem;
-    line-height: 25px;
-  }
-
-  /* Event */
 
   /* Detail Event */
 
@@ -1669,6 +1684,32 @@
     line-height: 35px;
   }
 
+  /* Event */
+
+  .heroEvent .container form button {
+    width: 30%;
+  }
+
+  .sortingMobile .filter .containerFilter .boxFilter .containerTitle .title .icon {
+    font-size: 1.2rem;
+  }
+
+  .sortingMobile .filter .containerFilter .boxFilter .containerTitle .title h4 {
+    font-size: 1.2rem;
+  }
+
+  .sortingMobile .filter .containerFilter .boxFilter .containerTitle .close {
+    font-size: 1.5rem;
+    padding: 0;
+    margin-top: -5px;
+  }
+
+  .Event .program .masihBerlangsung .perMasihBerlangsung p {
+    font-size: .9rem;
+  }
+
+  /* Event */
+
   /* Halaman Media Partner Start */
   .heroMediaPartner .caption h1 {
     font-size: 1.3rem;
@@ -1713,46 +1754,7 @@
 
   /* Halaman Artikel end */
 
-  /* Event */
-
-  .heroEvent2 .container form button {
-    width: 30%;
-  }
-
-  .EventMobile .sorting .filter .containerFilter .boxFilter .containerTitle .title .icon {
-    font-size: 1.2rem;
-  }
-
-  .EventMobile .sorting .filter .containerFilter .boxFilter .containerTitle .title h4 {
-    font-size: 1.2rem;
-  }
-
-  .EventMobile .sorting .filter .containerFilter .boxFilter .containerTitle .close {
-    font-size: 1.5rem;
-    padding: 0;
-    margin-top: -5px;
-  }
-
-  .EventMobile .program .masihBerlangsung .perMasihBerlangsung p {
-    font-size: 0.9rem;
-  }
-
-  /* Event */
-
   /* Login */
-
-  /* .containerLogin .container h1 {
-        font-size: 1.5rem;
-    }
-
-    .containerLogin .container .login h2 {
-        font-size: 1.3rem;
-    }
-
-    .containerLogin .container .login p {
-        font-size: 1rem;
-        line-height: 22px;
-    } */
   .containerLogin .container .login form .form-info label,
   .containerLogin .container .login form .form-info a {
     font-size: 0.9rem;
@@ -1861,10 +1863,63 @@
     margin: 10px 5px;
   }
 
+  /* Event */
+  .keteranganProgram span {
+    font-size: .8rem;
+  }
+
+  .sortingMobile .filter,
+  .sortingMobile .urutkan {
+    width: 100%;
+  }
+
+  .sortingMobile .filter .tombol {
+    flex-direction: row-reverse;
+  }
+
+  .sortingMobile .urutkan {
+    margin-top: 20px;
+  }
+
+
+  .sortingMobile {
+    flex-wrap: wrap;
+  }
+
+  .sortingMobile .urutkan h2 {
+    margin-right: 10px;
+  }
+
+  .sortingMobile .filter .containerFilter .boxFilter .containerTitle .title .icon,
+  .sortingMobile .filter .containerFilter .boxFilter .containerTitle .title h4 {
+    font-size: 1rem;
+  }
+
+  .sortingMobile .filter .containerFilter .boxFilter .containerTitle .close {
+    font-size: 1.5rem;
+    padding: 0;
+    margin-top: -5px;
+  }
+
+  .Event .program .masihBerlangsung .perMasihBerlangsung h2 {
+    font-size: 1rem;
+    line-height: 20px;
+  }
+
+  .Event .program .masihBerlangsung .perMasihBerlangsung img {
+    height: 170px;
+  }
+
+  .Event .program .masihBerlangsung .perMasihBerlangsung h3 {
+    font-size: 1.2rem;
+  }
+
+  /* Event */
+
+
   /* Media Partner Start */
   .eventMediaPartner .container button {
     font-size: 0.9rem;
-    /* padding: 10px 20px; */
   }
 
   .tahapanUpload .container {
@@ -1912,54 +1967,6 @@
   }
 
   /* Halaman Artikel end */
-
-  /* Event */
-  .EventMobile .sorting .filter,
-  .EventMobile .sorting .urutkan {
-    width: 100%;
-  }
-
-  .EventMobile .sorting .filter .tombol {
-    flex-direction: row-reverse;
-  }
-
-  .EventMobile .sorting .urutkan {
-    margin-top: 20px;
-  }
-
-  .EventMobile .sorting {
-    flex-wrap: wrap;
-  }
-
-  .EventMobile .sorting .urutkan h2 {
-    margin-right: 10px;
-  }
-
-  .EventMobile .sorting .filter .containerFilter .boxFilter .containerTitle .title .icon,
-  .EventMobile .sorting .filter .containerFilter .boxFilter .containerTitle .title h4 {
-    font-size: 1rem;
-  }
-
-  .EventMobile .sorting .filter .containerFilter .boxFilter .containerTitle .close {
-    font-size: 1.5rem;
-    padding: 0;
-    margin-top: -5px;
-  }
-
-  .EventMobile .program .masihBerlangsung .perMasihBerlangsung h2 {
-    font-size: 1rem;
-    line-height: 20px;
-  }
-
-  .EventMobile .program .masihBerlangsung .perMasihBerlangsung img {
-    height: 220px;
-  }
-
-  .EventMobile .program .masihBerlangsung .perMasihBerlangsung h3 {
-    font-size: 1.2rem;
-  }
-
-  /* Event */
 
   /* Per Artikel */
 

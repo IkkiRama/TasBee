@@ -3,3 +3,6 @@ Tambahin lupa password
 
 
 Penyesuaian lagi dii responsivenya, siapa tau ada ukuran yang belum ideal
+
+
+Detail event di bagian foto post kimia masih jelek
