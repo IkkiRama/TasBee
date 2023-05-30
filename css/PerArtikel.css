@@ -129,6 +129,7 @@
   background-color: #007ab9;
 }
 
+
 .contentArtikel .author {
   display: flex;
   padding-top: 25px;
@@ -139,6 +140,11 @@
   height: 60px;
   border-radius: 50%;
   object-fit: cover;
+}
+
+
+.contentArtikel .deskripsi-mobile {
+  display: none;
 }
 
 .contentArtikel .author .authorDetail {
@@ -184,6 +190,7 @@
   width: calc(100% / 4);
 }
 
+/* .containerArtikelLainnya .artikelLainnya .perArtikelLainnya img { */
 .containerArtikelLainnya .artikelLainnya .perArtikelLainnya img {
   width: 100%;
   height: 120px;
@@ -205,9 +212,6 @@
 
 .containerArtikelLainnya .artikelLainnya .perArtikelLainnya p {
   -webkit-line-clamp: 3;
-}
-
-.containerArtikelLainnya .artikelLainnya .perArtikelLainnya p {
   font-weight: 500;
   font-size: 0.9rem;
   line-height: 1.1rem;
@@ -247,6 +251,7 @@
 .rekomendasiArtikel .perArtikel .caption {
   padding: 0.8rem 0.8rem;
 }
+
 .rekomendasiArtikel .perArtikel h3 {
   font-size: 1.2rem;
 }
@@ -258,12 +263,11 @@
 .rekomendasiArtikel .perArtikel .authorRekomendasiArtikel {
   display: flex;
   padding-top: 30px;
-  align-items: center;
 }
 
 .rekomendasiArtikel .perArtikel .authorRekomendasiArtikel img {
-  width: 40px;
-  height: 40px;
+  width: 40px !important;
+  height: 40px !important;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -277,11 +281,7 @@
   font-weight: 600;
 }
 
-.rekomendasiArtikel
-  .perArtikel
-  .authorRekomendasiArtikel
-  .detailAuthor
-  span:hover {
+.rekomendasiArtikel .perArtikel .authorRekomendasiArtikel .detailAuthor span:hover {
   color: #007ab9;
 }
 
