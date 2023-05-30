@@ -535,8 +535,15 @@ footer .container {
 
 
 .containerModal.show {
-  transform: translateY(0);
-  transition: .5s;
+  transform: scaleY(1);
+  opacity: 1;
+  z-index: 9999999999;
+
+}
+
+
+.containerModal.show .modal {
+  transform: scaleY(1);
 }
 
 .containerModal {
@@ -548,10 +555,12 @@ footer .container {
   top: 0;
   left: 0;
   position: fixed;
-  transition: .5s;
-  transform: translateY(-150%);
+  transform: scaleY(0);
+  transform-origin: top;
+  animation: ease 3s;
+  opacity: 0;
   background-color: rgba(0, 0, 0, 0.349);
-  z-index: 99999999999;
+  z-index: -99;
   padding: 1rem;
 }
 
@@ -561,6 +570,10 @@ footer .container {
   border: 2px solid #e4e4e7;
   background-color: #fff;
   border-radius: 10px;
+  transition: .3s;
+  transform: scaleY(0);
+  pointer-events: auto;
+  transform-origin: top;
 }
 
 .modal .modal-title {

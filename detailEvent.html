@@ -305,7 +305,7 @@
 
 
         <!-- Modal Daftar Start -->
-        <div class="containerModal">
+        <section class="containerModal">
 
             <div class="modal">
                 <div class="modal-title">
@@ -382,7 +382,7 @@
                 </div>
                 </form>
             </div>
-        </div>
+        </section>
         <!-- Modal Daftar End -->
 
 
@@ -471,14 +471,25 @@
     <script>
         let daftar = document.querySelector(".daftar")
         let containerModal = document.querySelector(".containerModal")
+        let modal = document.querySelector(".modal")
         let close = document.querySelector(".modal-title .icon")
 
+        //Ketika user nge klik tombol daftar dan close
         close.addEventListener("click", () => {
             containerModal.classList.toggle("show")
         })
 
         daftar.addEventListener("click", () => {
             containerModal.classList.toggle("show")
+        })
+
+
+
+        //Ketika user nge klik apapun diluar modal
+        document.addEventListener("click", function (e) {
+            if (e.target === containerModal) {
+                containerModal.classList.remove("show")
+            }
         })
     </script>
 
