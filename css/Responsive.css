@@ -605,6 +605,55 @@
   }
 
   /* Halaman Detail Event end */
+
+
+  /* Kontak */
+  .kontak .container {
+    flex-wrap: wrap;
+  }
+
+  .kontak .container .caption,
+  .kontak .container img {
+    width: 100%;
+  }
+
+  .kontak .container img {
+    height: 30rem;
+    margin-bottom: 50px;
+  }
+
+  .kontak .container .caption {
+    margin-left: 0;
+  }
+
+  .kontak .container .caption h1 {
+    text-align: center;
+  }
+
+
+  .kontak .container {
+    flex-wrap: wrap;
+  }
+
+  .kontak .container .caption,
+  .kontak .container img {
+    width: 100%;
+  }
+
+  .kontak .container img {
+    height: 30rem;
+    margin-bottom: 50px;
+  }
+
+  .kontak .container .caption {
+    margin-left: 0;
+  }
+
+  .kontak .container .caption h1 {
+    text-align: center;
+  }
+
+  /* Kontak */
 }
 
 @media (max-width: 800px) {
@@ -1229,6 +1278,14 @@
   }
 
   /* Halaman Detail Event End */
+
+  /* Kontak */
+  .kontak .container img {
+    height: 30rem;
+    margin-bottom: 0;
+  }
+
+  /* Kontak */
 }
 
 @media (max-width: 500px) {
@@ -1370,6 +1427,14 @@
   }
 
   /* Per Artikel */
+
+  /* Kontak */
+  .kontak .container img {
+    height: 20rem;
+    margin-bottom: 10px;
+  }
+
+  /* Kontak */
 }
 
 @media (max-width: 450px) {
@@ -1729,6 +1794,22 @@
   }
 
   /* Detail Event */
+
+  /* Kontak */
+  .kontak .container img {
+    height: 15rem;
+  }
+
+  .kontak .container .caption h1 {
+    font-size: 1.9rem;
+  }
+
+  .kontak .container .caption textarea,
+  .kontak .container .caption input {
+    font-size: .9rem;
+  }
+
+  /* Kontak */
 }
 
 @media (max-width: 350px) {
@@ -2146,4 +2227,28 @@
 
   /* Per Artikel */
 
+  /* Kontak */
+  .kontak .container img {
+    height: 10rem;
+  }
+
+  .kontak .container .caption h1 {
+    font-size: 1.6rem;
+  }
+
+  .kontak .container .caption label {
+    font-size: .95rem;
+  }
+
+  .kontak .container .caption textarea,
+  .kontak .container .caption input {
+    padding-left: 10px;
+    font-size: .8rem;
+  }
+
+  .kontak .container .caption button {
+    width: 100%;
+  }
+
+  /* Kontak */
 }
