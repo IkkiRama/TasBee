@@ -118,11 +118,14 @@
   align-items: center;
 }
 
-.detailAcara .waktuPelaksanaan .date .waktu .icon,
-.detailAcara .waktuPelaksanaan .date .tanggal .icon {
-  margin-right: 20px;
-  font-size: 1rem;
-  color: #3f3f3f;
+.detailAcara .waktuPelaksanaan .date .waktu .icon img,
+.detailAcara .waktuPelaksanaan .date .tanggal .icon img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
 }
 
 
@@ -247,6 +250,13 @@
 
 
 
+.modal .modal-title img {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .modal .modal-body form .form-group {
   margin: 5px 0;
@@ -296,6 +306,7 @@
   border-bottom-right-radius: 10px;
 }
 
+.modal .modal-body form .form-group .form-control .icon img {}
 
 
 .modal .modal-footer h2 {

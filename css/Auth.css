@@ -74,21 +74,7 @@ form .form-group .form-control select {
   padding: 0 20px;
 }
 
-form .form-group .form-control .icon {
-  width: 10%;
-  position: absolute;
-  right: 3px;
-  top: 15px;
-  bottom: 15px;
-  cursor: pointer;
-  color: #4a4b4c;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #fff;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
+
 
 
 .login form .form-info {

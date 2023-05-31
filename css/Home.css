@@ -4,12 +4,10 @@
   height: 100vh;
   margin-bottom: 50px;
   position: relative;
-  background: linear-gradient(
-    to top right,
-    var(--secondary-color),
-    var(--primary-color),
-    #49e9fb
-  );
+  background: linear-gradient(to top right,
+      var(--secondary-color),
+      var(--primary-color),
+      #49e9fb);
 }
 
 .hero .container {

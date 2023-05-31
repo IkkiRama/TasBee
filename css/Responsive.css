@@ -41,8 +41,16 @@
     padding: 0;
   }
 
+  .containerModal .modal {
+    width: 40%;
+  }
+
   .keteranganProgram {
     top: 7vh;
+  }
+
+  .heroEvent {
+    height: 40vh;
   }
 
   .Event .sorting {
@@ -309,9 +317,10 @@
     width: 50%;
   }
 
-  .detailEvent .container .detailAcara .waktuPelaksanaan .date .waktu .icon,
-  .detailEvent .container .detailAcara .waktuPelaksanaan .date .tanggal .icon {
-    font-size: 0.9rem;
+  .detailEvent .container .detailAcara .waktuPelaksanaan .date .waktu .icon img,
+  .detailEvent .container .detailAcara .waktuPelaksanaan .date .tanggal .icon img {
+    width: 15px;
+    height: 15px;
     margin-right: 10px;
   }
 
@@ -657,6 +666,11 @@
 }
 
 @media (max-width: 800px) {
+  footer .container {
+    font-size: .9rem;
+    line-height: 1.4rem;
+  }
+
   /* program section */
 
   .program .caption p {
@@ -1398,14 +1412,24 @@
     flex-wrap: wrap;
   }
 
+  .detailEvent .container .detailAcara .waktuPelaksanaan .date .tanggal,
+  .detailEvent .container .detailAcara .waktuPelaksanaan .date .waktu {
+    width: 100%;
+  }
+
   .detailEvent .container .detailAcara .waktuPelaksanaan .date .tanggal p,
   .detailEvent .container .detailAcara .waktuPelaksanaan .date .waktu p {
     font-size: 1rem;
   }
 
-  .detailEvent .container .detailAcara .waktuPelaksanaan .date .tanggal .icon,
-  .detailEvent .container .detailAcara .waktuPelaksanaan .date .waktu .icon {
-    font-size: 1rem;
+  .detailEvent .container .detailAcara .waktuPelaksanaan .date .tanggal .icon img {
+    margin-top: -15px;
+  }
+
+  .detailEvent .container .detailAcara .waktuPelaksanaan .date .tanggal .icon img,
+  .detailEvent .container .detailAcara .waktuPelaksanaan .date .waktu .icon img {
+    width: 17px;
+    height: 17px;
     margin-right: 15px;
   }
 
@@ -1416,6 +1440,10 @@
   .detailEvent .container .tentangPembicara .orang .profilOrang img {
     width: 70px;
     height: 60px;
+  }
+
+  form .form-group .form-control .icon {
+    width: 20%;
   }
 
   /* Detail Event End */
@@ -1988,6 +2016,21 @@
     margin-bottom: 15px;
   }
 
+  .containerModal .modal {
+    width: 100%;
+    padding: .8rem;
+  }
+
+  .containerModal .modal .modal-body {
+    padding: 0 10px;
+  }
+
+  form .form-group img {
+    width: 15px;
+    height: 15px;
+  }
+
+
   /* Halaman Detail Event End */
 
 
@@ -2036,6 +2079,11 @@
 }
 
 @media (max-width: 300px) {
+  footer .container {
+    font-size: .7rem;
+    line-height: 1rem;
+  }
+
   .fitur h1 {
     font-size: 1rem;
     line-height: 22px;
